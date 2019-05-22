@@ -1,0 +1,231 @@
+/*region Base style*/
+.ui-field-container {
+	position: relative;
+	display: inline-flex;
+	box-sizing: border-box;
+	max-width: 100%;
+	width: 160px;
+	height: 39px;
+	vertical-align: middle;
+	align-items: stretch;
+}
+
+.ui-field-container .ui-field-inner {
+	display: flex;
+	border: 1px solid #c6cdd3;
+	border-radius: 2px;
+	padding: 0 11px;
+	box-sizing: border-box;
+	max-width: 100%;
+	background-color: #fff;
+	transition: border .3s ease, background-color .3s ease, color .3s ease;
+	align-items: stretch;
+}
+
+.ui-field-inner:hover {
+	border-color: #66afe9;
+}
+
+.ui-field-inner:focus,
+.ui-field-inner:active {
+	border-color: #66afe9;
+}
+
+.ui-field-container .ui-field {
+	display: block;
+	box-sizing: border-box;
+	max-width: 100%;
+	outline: none;
+	border: none;
+	border-radius: 1px;
+	background-color: transparent;
+	color: #535c69;
+	vertical-align: middle;
+	text-align: left;
+	font: 400 15px/37px "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	flex: 1;
+}
+
+.ui-field:hover {
+	color: #535c69;
+}
+
+.ui-field:focus {
+	outline: none;
+	color: #535c69;
+}
+
+/*IOS background fix*/
+.bx-ios input.ui-field,
+.bx-ios input.ui-field:hover,
+.bx-ios input.ui-field:active {
+	background-image: linear-gradient(transparent, transparent)
+}
+
+/*endregion*/
+
+/*region Size*/
+.ui-field-container.ui-field-lg {
+	height: 47px;
+	line-height: 45px;
+}
+
+.ui-field-container.ui-field-md {
+	height: 39px;
+	line-height: 37px;
+}
+
+.ui-field-container.ui-field-sm {
+	height: 31px;
+	line-height: 29px;
+}
+
+.ui-field-container.ui-field-xs {
+	height: 26px;
+	line-height: 24px;
+}
+
+/*endregion*/
+
+/*region Color*/
+/*region Green form*/
+.ui-field-container.ui-field-success .ui-field-inner,
+.ui-field-container.ui-field-success .ui-field-inner:hover,
+.ui-field-container.ui-field-success .ui-field-inner:focus {
+	border-color: #7bd500;
+}
+
+/*endregion*/
+/*region Green form*/
+.ui-field-container.ui-field-success .ui-field-inner,
+.ui-field-container.ui-field-success .ui-field-inner:hover,
+.ui-field-container.ui-field-success .ui-field-inner:focus {
+	border-color: #7bd500;
+}
+
+/*endregion*/
+
+/*region Red field*/
+.ui-field-container.ui-field-danger .ui-field-inner,
+.ui-field-container.ui-field-danger .ui-field-inner:hover,
+.ui-field-container.ui-field-danger .ui-field-inner:focus {
+	border-color: #ff5752;
+}
+
+/*endregion*/
+
+/*region Orange field*/
+.ui-field-container.ui-field-warning .ui-field-inner,
+.ui-field-container.ui-field-warning .ui-field-inner:hover,
+.ui-field-container.ui-field-warning .ui-field-inner:focus {
+	border-color: #d5a933;
+}
+
+/*endregion*/
+
+/*region Disabled field*/
+.ui-field-container.ui-field-disabled .ui-field-inner,
+.ui-field-container.ui-field-disabled .ui-field-inner:hover,
+.ui-field-container.ui-field-disabled .ui-field-inner:focus {
+	border-color: #c6cdd3;
+	background-color: #f4f4f4;
+}
+
+.ui-field-container.ui-field-disabled .ui-field,
+.ui-field-container.ui-field-disabled .ui-field:hover,
+.ui-field-container.ui-field-disabled .ui-field:focus {
+	color: #a9adb2;
+}
+
+/*endregion*/
+/*endregion*/
+
+/*region Types*/
+/*region Type select*/
+
+.ui-field-container.ui-field-select .ui-field-inner {
+}
+
+.ui-field-container.ui-field-select .ui-field {
+	padding-right: 30px;
+}
+
+.ui-field-container.ui-field-select .ui-field-angle {
+	position: absolute;
+	top: 50%;
+	right: 5px;
+	display: block;
+	margin-top: -10px;
+	width: 20px;
+	height: 20px;
+	cursor: pointer;
+}
+
+.ui-field-angle:after,
+.ui-field-angle:before {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	width: 9px;
+	height: 2px;
+	background-color: #979797;
+	content: "";
+	transition: all 250ms ease;
+	-webkit-transform-origin: center;
+	-moz-transform-origin: center;
+	-ms-transform-origin: center;
+	-o-transform-origin: center;
+	transform-origin: center;
+}
+
+.ui-field-angle:before {
+	margin-left: -3px;
+}
+
+.ui-field-angle:before,
+.ui-field-select-open .ui-field-angle:after {
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	-o-transform: translateX(-50%) translateY(-50%) rotate(45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(45deg);
+}
+
+.ui-field-angle:after {
+	margin-left: 3px;
+}
+
+.ui-field-angle:after,
+.ui-field-select-open .ui-field-angle:before {
+	-webkit-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+	-moz-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+	-ms-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+	-o-transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+	transform: translateX(-50%) translateY(-50%) rotate(-45deg);
+}
+
+.ui-field-select:hover .ui-field-angle:after,
+.ui-field-select:hover .ui-field-angle:before {
+	background-color: #767676;
+}
+
+/*endregion*/
+
+/*endregion*/
+
+/*region others*/
+
+.ui-field-remove-btn {
+	width: 30px;
+	min-width: 30px;
+	padding: 0;
+	border: none;
+	background-color: #000;
+	cursor: pointer;
+}
+
+.ui-field-remove-btn:after {
+
+}
+
+/*endregion*/

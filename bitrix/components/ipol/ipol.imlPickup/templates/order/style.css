@@ -1,0 +1,177 @@
+#IML_pvz{
+	position         : absolute;
+	z-index          : 2100;
+	display          : none;
+	background-color : white;
+	padding          : 10px;
+	overflow         : auto;
+	font-family      : Verdana;
+	width            : 900px;
+	box-sizing		 : content-box;
+}
+#IML_mask{
+	width            : 100%;
+	height           : 100%;
+	opacity          : 0.8;
+	position         : fixed;
+	z-index          : 2000;
+	background-color : black;
+	display          : none;
+	top              : 0px;
+	padding          : 5px
+}
+#IML_head{
+	height:35px;
+	margin-bottom: 10px;
+}
+#IML_logo{
+	background : url('/bitrix/images/iml.v1/widjet/logo.png') no-repeat transparent;
+	width      : 169px;
+	height     : 11px;
+	margin-top : 15px;
+}
+#IML_logo:hover{
+	background-position: 0px -12px;
+}
+#IML_logo a{
+	text-decoration : none;
+	width           : 100%;
+	height          : 100%;
+	display         : block;
+}
+#IML_closer{
+	position   : absolute;
+	background : url('/bitrix/images/iml.v1/widjet/close.png') no-repeat transparent;
+	height     : 22px;
+	width      : 22px;
+	right      : 15px;
+	top        : 15px;
+	z-index    : 1000;
+	cursor     : pointer;
+}
+#IML_closer:hover{
+	background-position: 0px -22px;
+}
+#IML_map{
+	float: left;
+	height: 500px;
+	width: 600px;
+}
+#IML_info{
+	float:left;
+	height: 500px;
+	overflow: hidden;
+	width: 300px;
+}
+#IML_info > div{
+	width:600px;
+}
+#IML_wrapper,#IML_detail{
+	float: left;
+	height: 500px;
+	overflow: auto;
+	width: 300px;
+	border: none;
+	outline: none;
+}
+#IML_wrapper p{
+	cursor : pointer;
+	padding: 5px 6px;
+	margin:  5px 6px;
+	font-size: 12px;
+}
+.iml_chosen{
+	background-color : #ebebeb;
+}
+#IML_detail p{
+	padding-left:10px;
+	font-size: 12px;
+	margin-top:30px;
+	line-height: 18px;
+}
+#IML_detail p img{
+	width: 280px;
+}
+#IML_back{
+	background: url('/bitrix/images/iml.v1/widjet/back.png') no-repeat transparent;
+	font-size: 14px;
+	height: 20px;
+	margin: 10px 0px 0px 10px;
+	padding-left:35px;
+	cursor: pointer;
+}
+#IML_back:hover{
+	background-position: 0px -20px;
+}
+#IML_back:active{
+	background-position: 0px -40px;
+}
+/*балун*/
+#IML_baloon{
+	background-color:white;
+	/* width: 258px; */
+	font-family: Verdana;
+	font-size: 12px;
+}
+#IML_baloon > div{
+	margin: 10px 0px;
+}
+.iml_baloonDiv a{
+	color: #666666;
+	text-decoration: none;
+	border-bottom:1px dashed #666666;
+}
+.iml_baloonDiv a:hover{
+	border-bottom:1px dashed white;
+}
+.iml_baloonDiv{
+	max-width: 235px;
+	padding-left:8px;
+	float:left;
+}
+.iml_icon{
+	float:left;
+	width:12px;
+	min-height: 12px;
+}
+#IML_iPlace{background: url('/bitrix/images/iml.v1/widjet/place.png') 1px no-repeat;}
+#IML_iTelephone{background: url('/bitrix/images/iml.v1/widjet/phone.png') no-repeat;}
+#IML_iTime{background: url('/bitrix/images/iml.v1/widjet/clock.png') no-repeat;}
+#IML_iPrice{background: url('/bitrix/images/iml.v1/widjet/pay.png') no-repeat;}
+#IML_button{
+	width:130px;
+	height:25px;
+	background: url('/bitrix/images/iml.v1/widjet/chooze.png') no-repeat;
+	display: block;
+	margin: auto;
+	text-decoration:none;
+}
+#IML_button:hover{
+	background-position: 0px -25px;
+}
+#IML_head > div{
+	font-size: 12px;
+	font-family: Verdana;
+	float:left;
+}
+#IML_logoPlace{
+	width: 430px;
+	height: 38px;
+	background-image: url("/bitrix/images/iml.v1/IMLogo.png");
+	background-repeat:no-repeat;
+	background-position: 372px 2px;
+}
+#IML_separator{
+	background-color: #e3e3e3;
+	width: 1px;
+	height: 38px;
+}
+#IML_pDate{
+	cursor: help;
+}
+.IML_mark{
+	margin-left:12px;
+}
+.IPOLIML_DATEOC{
+	font-size: 10px;
+}

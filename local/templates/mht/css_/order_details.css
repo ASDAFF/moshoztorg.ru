@@ -1,0 +1,475 @@
+/* line 4, ../sass/css_/order_details.scss */
+.order_details_page .search_block {
+  top: 13px;
+}
+/* line 7, ../sass/css_/order_details.scss */
+.order_details_page .order_details {
+  position: relative;
+  width: 990px;
+  margin: 0 auto 49px auto;
+}
+/* line 12, ../sass/css_/order_details.scss */
+.order_details_page .order_details .breadcrumbs {
+  margin: -8px 0 0 0;
+}
+/* line 15, ../sass/css_/order_details.scss */
+.order_details_page .order_details h1 {
+  text-transform: uppercase;
+  font-family: "pfdintextpro-medium";
+  font-size: 39px;
+  margin: 12px 0 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+/* line 23, ../sass/css_/order_details.scss */
+.order_details_page .order_details .order_description {
+  margin: 3px 0 0 0;
+}
+/* line 27, ../sass/css_/order_details.scss */
+.order_details_page .order_details .order_description .row .col {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  color: #000000;
+  font-size: 16px;
+  font-family: "pfdintextpro-regular";
+  margin: 0 0 8px 0;
+}
+/* line 35, ../sass/css_/order_details.scss */
+.order_details_page .order_details .order_description .row .col.h3 {
+  color: #000000;
+  font-size: 16px;
+  font-family: "plumb-bold";
+  text-transform: uppercase;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 0 9px 0;
+  margin: 34px 0 25px 0;
+  width: 100%;
+}
+/* line 45, ../sass/css_/order_details.scss */
+.order_details_page .order_details .order_description .row .col.h4 {
+  margin: 23px 0 48px 0;
+}
+/* line 48, ../sass/css_/order_details.scss */
+.order_details_page .order_details .order_description .row .col.title {
+  color: #7e7e7e;
+  width: 195px;
+}
+/* line 52, ../sass/css_/order_details.scss */
+.order_details_page .order_details .order_description .row .col a {
+  color: #e6330a;
+  position: relative;
+}
+/* line 56, ../sass/css_/order_details.scss */
+.order_details_page .order_details .order_description .row .col a:after {
+  background: url('/../../../img/short_link_bottom.png?1428585798') center bottom no-repeat;
+  height: 2px;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* line 67, ../sass/css_/order_details.scss */
+.order_details_page .order_details .order_description .row .col a:hover:after {
+  width: 100%;
+}
+/* line 75, ../sass/css_/order_details.scss */
+.order_details_page .order_details .pay_block {
+  width: 301px;
+}
+/* line 78, ../sass/css_/order_details.scss */
+.order_details_page .order_details .pay_block .label {
+  color: #000000;
+  font-size: 11px;
+  font-family: "plumb-medium";
+  text-transform: uppercase;
+}
+/* line 85, ../sass/css_/order_details.scss */
+.order_details_page .order_details .pay_block .price .price_value {
+  color: #000000;
+  font-size: 40px;
+  line-height: 40px;
+  font-family: "plumb-bold";
+  vertical-align: top;
+}
+/* line 92, ../sass/css_/order_details.scss */
+.order_details_page .order_details .pay_block .price .rub {
+  font-size: 30px;
+  line-height: 40px;
+  position: relative;
+  top: -6px;
+  vertical-align: top;
+  font-family: "pt_sans-bold";
+}
+/* line 100, ../sass/css_/order_details.scss */
+.order_details_page .order_details .pay_block .price .rub:before {
+  font-family: "pt_sans-bold";
+}
+/* line 105, ../sass/css_/order_details.scss */
+.order_details_page .order_details .pay_block .button {
+  float: right;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  font-family: "pfdintextpro-medium";
+  font-size: 15px;
+  text-transform: uppercase;
+  width: 135px;
+  text-align: center;
+  padding: 16px 0 14px 0;
+  margin: 0 10px 0 3px;
+  color: #ffffff;
+  background: #7aab4b;
+}
+/* line 120, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list {
+  margin: 64px 0 63px 0;
+}
+/* line 123, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row {
+  padding: 20px 0;
+  border-top: 1px solid #dfdfdf;
+  border-bottom: 1px solid #dfdfdf;
+}
+/* line 128, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row.h3 {
+  text-transform: uppercase;
+  font-family: "pfdintextpro-medium";
+  font-size: 16px;
+  border: none;
+  padding: 0 0 9px 0;
+}
+/* line 135, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row .col {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+/* line 139, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row .col .zoom {
+  float: left;
+  margin: 0 20px 0 0;
+  position: relative;
+  width: 50px;
+  hegiht: 50px;
+}
+/* line 146, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row .col .zoom img {
+  width: 50px;
+  hegiht: 50px;
+}
+/* line 151, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row .col .product_name {
+  font-family: "plumb-bold";
+  color: #e10a00;
+  font-size: 16px;
+  line-height: 50px;
+  text-transform: uppercase;
+  position: relative;
+}
+/* line 159, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row .col .product_name:after {
+  background: url('/../../../img/sub_menu_bottom.png?1428585798') center bottom no-repeat;
+  height: 2px;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -2px;
+  left: 0;
+}
+/* line 170, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row .col .product_name:hover:after {
+  width: 100%;
+}
+/* line 175, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row .col .product_price {
+  font-family: "plumb-bold";
+  color: #000000;
+  font-size: 20px;
+  line-height: 50px;
+}
+/* line 182, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row .col .product_price .rub:before {
+  font-size: 16px;
+  font-family: "pt_sans-bold";
+  line-height: 50px;
+  position: relative;
+  top: -3px;
+}
+/* line 191, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row .col .remove {
+  color: #e10a00;
+  font-family: "plumb-bold";
+  font-size: 22px;
+  font-weight: bold;
+  line-height: 50px;
+  text-transform: uppercase;
+}
+/* line 199, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row .col.product_name_block {
+  width: 590px;
+}
+/* line 202, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row .col.one_price_block {
+  width: 120px;
+  text-align: right;
+}
+/* line 206, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row .col.count_selector_block {
+  font-family: "plumb-bold";
+  color: #000000;
+  font-size: 20px;
+  line-height: 50px;
+  width: 91px;
+  text-align: right;
+}
+/* line 214, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row .col.all_price_block {
+  width: 130px;
+  text-align: right;
+}
+/* line 218, ../sass/css_/order_details.scss */
+.order_details_page .order_details .in_cart_list .row .col.remove_block {
+  width: 59px;
+  text-align: right;
+}
+/* line 225, ../sass/css_/order_details.scss */
+.order_details_page .order_details .h2 {
+  color: #000000;
+  font-size: 20px;
+  font-family: "pfdintextpro-medium";
+  text-transform: uppercase;
+  border-bottom: 1px solid #000000;
+  padding: 0 0 5px 0;
+  margin: -3px 0 0 0;
+}
+/* line 234, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products {
+  margin: 0 0 64px 0;
+}
+/* line 237, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  position: relative;
+  width: 135px;
+  margin: 28px 35px 0 0;
+}
+/* line 244, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product.six {
+  margin-right: 0;
+}
+/* line 248, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product.tree {
+  margin: 28px 0 0 0;
+}
+/* line 251, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_brand {
+  font-family: "pfdintextpro-medium";
+  text-transform: uppercase;
+  font-size: 15px;
+  height: 20px;
+}
+/* line 257, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_description {
+  border-top: 1px solid #000000;
+  font-family: "pfdintextpro-regular";
+  overflow: hidden;
+  font-size: 14px;
+  padding: 7px 0 0 0;
+  height: 28px;
+}
+/* line 265, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_assessment_block {
+  margin: 12px 0;
+  cursor: pointer;
+  width: 45px;
+  height: 7px;
+  position: absolute;
+  z-index: 3;
+  bottom: 18px;
+  background: url('/../../../img/asterix_mini.png?1428585798') left center repeat-x;
+}
+/* line 275, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_assessment_block .product_assessment {
+  height: 7px;
+  background: url('/../../../img/asterix_mini_active.png?1428585798') left center repeat-x;
+  cursor: pointer;
+}
+/* line 281, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_image {
+  width: 135px;
+  height: 105px;
+  margin: 0 0 3px 0;
+  position: relative;
+}
+/* line 287, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #ffffff;
+  display: block;
+  max-width: 100%;
+}
+/* line 295, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_image img.product_image_original {
+  z-index: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 299, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_image img.product_image_hover {
+  z-index: 2;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 306, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_image:hover img.product_image_original {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 309, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_image:hover img.product_image_hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 315, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_prices_block {
+  position: relative;
+  height: 22px;
+  background: url('/../../../img/price_border.png?1428585798') center bottom repeat-x;
+}
+/* line 321, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_prices_block .product_price_block .product_price {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: baseline;
+  font-family: "plumb-bold";
+  font-size: 25px;
+  line-height: 25px;
+  margin: 1px 0 0 0;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+/* line 331, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_prices_block .product_price_block .product_price .product_price_value {
+  background: #ffffff;
+  padding: 0 6px 0 0;
+}
+/* line 335, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_prices_block .product_price_block .product_price .rub:before {
+  font-family: "pt_sans-bold";
+  vertical-align: baseline;
+  font-size: 20px;
+  line-height: 25px;
+  position: relative;
+  top: -4px;
+}
+/* line 344, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_prices_block .product_price_block .product_cart {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 32px;
+  height: 52px;
+  cursor: pointer;
+  padding: 0 0 0 2px;
+  z-index: 2;
+  background: url('/../../../img/cart.png?1428585798') right center no-repeat;
+}
+/* line 356, ../sass/css_/order_details.scss */
+.order_details_page .order_details .viewed_products .product .product_prices_block .product_price_block .product_cart:hover {
+  background: url('/../../../img/cart_hover.png?1428585798') right center no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 381, ../sass/css_/order_details.scss */
+  .order_details_page .order_details .order_description .row .col a:after {
+    background: url('/../../../img/short_link_bottom@2x.png?1428585798') center bottom no-repeat;
+    -moz-background-size: 320px 1px;
+    -o-background-size: 320px 1px;
+    -webkit-background-size: 320px 1px;
+    background-size: 320px 1px;
+  }
+  /* line 393, ../sass/css_/order_details.scss */
+  .order_details_page .order_details .in_cart_list .row .col .product_name:after {
+    background: url('/../../../img/sub_menu_bottom@2x.png?1428585798') center bottom no-repeat;
+    -moz-background-size: 320px 1px;
+    -o-background-size: 320px 1px;
+    -webkit-background-size: 320px 1px;
+    background-size: 320px 1px;
+  }
+  /* line 403, ../sass/css_/order_details.scss */
+  .order_details_page .order_details .viewed_products .product .product_assessment_block {
+    background: url('/../../../img/asterix_mini@2x.png?1428585798') left center repeat-x;
+    -moz-background-size: 9px 7px;
+    -o-background-size: 9px 7px;
+    -webkit-background-size: 9px 7px;
+    background-size: 9px 7px;
+  }
+  /* line 407, ../sass/css_/order_details.scss */
+  .order_details_page .order_details .viewed_products .product .product_assessment_block .product_assessment {
+    background: url('/../../../img/asterix_mini_active@2x.png?1428585798') left center repeat-x;
+    -moz-background-size: 9px 7px;
+    -o-background-size: 9px 7px;
+    -webkit-background-size: 9px 7px;
+    background-size: 9px 7px;
+  }
+  /* line 412, ../sass/css_/order_details.scss */
+  .order_details_page .order_details .viewed_products .product .product_prices_block {
+    background: url('/../../../img/price_border@2x.png?1428585798') center bottom repeat-x;
+    -moz-background-size: 4px 1px;
+    -o-background-size: 4px 1px;
+    -webkit-background-size: 4px 1px;
+    background-size: 4px 1px;
+  }
+  /* line 417, ../sass/css_/order_details.scss */
+  .order_details_page .order_details .viewed_products .product .product_prices_block .product_price_block .product_cart {
+    background: url('/../../../img/cart@2x.png?1428585797') right center no-repeat;
+    -moz-background-size: 32px 52px;
+    -o-background-size: 32px 52px;
+    -webkit-background-size: 32px 52px;
+    background-size: 32px 52px;
+  }
+  /* line 421, ../sass/css_/order_details.scss */
+  .order_details_page .order_details .viewed_products .product .product_prices_block .product_price_block .product_cart:hover {
+    background: url('/../../../img/cart_hover@2x.png?1428585798') right center no-repeat;
+    -moz-background-size: 32px 52px;
+    -o-background-size: 32px 52px;
+    -webkit-background-size: 32px 52px;
+    background-size: 32px 52px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 438, ../sass/css_/order_details.scss */
+  .mobile_enabled .order_details_page .order_details {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+}

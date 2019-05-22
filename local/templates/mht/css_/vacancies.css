@@ -1,0 +1,260 @@
+/* line 4, ../sass/css_/vacancies.scss */
+.vacancies_page .search_block {
+  top: 13px;
+}
+/* line 7, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies {
+  position: relative;
+  width: 990px;
+  margin: 0 auto;
+}
+/* line 12, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .breadcrumbs {
+  margin: -8px 0 0 0;
+}
+/* line 15, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies h1 {
+  text-transform: uppercase;
+  font-family: "pfdintextpro-medium";
+  font-size: 39px;
+  margin: 12px 0 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+/* line 23, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block {
+  margin: 43px 0 0 0;
+}
+/* line 26, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_menu {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  width: 195px;
+}
+/* line 31, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_menu li {
+  font-size: 16px;
+  font-family: "pfdintextpro-regular";
+  color: #000000;
+  margin: 0 0 9px 0;
+}
+/* line 37, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_menu li a {
+  color: #e6330a;
+  position: relative;
+}
+/* line 41, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_menu li a:after {
+  background: url('/../../../img/short_link_bottom.png?1428585798') left bottom no-repeat;
+  height: 1px;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+/* line 52, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_menu li a:hover:after {
+  width: 100%;
+}
+/* line 58, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_menu li.active a {
+  color: #000000;
+}
+/* line 61, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_menu li.active a:after {
+  width: 0;
+}
+/* line 68, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  width: 795px;
+  margin: 0 0 60px 0;
+}
+/* line 74, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy {
+  margin: 1px 0;
+}
+/* line 77, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_header {
+  background: #f3f3f3;
+  height: 80px;
+  position: relative;
+  cursor: pointer;
+}
+/* line 83, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_header .name {
+  position: absolute;
+  top: 19px;
+  left: 40px;
+  color: #000000;
+  font-size: 22px;
+  font-family: "pfdintextpro-medium";
+}
+/* line 91, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_header .address {
+  position: absolute;
+  background: url('/../../../img/dealers_point.png?1428585798') left center no-repeat;
+  color: #676767;
+  font-family: "pfdintextpro-regular";
+  top: 42px;
+  left: 39px;
+  padding: 8px 0 0 22px;
+}
+/* line 100, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_header .salary {
+  font-family: "pfdintextpro-regular";
+  position: absolute;
+  color: #000000;
+  font-size: 22px;
+  left: 645px;
+  top: 19px;
+}
+/* line 108, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_header .salary .salary_value {
+  font-family: "pfdintextpro-bold";
+}
+/* line 112, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_header .button {
+  position: absolute;
+  cursor: pointer;
+  color: #e6330a;
+  font-family: "pfdintextpro-regular";
+  font-size: 15px;
+  left: 645px;
+  top: 50px;
+}
+/* line 122, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_description {
+  background: #fafafa;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dbdbdb;
+  display: none;
+  padding: 22px 40px 22px 40px;
+}
+/* line 129, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_description h4 {
+  font-family: "pfdintextpro-bold";
+  color: #000000;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 0 0 8px 0;
+}
+/* line 136, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_description p {
+  font-family: "pfdintextpro-regular";
+  color: #000000;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 8px 0 20px 0;
+}
+/* line 143, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_description p a {
+  color: #e6330a;
+  position: relative;
+}
+/* line 147, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_description p a:after {
+  background: url('/../../../img/short_link_bottom.png?1428585798') left bottom no-repeat;
+  height: 1px;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+/* line 158, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_description p a:hover:after {
+  width: 100%;
+}
+/* line 164, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_description ul {
+  margin: 0 0 18px 0;
+}
+/* line 167, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_description ul li {
+  color: #000000;
+  font-family: "pfdintextpro-regular";
+  font-size: 16px;
+  line-height: 24px;
+  margin: 7px 0 0 40px;
+}
+/* line 177, ../sass/css_/vacancies.scss */
+.vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy.active .vacancy_description {
+  display: block;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 201, ../sass/css_/vacancies.scss */
+  .vacancies_page .vacancies .vacancies_block .vacancies_menu li a:after {
+    background: url('/../../../img/short_link_bottom@2x.png?1428585798') left bottom no-repeat;
+    -moz-background-size: 320px 1px;
+    -o-background-size: 320px 1px;
+    -webkit-background-size: 320px 1px;
+    background-size: 320px 1px;
+  }
+  /* line 211, ../sass/css_/vacancies.scss */
+  .vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_header .address {
+    background: url('/../../../img/dealers_point@2x.png?1428585798') left center no-repeat;
+    -moz-background-size: 15px 18px;
+    -o-background-size: 15px 18px;
+    -webkit-background-size: 15px 18px;
+    background-size: 15px 18px;
+  }
+  /* line 220, ../sass/css_/vacancies.scss */
+  .vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy.active .vacancy_description p a:after {
+    background: url('/../../../img/short_link_bottom@2x.png?1428585798') left bottom no-repeat;
+    -moz-background-size: 320px 1px;
+    -o-background-size: 320px 1px;
+    -webkit-background-size: 320px 1px;
+    background-size: 320px 1px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 238, ../sass/css_/vacancies.scss */
+  .mobile_enabled .vacancies_page .vacancies {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  /* line 245, ../sass/css_/vacancies.scss */
+  .mobile_enabled .vacancies_page .vacancies .vacancies_block .vacancies_menu {
+    margin-bottom: 20px;
+  }
+  /* line 248, ../sass/css_/vacancies.scss */
+  .mobile_enabled .vacancies_page .vacancies .vacancies_block .vacancies_list {
+    width: 100%;
+  }
+  /* line 251, ../sass/css_/vacancies.scss */
+  .mobile_enabled .vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_header {
+    padding: 20px;
+    height: auto;
+  }
+  /* line 255, ../sass/css_/vacancies.scss */
+  .mobile_enabled .vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_header .address,
+  .mobile_enabled .vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_header .salary,
+  .mobile_enabled .vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_header .name {
+    margin-bottom: 5px;
+    display: inline-block;
+    position: static;
+  }
+  /* line 262, ../sass/css_/vacancies.scss */
+  .mobile_enabled .vacancies_page .vacancies .vacancies_block .vacancies_list .vacancy .vacancy_header .button {
+    display: none;
+  }
+}

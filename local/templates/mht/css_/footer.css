@@ -1,0 +1,649 @@
+/* line 3, ../sass/css_/footer.scss */
+.sub_footer {
+  padding-bottom: 225px;
+}
+
+/* line 6, ../sass/css_/footer.scss */
+.footer {
+  margin: -225px 0 0 0;
+  background: #000000;
+  height: 225px;
+  width: 100%;
+}
+/* line 12, ../sass/css_/footer.scss */
+.footer .footer_content {
+  width: 990px;
+  margin: 0 auto;
+  color: #ffffff;
+}
+/* line 17, ../sass/css_/footer.scss */
+.footer .footer_content [id^="bx_incl_area"] {
+  display: inline-block;
+}
+/* line 21, ../sass/css_/footer.scss */
+.footer .footer_content .contact_block {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  width: 330px;
+}
+/* line 26, ../sass/css_/footer.scss */
+.footer .footer_content .contact_block .logotype_block {
+  margin: 25px 0 0 0;
+}
+/* line 29, ../sass/css_/footer.scss */
+.footer .footer_content .contact_block .phone_block {
+  margin: 39px 0 0 0;
+  width: 266px;
+}
+/* line 33, ../sass/css_/footer.scss */
+.footer .footer_content .contact_block .phone_block .phone {
+  background: url('/../../../img/phone_icon.png?1428585798') right top no-repeat;
+}
+/* line 36, ../sass/css_/footer.scss */
+.footer .footer_content .contact_block .phone_block .phone .phone_number {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  font-family: "plumb-medium";
+  font-size: 21px;
+  width: 165px;
+  white-space: nowrap;
+  margin: 0 5px 10px -9px;
+  text-align: right;
+}
+/* line 46, ../sass/css_/footer.scss */
+.footer .footer_content .contact_block .phone_block .phone .phone_number a {
+  color: #ffffff;
+}
+/* line 49, ../sass/css_/footer.scss */
+.footer .footer_content .contact_block .phone_block .phone .phone_number .phone_code {
+  font-family: "plumb-light";
+  letter-spacing: -1px;
+}
+/* line 54, ../sass/css_/footer.scss */
+.footer .footer_content .contact_block .phone_block .phone .phone_notis {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  font-family: "pfdindisplaypro-light";
+  font-size: 10px;
+}
+/* line 63, ../sass/css_/footer.scss */
+.footer .footer_content .contact_block .shops_adress .select {
+  margin: 6px 0 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+/* line 68, ../sass/css_/footer.scss */
+.footer .footer_content .contact_block .shops_adress .select .ui-autocomplete-input {
+  color: #ffffff;
+  background: #000000;
+}
+/* line 72, ../sass/css_/footer.scss */
+.footer .footer_content .contact_block .shops_adress .select .select_arrow {
+  background: url('/../../../img/arrow_bottom_white.png?1428585798') center center no-repeat;
+  height: 28px;
+}
+/* line 77, ../sass/css_/footer.scss */
+.footer .footer_content .contact_block .shops_adress .shops_adress_title {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  font-family: "pfdindisplaypro-regular";
+  color: #ffffff;
+  font-size: 11px;
+  text-transform: uppercase;
+  margin: 17px 0 0 32px;
+}
+/* line 88, ../sass/css_/footer.scss */
+.footer .footer_content .menu_block {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  margin: 29px 0 0 30px;
+  width: 495px;
+}
+/* line 94, ../sass/css_/footer.scss */
+.footer .footer_content .menu_block .menu {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  width: 155px;
+}
+/* line 99, ../sass/css_/footer.scss */
+.footer .footer_content .menu_block .menu .menu_title {
+  font-family: "pfdindisplaypro-bold";
+  font-size: 11px;
+  text-transform: uppercase;
+  margin: 0 0 5px 0;
+}
+/* line 105, ../sass/css_/footer.scss */
+.footer .footer_content .menu_block .menu .menu_title a {
+  color: #fff;
+}
+/* line 110, ../sass/css_/footer.scss */
+.footer .footer_content .menu_block .menu ul li {
+  margin: 0 0 3px 0;
+}
+/* line 113, ../sass/css_/footer.scss */
+.footer .footer_content .menu_block .menu ul li a {
+  color: #b8b8b8;
+  font-family: "pfdindisplaypro-regular";
+  font-size: 11px;
+  text-transform: uppercase;
+}
+/* line 119, ../sass/css_/footer.scss */
+.footer .footer_content .menu_block .menu ul li a:hover {
+  color: #e6330a;
+}
+/* line 127, ../sass/css_/footer.scss */
+.footer .footer_content .social_block {
+  display: inline-block;
+  margin: 29px 0 0 0;
+  vertical-align: top;
+  width: 135px;
+}
+/* line 133, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .social_block_title {
+  font-family: "pfdindisplaypro-bold";
+  font-size: 11px;
+  text-transform: uppercase;
+}
+/* line 138, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .social_network {
+  margin: 8px 0 17px 0;
+}
+/* line 141, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .social_network li {
+  display: inline-block;
+  vertical-align: top;
+  width: 24px;
+  height: 24px;
+  margin: 0 3px 0 0;
+}
+/* line 148, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .social_network li a {
+  display: inline-block;
+  vertical-align: top;
+  width: 25px;
+  height: 24px;
+}
+/* line 155, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .social_network li.twitter a {
+  background: url('/../../../img/twitter.png?1428585798') center center no-repeat;
+}
+/* line 158, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .social_network li.twitter a:hover {
+  background: url('/../../../img/twitter_hover.png?1428585798') center center no-repeat;
+}
+/* line 164, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .social_network li.facebook a {
+  background: url('/../../../img/facebook.png?1428585798') center center no-repeat;
+}
+/* line 167, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .social_network li.facebook a:hover {
+  background: url('/../../../img/facebook_hover.png?1428585798') center center no-repeat;
+}
+/* line 173, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .social_network li.vk a {
+  background: url('/../../../img/vk.png?1428585798') center center no-repeat;
+}
+/* line 176, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .social_network li.vk a:hover {
+  background: url('/../../../img/vk_hover.png?1428585798') center center no-repeat;
+}
+/* line 182, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .social_network li.instagram a {
+  background: url('/../../../img/instagram.png?1428585797') center center no-repeat;
+}
+/* line 185, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .social_network li.instagram a:hover {
+  background: url('/../../../img/instagram_hover.png?1428585798') center center no-repeat;
+}
+/* line 191, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .social_network li.ok a {
+  background: url('/../../../img/ok.png?1429427410') center center no-repeat;
+}
+/* line 194, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .social_network li.ok a:hover {
+  background: url('/../../../img/ok_hover.png?1429427515') center center no-repeat;
+}
+/* line 201, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .mobile-payments {
+  display: none;
+}
+/* line 204, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .payments {
+  margin: 8px 0 0 0;
+}
+/* line 206, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .payments li {
+  display: inline-block;
+  vertical-align: top;
+  width: 24px;
+  height: 17px;
+  margin: 0 3px 0 0;
+}
+/* line 213, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .payments li a {
+  display: inline-block;
+  vertical-align: top;
+  width: 24px;
+  height: 17px;
+}
+/* line 220, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .payments li.visa a {
+  background: url('/../../../img/visa.png?1428585797') center center no-repeat;
+}
+/* line 223, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .payments li.visa a:hover {
+  background: url('/../../../img/visa_hover.png?1428585798') center center no-repeat;
+}
+/* line 229, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .payments li.mastercard a {
+  background: url('/../../../img/mastercard.png?1428585798') center center no-repeat;
+}
+/* line 232, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .payments li.mastercard a:hover {
+  background: url('/../../../img/mastercard_hover.png?1428585798') center center no-repeat;
+}
+/* line 238, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .payments li.qiwi a {
+  background: url('/../../../img/qiwi.png?1428585798') center center no-repeat;
+}
+/* line 241, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .payments li.qiwi a:hover {
+  background: url('/../../../img/qiwi_hover.png?1428585798') center center no-repeat;
+}
+/* line 247, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .payments li.yandex a {
+  background: url('/../../../img/yandex.png?1428585798') center center no-repeat;
+}
+/* line 250, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .payments li.yandex a:hover {
+  background: url('/../../../img/yandex_hover.png?1428585798') center center no-repeat;
+}
+/* line 256, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .payments li.webmoney a {
+  background: url('/../../../img/webmoney.png?1428585798') center center no-repeat;
+}
+/* line 259, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .payments li.webmoney a:hover {
+  background: url('/../../../img/webmoney_hover.png?1428585798') center center no-repeat;
+}
+/* line 266, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .copyright_block {
+  color: #ffffff;
+  font-family: "pfdindisplaypro-regular";
+  font-size: 10px;
+  text-transform: uppercase;
+  margin: 47px 0 0 0;
+}
+/* line 273, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .copyright_block .show-full,
+.footer .footer_content .social_block .copyright_block .show-mobile {
+  display: none;
+  margin-bottom: 8px;
+}
+/* line 279, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .copyright_block span {
+  color: #b8b8b8;
+}
+/* line 282, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .copyright_block span a {
+  color: #b8b8b8;
+}
+/* line 286, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .copyright_block a {
+  color: #ffffff;
+}
+/* line 289, ../sass/css_/footer.scss */
+.footer .footer_content .social_block .copyright_block .webstudio {
+  margin: 5px 0 0 0;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 307, ../sass/css_/footer.scss */
+  .footer .footer_content .contact_block .phone_block .phone {
+    background: url('/../../../img/phone_icon@2x.png?1428585797') right top no-repeat;
+    -moz-background-size: 13px 16px;
+    -o-background-size: 13px 16px;
+    -webkit-background-size: 13px 16px;
+    background-size: 13px 16px;
+  }
+  /* line 314, ../sass/css_/footer.scss */
+  .footer .footer_content .contact_block .shops_adress .select .select_arrow {
+    background: url('/../../../img/arrow_bottom_white@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 31px 31px;
+    -o-background-size: 31px 31px;
+    -webkit-background-size: 31px 31px;
+    background-size: 31px 31px;
+  }
+  /* line 325, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .social_network li.twitter a {
+    background: url('/../../../img/twitter@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 24px;
+    -o-background-size: 24px 24px;
+    -webkit-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  /* line 329, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .social_network li.twitter a:hover {
+    background: url('/../../../img/twitter_hover@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 24px;
+    -o-background-size: 24px 24px;
+    -webkit-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  /* line 336, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .social_network li.facebook a {
+    background: url('/../../../img/facebook@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 24px;
+    -o-background-size: 24px 24px;
+    -webkit-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  /* line 340, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .social_network li.facebook a:hover {
+    background: url('/../../../img/facebook_hover@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 24px;
+    -o-background-size: 24px 24px;
+    -webkit-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  /* line 347, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .social_network li.vk a {
+    background: url('/../../../img/vk@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 24px;
+    -o-background-size: 24px 24px;
+    -webkit-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  /* line 351, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .social_network li.vk a:hover {
+    background: url('/../../../img/vk_hover@2x.png?1428585797') center center no-repeat;
+    -moz-background-size: 24px 24px;
+    -o-background-size: 24px 24px;
+    -webkit-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  /* line 358, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .social_network li.instagram a {
+    background: url('/../../../img/instagram@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 24px;
+    -o-background-size: 24px 24px;
+    -webkit-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  /* line 362, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .social_network li.instagram a:hover {
+    background: url('/../../../img/instagram_hover@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 24px;
+    -o-background-size: 24px 24px;
+    -webkit-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  /* line 369, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .social_network li.ok a {
+    background: url('/../../../img/ok@2x.png?1429202615') center center no-repeat;
+    -moz-background-size: 24px 24px;
+    -o-background-size: 24px 24px;
+    -webkit-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  /* line 373, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .social_network li.ok a:hover {
+    background: url('/../../../img/ok_hover@2x.png?1429427520') center center no-repeat;
+    -moz-background-size: 24px 24px;
+    -o-background-size: 24px 24px;
+    -webkit-background-size: 24px 24px;
+    background-size: 24px 24px;
+  }
+  /* line 384, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .payments li.visa a {
+    background: url('/../../../img/visa@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 17px;
+    -o-background-size: 24px 17px;
+    -webkit-background-size: 24px 17px;
+    background-size: 24px 17px;
+  }
+  /* line 388, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .payments li.visa a:hover {
+    background: url('/../../../img/visa_hover@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 17px;
+    -o-background-size: 24px 17px;
+    -webkit-background-size: 24px 17px;
+    background-size: 24px 17px;
+  }
+  /* line 395, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .payments li.mastercard a {
+    background: url('/../../../img/mastercard@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 17px;
+    -o-background-size: 24px 17px;
+    -webkit-background-size: 24px 17px;
+    background-size: 24px 17px;
+  }
+  /* line 399, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .payments li.mastercard a:hover {
+    background: url('/../../../img/mastercard_hover@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 17px;
+    -o-background-size: 24px 17px;
+    -webkit-background-size: 24px 17px;
+    background-size: 24px 17px;
+  }
+  /* line 406, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .payments li.qiwi a {
+    background: url('/../../../img/qiwi@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 17px;
+    -o-background-size: 24px 17px;
+    -webkit-background-size: 24px 17px;
+    background-size: 24px 17px;
+  }
+  /* line 410, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .payments li.qiwi a:hover {
+    background: url('/../../../img/qiwi_hover@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 17px;
+    -o-background-size: 24px 17px;
+    -webkit-background-size: 24px 17px;
+    background-size: 24px 17px;
+  }
+  /* line 417, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .payments li.yandex a {
+    background: url('/../../../img/yandex@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 17px;
+    -o-background-size: 24px 17px;
+    -webkit-background-size: 24px 17px;
+    background-size: 24px 17px;
+  }
+  /* line 421, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .payments li.yandex a:hover {
+    background: url('/../../../img/yandex_hover@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 17px;
+    -o-background-size: 24px 17px;
+    -webkit-background-size: 24px 17px;
+    background-size: 24px 17px;
+  }
+  /* line 428, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .payments li.webmoney a {
+    background: url('/../../../img/webmoney@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 17px;
+    -o-background-size: 24px 17px;
+    -webkit-background-size: 24px 17px;
+    background-size: 24px 17px;
+  }
+  /* line 432, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .payments li.webmoney a:hover {
+    background: url('/../../../img/webmoney_hover@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 24px 17px;
+    -o-background-size: 24px 17px;
+    -webkit-background-size: 24px 17px;
+    background-size: 24px 17px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 446, ../sass/css_/footer.scss */
+  .footer .footer_content .social_block .copyright_block .show-mobile {
+    display: block;
+  }
+
+  /* line 452, ../sass/css_/footer.scss */
+  .mobile_enabled .footer {
+    height: auto;
+  }
+  /* line 454, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  /* line 458, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .social_block {
+    width: 100%;
+  }
+  /* line 462, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .social_block .copyright_block .show-full {
+    display: block;
+  }
+  /* line 465, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .social_block .copyright_block .show-mobile {
+    display: none;
+  }
+  /* line 471, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .social_block .social_network li {
+    width: 38px;
+    height: 38px;
+    margin-right: 25px;
+  }
+  /* line 476, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .social_block .social_network li.facebook a {
+    background-position: -43px 0 !important;
+  }
+  /* line 480, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .social_block .social_network li.vk a {
+    background-position: -86px 0 !important;
+  }
+  /* line 484, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .social_block .social_network li.instagram a {
+    background-position: -129px 0 !important;
+  }
+  /* line 487, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .social_block .social_network li a {
+    width: 38px;
+    height: 38px;
+    background-image: url("/img/mobile/social.png") !important;
+    background-position: 0px 0px !important;
+    background-size: 166px 38px !important;
+  }
+  /* line 496, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .social_block .social_block_title {
+    font-family: "pfdindisplaypro-regular";
+    font-size: 16px;
+    color: #555;
+    letter-spacing: 2px;
+    margin-bottom: 8px;
+  }
+  /* line 503, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .social_block .payments {
+    display: none;
+  }
+  /* line 507, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .social_block .mobile-payments {
+    display: block;
+    width: 222px;
+  }
+  /* line 510, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .social_block .mobile-payments img {
+    max-width: 100%;
+  }
+  /* line 515, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .menu_block {
+    width: 100%;
+    margin: 20px 0 0 0;
+  }
+  /* line 518, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .menu_block .menu {
+    margin-top: 20px;
+    border-top: 1px solid #525e5e;
+    width: 100%;
+    padding-top: 20px;
+    line-height: 20px;
+  }
+  /* line 524, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .menu_block .menu .menu_title {
+    display: none;
+  }
+  /* line 528, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .menu_block .menu ul li:nth-child(odd) {
+    float: left;
+  }
+  /* line 531, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .menu_block .menu ul li:nth-child(odd) {
+    float: right;
+  }
+  /* line 535, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .menu_block .menu ul li a {
+    font-size: 15px;
+  }
+  /* line 542, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .contact_block {
+    display: block;
+    width: 100%;
+  }
+  /* line 545, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .contact_block .shops_adress .shops_adress_title {
+    float: right;
+    width: 90px;
+    vertical-align: middle;
+    text-align: right;
+    line-height: 15px;
+    font-size: 11px;
+  }
+  /* line 553, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .contact_block .shops_adress .shops_adress_title a {
+    color: #e6330a !important;
+  }
+  /* line 556, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .contact_block .logotype_block .make-call {
+    width: 40px;
+    height: 40px;
+    background: url("/img/phone-call.png") no-repeat center center;
+    display: inline-block;
+    float: right;
+  }
+  /* line 563, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .contact_block .phone_block {
+    width: 100%;
+  }
+  /* line 566, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .contact_block .phone_block .phone {
+    background-image: none;
+  }
+  /* line 569, ../sass/css_/footer.scss */
+  .mobile_enabled .footer .footer_content .contact_block .phone_block .phone .phone_notis {
+    float: right;
+    text-align: right;
+  }
+}

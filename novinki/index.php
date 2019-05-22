@@ -1,0 +1,1 @@
+<?	require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");	$APPLICATION->SetTitle("Новинки");?>	Text.<?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

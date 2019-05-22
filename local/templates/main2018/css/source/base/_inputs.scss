@@ -1,0 +1,274 @@
+//====================placeholder
+::-webkit-input-placeholder {opacity: 1; color: $font-color;}
+:-moz-placeholder {opacity: 1; color: $font-color;}
+::-moz-placeholder {opacity: 1; color: $font-color;}
+:-ms-input-placeholder {opacity: 1; color: $font-color;}
+.placeholder {opacity: 1; color: $font-color;}
+
+:focus::-webkit-input-placeholder {opacity: 0}
+:focus:-moz-placeholder {opacity: 0}
+:focus::-moz-placeholder {opacity: 0}
+:focus:-ms-input-placeholder {opacity: 0}
+:focus.placeholder {opacity: 0}
+
+//====================error inputs
+input.si-error, textarea.si-error {
+
+  &::-webkit-input-placeholder {color: $error-color;}
+  &:-moz-placeholder {color: $error-color;}
+  &::-moz-placeholder {color: $error-color;}
+  &:-ms-input-placeholder {color: $error-color;}
+  &.placeholder {color: $error-color;}
+}
+
+input[type=text] {
+
+  &.si-error {
+    color: $error-color !important;
+    border-color: $error-color !important;
+  }
+}
+
+//====================icon bg
+//form [class*="client-"] {
+//  background-image: url('../images/sprite-input.png') !important;
+//
+//  &.client-name {
+//    background-position: 0px 0 !important;
+//  }
+//
+//  &.client-phone {
+//    background-position: 0px -70px !important;
+//  }
+//
+//  &.client-mail {
+//    background-position: 0px -140px !important;
+//  }
+//
+//  &.client-message {
+//    background-position: 0px -210px !important;
+//  }
+//
+//  &.si-error {
+//    background-image: url('../images/sprite-input-error.png') !important;
+//  }
+//}
+
+//====================label
+label {
+  cursor: pointer !important;
+}
+
+//====================text inputs
+input[type=text] {
+  -webkit-appearance: none;
+  display: block;
+  color: $font-color !important;
+  width: 100%;
+  background: no-repeat #f4f4f4;
+  padding: 28px 23px;
+  margin-bottom: $pad * 2;
+  font-size: 16px;
+  border: none;
+}
+
+input[type=email],
+input[type=tel] {
+  @extend input[type=text];
+}
+
+//====================textarea
+textarea {
+  @extend input[type=text];
+  resize: none !important;
+  height: auto;
+  padding: 28px 23px;
+}
+
+//====================animated input
+.ani-input-holder {
+  margin-bottom: $pad;
+
+  label {
+    @include general-transition;
+    display: block;
+    padding: 0 0px;
+    position: relative;
+    z-index: 5;
+    cursor: pointer !important;
+    top: 33px;
+  }
+
+  input[type=text] {
+    color: transparent;
+    background: transparent;
+    padding: 0 0px;
+    border: 0 solid transparent;
+    border-bottom: 2px solid #fff;
+    height: 36px;
+  }
+
+  &.active {
+
+    label {
+      top: 10px;
+      margin-bottom: 18px;
+    }
+
+    input[type=text] {
+      color: #fff;
+    }
+  }
+}
+
+//====================checkbox
+.checkbox-label {
+  display: block;
+  text-align: left;
+  padding-left: 24px;
+  position: relative !important;
+}
+
+.jq-checkbox {
+  width: 14px;
+  height: 14px;
+  background: #ededed;
+  border: 1px solid #b4b6b8 !important;
+  border-radius: 2px;
+  margin: 0;
+  position: absolute !important;
+  top: 4px;
+  left: 0;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+}
+
+.jq-checkbox__div {
+  @include general-transition;
+  @include abs-center;
+  display: inline-block !important;
+  width: 8px !important;
+  height: 8px !important;
+  background: $font-color !important;
+  border-radius: 1px !important;
+  //width: 9px !important;
+  //height: 6px !important;
+  //background: url('../images/checkbox-bg.png') no-repeat 50% 50% transparent !important;
+  //border-radius: 0 !important;
+  opacity: 0;
+  -webkit-box-shadow: none !important;
+  box-shadow: none !important;
+
+  .checkbox-label:hover &,
+  .checkbox-label:active &,
+  .jq-checkbox.checked & {
+    @include abs-center;
+    opacity: 1;
+  }
+}
+
+//====================radio
+.radio-label {
+  @extend .checkbox-label;
+}
+
+.jq-radio {
+  @extend .jq-checkbox;
+  border-radius: 50%;
+}
+
+.jq-radio__div {
+  @extend .jq-checkbox__div;
+  width: 8px !important;
+  height: 8px !important;
+  background: $primary-color !important;
+  border-radius: 50% !important;
+
+  .radio-label:hover &,
+  .radio-label:active &,
+  .jq-radio.checked & {
+    @include abs-center;
+    opacity: 1;
+  }
+}
+
+//==================== select
+.jq-selectbox {
+  display: block !important;
+  width: 100% !important;
+
+  li {
+    @include general-transition;
+    color: $font-color !important;
+    background: #fff !important;
+    border: 1px solid #000;
+
+    &:not(:first-child) {
+      border-top:none;
+    }
+    &:hover,
+    &:active,
+    &.selected {
+      background: $offtop-color !important;
+    }
+  }
+}
+
+.jq-selectbox__select {
+  display: block;
+  width: 100%;
+  //font: 15px/28px 'Roboto';
+  color: $font-color;
+  height: 30px;
+  padding: 0 35px 0 5px;
+  border: 1px solid #fff !important;
+  border-radius: 0;
+  background: #fff !important;
+  box-shadow: none !important;
+  text-shadow: none !important;
+}
+
+.jq-selectbox__select-text {
+  height: 30px;
+}
+
+.jq-selectbox__trigger {
+  @include abs-center;
+  left: auto;
+  right: 0;
+  width: 30px;
+  height: 30px;
+  //background: url('../images/arrow-down.png') no-repeat 50% 50% transparent;
+  border: 0 !important;
+}
+
+.jq-selectbox__trigger-arrow {
+  //display: none;
+  border-left: 2px solid $primary-color;
+  border-top: 2px solid $primary-color;
+  border-right: none;
+  width: 8px;
+  height: 8px;
+  top: 10px;
+  right: 18px;
+
+  -webkit-transform: rotate(-135deg);
+  -moz-transform: rotate(-135deg);
+  -ms-transform: rotate(-135deg);
+  -o-transform: rotate(-135deg);
+  transform: rotate(-135deg);
+}
+
+.jq-selectbox__dropdown {
+  //font: 15px/21px 'Roboto';
+  color: $font-color;
+  width: 100%;
+  height: auto !important;
+  border: none !important;
+  border-radius: 0;
+  box-shadow: none !important;
+  text-shadow: none !important;
+  top: 100% !important;
+  bottom: auto !important;
+  z-index: -1 !important;
+}

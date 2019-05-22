@@ -1,0 +1,156 @@
+.forumborder {background-color:#99BAD7;}
+.forumhead {background-color:#CEDEEC;}
+.forumbody {background-color:#F1F5FA;}
+.forumbodytext {font-family: Arial, Helvetica, sans-serif; font-size:smaller; color:#000000;}
+.forumheadtext {font-family: Arial, Helvetica, sans-serif; font-size:smaller; color:#000000;}
+.forumfieldtext {font-family: Arial, Helvetica, sans-serif; font-size:smaller; color:#444444;}
+
+.postsep  {background-color: #9C9A9C; height: 1px}
+
+.forumquote {font-family: Arial, Helvetica, sans-serif; font-size:8pt; color: #000000; background-color: #FBFBF9; border : 1px solid Black;padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; text-indent: 2pt;}
+.forumcode {font-family: Arial, Helvetica, sans-serif; font-size:8pt; color: #333333; background-color: #FBFBF9; border : 1px solid Black; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; text-indent: 2pt;}
+
+
+
+.forumtoolblock {
+	border-left: 1px solid #CEDEEC; 
+	border-top: 1px solid #CEDEEC; 
+	border-right: 0px solid; 
+	border-bottom: 0px solid; 
+}
+
+.forumtoolbar {
+	background-color: #F1F5FA; 
+	height:25px;
+	border-left: 1px solid #FFFFFF; 
+	border-top: 1px solid #FFFFFF; 
+	border-right: 1px solid #CEDEEC; 
+	border-bottom: 1px solid #CEDEEC; 
+}
+
+.forumtoolsection {
+	border-left: 1px solid #FFFFFF;
+	border-top: 1px solid #FFFFFF; 
+	border-right: 1px solid #CEDEEC; 
+	border-bottom: 1px solid #CEDEEC; 
+	width: 3px; 
+	height: 21px; 
+	margin-left: 1px; 
+	margin-right:0px;
+}
+
+.forumtoolbutton, .forummessbuttontext {
+	font-family: Verdana,Arial,Hevetica,sans-serif; 
+	font-size: 11px; 
+	color: #456A74; 
+	text-decoration: none;
+}
+
+a.forumtoolbutton:hover, .forummessbuttontext:hover {
+	color: #456A74; 
+	text-decoration:underline; 
+}
+
+.forumtoolseparator {
+	border-left: 1px solid #CEDEEC;
+	border-right: 1px solid #FFFFFF; 
+	width: 2px; 
+	height: 21px; 
+	margin-left: 6px; 
+	margin-right:1px;
+}
+
+
+.forumtitle {
+	border: 1px solid #99BAD7;
+	padding: 4px;
+	background-color: #CEDEEC;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+	font-weight: bold;
+}
+
+.forumtitletext {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 13px;
+	color: #000000;
+}
+
+
+.forumnewtopic_button {
+	BACKGROUND: #CEDEEC;
+	border: 1px solid #99BAD7;
+	COLOR: #000000;
+	FONT-FAMILY: Arial, Verdana, Helvetica, sans-serif;
+	FONT-SIZE: 10pt;
+	font-weight: bold;
+	height: 25px;
+	width: 170px;
+}
+
+
+.forumpostsep  {background-color: #ffffff; height: 6px}
+.forumbrd {border: 1px solid #99BAD7;}
+.forumbrd1 {border-left: 1px solid #99BAD7;}
+.forumbrd2 {border: 1px solid #99BAD7;}
+
+.forumheadcolor {color:#003366;}
+
+
+.forummessbutton {
+	background-color: #CEDEEC; 
+	border: 1px solid #99BAD7;
+	height: 20px;
+	padding-left:5px;
+	padding-right:5px;
+}
+
+.forummessbuttonsep {width:4px;}
+
+.forumhr {background-color:#CEDEEC;}
+.forumsigntext {color:#003366;}
+
+DIV.out {
+	BORDER-RIGHT: #99BAD7 1px solid; 
+	PADDING-RIGHT: 1px; 
+	BORDER-TOP: #99BAD7 1px solid; 
+	DISPLAY: block; 
+	PADDING-LEFT: 1px; 
+	PADDING-BOTTOM: 1px; 
+	MARGIN: 0px 15px; 
+	BORDER-LEFT: #99BAD7 1px solid; 
+	PADDING-TOP: 1px; 
+	BORDER-BOTTOM: #99BAD7 1px solid; 
+	POSITION: relative; 
+	TOP: 4px; 
+	BACKGROUND-COLOR: #ffffff
+}
+DIV.out1 {
+	PADDING-RIGHT: 0px; 
+	DISPLAY: block; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 0px; 
+	MARGIN-RIGHT: 10px; 
+	PADDING-TOP: 0px; 
+	POSITION: relative; 
+	TOP: -9px
+}
+DIV.in {
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	FONT-SIZE: 8px; 
+	PADDING-BOTTOM: 0px; 
+	PADDING-TOP: 0px; 
+	BACKGROUND-COLOR: #CEDEEC
+}
+DIV.in1 {
+	PADDING-RIGHT: 10px; 
+	PADDING-LEFT: 10px; 
+	FONT-SIZE: 10px; 
+	PADDING-BOTTOM: 0px; 
+	PADDING-TOP: 0px;
+	FONT-FAMILY: Arial, Helvetica, sans-serif; 
+	FONT-WEIGTH: bold; 
+	COLOR:#444444;	
+}

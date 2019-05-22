@@ -1,0 +1,1 @@
+<span class="primary"><a href="/catalog/new/"><span style="color: #f16522;">Новинки</span><span style="color: #f16522;">.</span></a></span> Обзоры новинок сезона

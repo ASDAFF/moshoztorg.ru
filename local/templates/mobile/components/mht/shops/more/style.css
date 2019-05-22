@@ -1,0 +1,64 @@
+.hidden {
+    display: none;
+}
+
+.dealer_left {
+    width: 100%;
+    text-align: center;
+    float: left;
+    font-size: 15px;
+}
+
+.dealer_build {
+    position: relative;
+    padding-bottom: 20px;
+}
+
+.dealer_build:after {
+    content: '';
+    width: 60px;
+    height: 2px;
+    position: absolute;
+    display: inline-block;
+    background: #e6330a;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.dealer_street, .dealer_build {
+        font-weight: 600;
+}
+
+.ya-taxi-widget {
+    width: 100% !important;
+    max-width: none !important;
+    margin-top: 20px;
+}
+
+.ya-taxi-widget__title, .ya-taxi-widget__description {
+text-align: center !important;
+}
+
+.ya-taxi-widget_size_s.ya-taxi-widget_theme_action .ya-taxi-widget__content {
+        padding: 0 20px 0 20px !important;
+}
+
+
+.ya-taxi-widget_size_s .ya-taxi-widget__content:after, .ya-taxi-widget_size_xs .ya-taxi-widget__content:after {
+    display: none !important;
+}
+
+
+.ymaps-2-1-62-balloon__close+.ymaps-2-1-62-balloon__content {
+    margin-right: 10px !important;
+}
+
+.balloonContent .image img {
+    width: 100%;
+}
+
+.contact_block {
+    text-align: center;
+}

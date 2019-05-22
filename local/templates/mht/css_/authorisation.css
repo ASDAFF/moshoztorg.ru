@@ -1,0 +1,245 @@
+/* line 4, ../sass/css_/authorisation.scss */
+.authorisation_page .search_block {
+  top: 13px;
+}
+/* line 7, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation {
+  position: relative;
+  width: 990px;
+  margin: 0 auto 49px auto;
+}
+/* line 12, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .breadcrumbs {
+  margin: -8px 0 0 0;
+}
+/* line 15, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation h1 {
+  text-transform: uppercase;
+  font-family: "pfdintextpro-medium";
+  font-size: 39px;
+  margin: 12px 0 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+/* line 23, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation a {
+  color: #e6330a;
+  font-size: 16px;
+  line-height: 16px;
+  font-family: "pfdintextpro-regular";
+  position: relative;
+}
+/* line 30, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation a:after {
+  background: url('/../../../img/short_link_bottom.png?1428585798') center bottom no-repeat;
+  height: 2px;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* line 41, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation a:hover:after {
+  width: 100%;
+}
+/* line 46, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .social_network {
+  margin: 40px  0 0 0;
+  padding: 0 0 13px 0;
+  border-bottom: 1px solid #e5e5e5;
+  width: 331px;
+}
+/* line 52, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .social_network li {
+  display: inline-block;
+  vertical-align: top;
+  width: 29px;
+  height: 29px;
+  margin: 0 10px 0 0;
+}
+/* line 59, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .social_network li a {
+  display: inline-block;
+  vertical-align: top;
+  width: 29px;
+  height: 29px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 66, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .social_network li a:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+/* line 69, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .social_network li a:after {
+  display: none;
+}
+/* line 74, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .social_network li.twitter a {
+  background: url('/../../../img/authorisation/twitter.png?1428585798') center center no-repeat;
+}
+/* line 79, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .social_network li.facebook a {
+  background: url('/../../../img/authorisation/facebook.png?1428585798') center center no-repeat;
+}
+/* line 84, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .social_network li.vk a {
+  background: url('/../../../img/authorisation/vk.png?1428585798') center center no-repeat;
+}
+/* line 89, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .social_network li.instagram a {
+  background: url('/../../../img/authorisation/instagram.png?1428585798') center center no-repeat;
+}
+/* line 95, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .form_block {
+  margin: 15px 0 21px 0;
+}
+/* line 100, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .form_block table tr td {
+  vertical-align: top;
+}
+/* line 103, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .form_block table tr td label {
+  font-family: "pfdintextpro-regular";
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  cursor: default;
+}
+/* line 110, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .form_block table tr td input {
+  border: 1px solid #bfbfbf;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  font-family: "pfdintextpro-regular";
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  margin: 7px 0 24px 0;
+  padding: 13px;
+  width: 302px;
+  cursor: text;
+}
+/* line 122, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .form_block table tr td .checkbox-input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  width: 16px;
+  height: 16px;
+  margin: 0 0 0 10px;
+}
+/* line 128, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .form_block table tr td .checkbox-input + .checkbox-label {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  color: #000000;
+  font-size: 12px;
+  background: url('/../../../img/checkbox.png?1428585798') left center no-repeat;
+  margin: 0 0 0 -26px;
+  padding: 0 0 0 23px;
+  cursor: pointer;
+  height: 16px;
+  line-height: 16px;
+}
+/* line 141, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .form_block table tr td .checkbox-input:checked + .checkbox-label {
+  background: url('/../../../img/checkbox_checked.png?1428585798') left center no-repeat;
+}
+/* line 146, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .form_block table tr td .forgot {
+  font-size: 12px;
+  float: right;
+}
+/* line 153, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .form_block .button {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  font-family: "pfdintextpro-medium";
+  font-size: 15px;
+  text-transform: uppercase;
+  width: 140px;
+  text-align: center;
+  padding: 15px 28px 14px 26px;
+  margin: 20px 0 16px 0;
+  color: #ffffff;
+  background: #7aab4b;
+}
+/* line 166, ../sass/css_/authorisation.scss */
+.authorisation_page .authorisation .form_block .button:after {
+  display: none;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 185, ../sass/css_/authorisation.scss */
+  .authorisation_page .authorisation a:after {
+    background: url('/../../../img/short_link_bottom@2x.png?1428585798') center bottom no-repeat;
+    -moz-background-size: 320px 1px;
+    -o-background-size: 320px 1px;
+    -webkit-background-size: 320px 1px;
+    background-size: 320px 1px;
+  }
+  /* line 193, ../sass/css_/authorisation.scss */
+  .authorisation_page .authorisation .social_network li.twitter a {
+    background: url('/../../../img/authorisation/twitter@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 29px 29px;
+    -o-background-size: 29px 29px;
+    -webkit-background-size: 29px 29px;
+    background-size: 29px 29px;
+  }
+  /* line 199, ../sass/css_/authorisation.scss */
+  .authorisation_page .authorisation .social_network li.facebook a {
+    background: url('/../../../img/authorisation/facebook@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 29px 29px;
+    -o-background-size: 29px 29px;
+    -webkit-background-size: 29px 29px;
+    background-size: 29px 29px;
+  }
+  /* line 205, ../sass/css_/authorisation.scss */
+  .authorisation_page .authorisation .social_network li.vk a {
+    background: url('/../../../img/authorisation/vk@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 29px 29px;
+    -o-background-size: 29px 29px;
+    -webkit-background-size: 29px 29px;
+    background-size: 29px 29px;
+  }
+  /* line 211, ../sass/css_/authorisation.scss */
+  .authorisation_page .authorisation .social_network li.instagram a {
+    background: url('/../../../img/authorisation/instagram@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 29px 29px;
+    -o-background-size: 29px 29px;
+    -webkit-background-size: 29px 29px;
+    background-size: 29px 29px;
+  }
+  /* line 223, ../sass/css_/authorisation.scss */
+  .authorisation_page .authorisation .form_block table tr td .checkbox-input + .checkbox-label {
+    background: url('/../../../img/checkbox@2x.png?1428585798') left center no-repeat;
+    -moz-background-size: 15px 15px;
+    -o-background-size: 15px 15px;
+    -webkit-background-size: 15px 15px;
+    background-size: 15px 15px;
+  }
+  /* line 228, ../sass/css_/authorisation.scss */
+  .authorisation_page .authorisation .form_block table tr td .checkbox-input:checked + .checkbox-label {
+    background: url('/../../../img/checkbox_checked@2x.png?1428585798') left center no-repeat;
+    -moz-background-size: 15px 15px;
+    -o-background-size: 15px 15px;
+    -webkit-background-size: 15px 15px;
+    background-size: 15px 15px;
+  }
+}

@@ -1,0 +1,261 @@
+//==================== modal overlay
+html {
+
+  &.si-lock {
+    overflow: hidden !important;
+  }
+
+  &.si-lock2 {
+    height: 100% !important;
+    overflow: hidden !important;
+  }
+}
+
+.fancybox-margin {
+  margin-right: 0 !important
+}
+
+.si-overlay {
+  @include abs-center-fixed;
+  display: none;
+  background: transparentize(#000, .2);
+  z-index: 203;
+}
+
+.si-overlay-2 {
+  @extend .si-overlay;
+  z-index: 205;
+}
+
+.si-modals-wrapper {
+  @include abs-center-fixed;
+  display: none;
+  overflow: auto;
+  -webkit-overflow-scrolling: touch;
+  z-index: 203;
+}
+
+.si-modals-wrapper-2 {
+  @extend .si-modals-wrapper;
+  z-index: 205;
+}
+
+//==================== modal close
+.si-close {
+  @extend .icon;
+  @extend .close !optional;
+  position: absolute !important;
+  top: 16px;
+  right: 20px;
+}
+
+//==================== modal - basic
+.si-modal {
+  @include general-transition;
+  @include transform(scale(0.7));
+  transition-duration: 0.5s;
+  display: none;
+  position: relative;
+  color: $font-color;
+  background: #fff;
+  padding: 20px 60px 20px;
+  width: 480px;
+  margin: 50px auto;
+
+  &.si-visible {
+    @include transform(scale(1));
+  }
+
+  .btn-holder {
+    margin-top: 20px;
+  }
+
+  .btn {
+    min-width: 300px;
+    height: 60px;
+    width: 100%;
+  }
+
+  input[type=text] {
+    padding: 21px 23px;
+    margin-bottom: 10px;
+  }
+  textarea {
+    height: 180px;
+  }
+}
+
+.modal-form-title {
+  margin-bottom: 8px;
+  font-size: 24px;
+  font-weight: 900;
+  text-transform: uppercase;
+  line-height: 32px;
+}
+
+.modal-time {
+  margin-bottom: 28px;
+  font-size: 16px;
+}
+
+//==================== modal - text
+.modal-text-block {
+  margin-top: 0px;
+}
+
+//==================== modal - success
+.si-success-modal {
+  @extend .si-modal;
+  padding: 55px 60px 20px;
+  overflow: hidden;
+  strong {
+    display: block;
+  }
+}
+
+.si-success-modal-title {
+  @extend .modal-form-title !optional;
+}
+
+.success-time {
+  @extend .modal-time !optional;
+}
+
+.success-schedule {
+  font-size: 16px;
+  margin-bottom: 43px;
+  strong {
+    text-transform: uppercase;
+  }
+}
+
+.success-social {
+  background-color: #f8f8f4;
+  position: relative;
+  padding-top: 20px;
+  padding-left: 0;
+
+  &::before {
+    width: 650px;
+    height: 160px;
+    content: "";
+    display: inline-block;
+    position: absolute;
+    background-color: #f8f8f4;
+
+    top: 0;
+    left: -70px;
+    z-index: -1;
+  }
+  .social-title {
+    color: #000;
+  }
+  .social-icons {
+
+    & > a {
+    }
+
+    svg {
+      fill: $font-color;
+
+      &:hover,
+      &:active {
+        fill: $primary-color;
+      }
+    }
+  }
+}
+
+//==================== message
+.si-page-message-overlay {
+  @include general-transition;
+  @include abs-center-fixed;
+  display: block;
+  visibility: hidden;
+  z-index: 299;
+  background: transparentize(#000, .2);
+  transition-duration: 0.5s;
+
+  &.show {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+.si-page-message {
+  @include general-transition;
+  @include abs-center-fixed;
+  transition-duration: 0.5s;
+  width: 101%;
+  height: 0;
+  color: #fff;
+  background: $accent-color;
+  opacity: 0;
+  visibility: hidden;
+  z-index: -5;
+  box-shadow: 0 0 10px #000;
+
+  &.show {
+    height: 200px;
+    opacity: 1;
+    visibility: visible;
+    z-index: 300;
+  }
+}
+
+.si-page-message-inner {
+  @include general-transition;
+  font-size: 30px;
+  line-height: 36px;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  vertical-align: middle;
+  transition-duration: 0.5s;
+  opacity: 0;
+  position: relative;
+
+  &.show {
+    opacity: 1;
+  }
+
+  .centered {
+    display: table;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.si-page-message-text {
+  display: table-cell;
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
+
+.authorization-modal {
+  .modal-form-title {
+    margin-bottom: 30px;
+  }
+  .modal-form-social {
+    margin-bottom: 30px;
+  }
+}
+
+.modal-form-social {
+  text-align: left;
+  a {
+    padding-right: 10px;
+    &:hover {
+      svg {
+        fill: $primary-color;
+      }
+    }
+  }
+  ul {
+    padding: 0;
+  }
+  svg {
+    fill: $font-color;
+  }
+}

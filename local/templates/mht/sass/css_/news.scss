@@ -1,0 +1,100 @@
+@import "compass/css3";
+
+.news_page{
+	.search_block{
+		top:13px;	
+	}
+	.news{
+		position:relative;
+		width:990px;
+		margin:0 auto;	
+		
+		.breadcrumbs{
+			margin:-8px 0 0 0;	
+		}
+		h1{
+			text-transform:uppercase;
+			font-family:"pfdintextpro-medium";
+			font-size:39px;	
+			margin:12px 0 0 0;
+			@include inline-block;
+			vertical-align:top;	
+		}
+		.news_list{
+			margin:42px 0 50px 0;
+			
+			.new{
+				@include inline-block;
+				vertical-align:top;
+				position:relative;
+				width:310px;
+
+				&:after{
+					content: '';
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+					background: rgba(0,0,0,0.4);
+					z-index: 1;
+				}
+				
+				.image{
+					position:absolute;
+					left:0;
+					top:0;
+					width:100%;
+					height:100%;
+					z-index:1;	
+					overflow:hidden;
+					
+					img{
+						width:100%;
+						height:auto;	
+						@include transition-property(all);
+						@include transition-duration(500ms);
+					}
+				}
+				.name{
+					position:relative;
+					z-index:2;	
+					color:#ffffff;
+					font-size:24px;
+					font-family:"plumb-bold";
+					text-transform:uppercase;
+					margin:28px 28px 40px 28px;
+				}
+				.time{
+					position:relative;
+					z-index:2;	
+					color:#ffffff;
+					font-size:13px;
+					font-family:"plumb-medium";
+					text-transform:uppercase;
+					margin:40px 28px 28px 28px;
+				}
+				&:hover{
+					.image{
+						img{
+							width:110%;
+							margin:-5%;	
+						}	
+					}	
+				}
+			}	
+		}
+	}
+}
+
+@media screen and (max-width: 640px){
+	.mobile_enabled{
+		
+		.news_page .news{
+			width: 100%;
+			padding: 20px;
+			width: 100%;
+			box-sizing: border-box;
+		}
+	}
+}

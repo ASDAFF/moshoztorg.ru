@@ -1,0 +1,59 @@
+.forumborder {background-color:#CACBBD;}
+.forumhead {background-color:#EAEBE2;}
+.forumbody {background-color:#FBFBF9;}
+.forumbodytext {font-family: Arial, Helvetica, sans-serif; font-size:smaller; color:#000000;}
+.forumheadtext {font-family: Arial, Helvetica, sans-serif; font-size:smaller; color:#000000;}
+.forumtitletext {font-family: Arial, Helvetica, sans-serif; font-size:smaller; color:#000000;}
+
+.postsep  {background-color: #9C9A9C; height: 1px}
+
+.forumquote {font-family: Arial, Helvetica, sans-serif; font-size:8pt; color: #000000; background-color: #FBFBF9; border : 1px solid Black;padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; text-indent: 2pt;}
+.forumcode {font-family: Arial, Helvetica, sans-serif; font-size:8pt; color: #333333; background-color: #FBFBF9; border : 1px solid Black; padding-top: 2px; padding-right: 2px; padding-bottom: 2px; padding-left: 2px; text-indent: 2pt;}
+
+.forumtopmenubody {background-color: #F8F8F3; }
+.forumtopmenu {font-family: Arial, Helvetica, sans-serif; font-size:8pt; color: #333333; background-color: #F8F8F3; text-decoration:none; }
+.forumtopmenu:hover {font-family: Arial, Helvetica, sans-serif; font-size:8pt; color: #000000; background-color: #FBFBF9; text-decoration:underline; }
+
+DIV.out {
+	BORDER-RIGHT: #99BAD7 1px solid; 
+	PADDING-RIGHT: 1px; 
+	BORDER-TOP: #99BAD7 1px solid; 
+	DISPLAY: block; 
+	PADDING-LEFT: 1px; 
+	PADDING-BOTTOM: 1px; 
+	MARGIN: 0px 15px; 
+	BORDER-LEFT: #99BAD7 1px solid; 
+	PADDING-TOP: 1px; 
+	BORDER-BOTTOM: #99BAD7 1px solid; 
+	POSITION: relative; 
+	TOP: 4px; 
+	BACKGROUND-COLOR: #ffffff
+}
+DIV.out1 {
+	PADDING-RIGHT: 0px; 
+	DISPLAY: block; 
+	PADDING-LEFT: 0px; 
+	PADDING-BOTTOM: 0px; 
+	MARGIN-RIGHT: 10px; 
+	PADDING-TOP: 0px; 
+	POSITION: relative; 
+	TOP: -9px
+}
+DIV.in {
+	PADDING-RIGHT: 0px; 
+	PADDING-LEFT: 0px; 
+	FONT-SIZE: 8px; 
+	PADDING-BOTTOM: 0px; 
+	PADDING-TOP: 0px; 
+	BACKGROUND-COLOR: #CEDEEC
+}
+DIV.in1 {
+	PADDING-RIGHT: 10px; 
+	PADDING-LEFT: 10px; 
+	FONT-SIZE: 10px; 
+	PADDING-BOTTOM: 0px; 
+	PADDING-TOP: 0px;
+	FONT-FAMILY: Arial, Helvetica, sans-serif; 
+	FONT-WEIGTH: bold; 
+	COLOR:#444444;	
+}

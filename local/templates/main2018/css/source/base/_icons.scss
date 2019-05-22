@@ -1,0 +1,205 @@
+//====================icons
+.icon {
+  display: inline-block;
+  overflow: hidden;
+  //text-indent: -9999px;
+  //background: url('../images/sprite.png') no-repeat transparent;
+  position: relative;
+  vertical-align: middle;
+}
+
+.will-change {
+  background: none;
+
+  &::before,
+  &::after {
+    @include general-transition;
+    @include abs-center;
+    content: "";
+    overflow: hidden;
+    background: url('../images/sprite.png') no-repeat transparent;
+  }
+
+  &::before {
+    opacity: 1;
+  }
+
+  &::after {
+    opacity: 0;
+  }
+
+  &:hover,
+  &:active,
+  &.active {
+
+    &::before {
+      opacity: 0;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+
+  &:hover,
+  &:active,
+  a:hover &,
+  a:active &,
+  .question:hover &,
+  .question:active &,
+  .question-item.active .question & {
+
+    &::before {
+      opacity: 0;
+    }
+
+    &::after {
+      opacity: 1;
+    }
+  }
+}
+
+//==================== SVG icons
+.svg-icon {
+  @include general-transition;
+  display: inline-block;
+  vertical-align: middle;
+  fill-rule: evenodd;
+  clip-rule: evenodd;
+}
+
+.close {
+  width: 13px !important;
+  height: 24px !important;
+  fill: $font-color;
+
+  a:hover &,
+  a:active & {
+    fill: $accent-color;
+  }
+}
+
+//=== icons
+.arrow-left {
+}
+
+.arrow-right {
+}
+
+.cart {
+  fill: $menu-color;
+  fill-rule: evenodd;
+
+  @include mobile {
+    width: 28px !important;
+    height: 22px !important;
+  }
+}
+
+.extra1 {
+  @include mobile {
+    width: 64px !important;
+    height: 64px !important;
+  }
+}
+
+.extra2 {
+  @include mobile {
+    width: 81px !important;
+    height: 48px !important;
+  }
+}
+
+.extra3 {
+  @include mobile {
+    width: 64px !important;
+    height: 64px !important;
+  }
+}
+
+.extra4 {
+  @include mobile {
+    width: 64px !important;
+    height: 64px !important;
+  }
+}
+
+.heart {
+  fill: none;
+  stroke: $menu-color;
+  stroke-width: 2px;
+
+  @include mobile {
+    width: 26px !important;
+    height: 22px !important;
+  }
+}
+
+.insta {
+  fill: #fff;
+  @include mobile {
+    width: 45px !important;
+    height: 45px !important;
+  }
+}
+
+.ok {
+  fill: #fff;
+  @include mobile {
+    width: 45px !important;
+    height: 45px !important;
+  }
+}
+
+.face {
+  fill: #fff;
+  @include mobile {
+    width: 45px !important;
+    height: 45px !important;
+  }
+}
+
+.vk {
+  fill: #fff;
+  @include mobile {
+    width: 45px !important;
+    height: 45px !important;
+  }
+}
+
+.search {
+  fill: $menu-color;
+}
+
+.phone {
+  fill: #f95319;
+}
+
+//===menu_icons
+.menu_icon {
+  fill: $menu-color;
+}
+.menu_icon1 {}
+.menu_icon2 {}
+.menu_icon3 {}
+.menu_icon4 {}
+.menu_icon5 {}
+.menu_icon6 {}
+.menu_icon7 {}
+.menu_icon8 {}
+.menu_icon9 {}
+.menu_icon10 {}
+.menu_icon11 {}
+.menu_icon12 {}
+.menu_icon13 {}
+.menu_icon14 {}
+.menu_icon15 {}
+.menu_icon16 {}
+.menu_icon17 {}
+.menu_icon18 {}
+.menu_icon19 {}
+.menu_icon20 {}
+.menu_icon21 {}
+.menu_icon22 {}
+.menu_icon23 {}
+.menu_icon24 {}

@@ -1,0 +1,12 @@
+.news_page .news .news_list .new:hover .image img {
+    width: 130%;
+    margin: -5%;
+}
+
+
+.news_page .news .news_list .new .image img {
+    width: 116%;
+position: absolute;
+    top: -35px;
+    left: -25px;
+}

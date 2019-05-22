@@ -1,0 +1,5 @@
+@import "compass/css3";
+@mixin pie(){
+	behavior: url(/local/templates/mht/pie/PIE.php);
+	position:relative;
+}

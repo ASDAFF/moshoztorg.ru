@@ -1,0 +1,240 @@
+@import "compass/css3";
+
+.authorisation_page{
+	.search_block{
+		top:13px;	
+	}
+	.authorisation{
+		position:relative;
+		width:990px;
+		margin:0 auto 49px auto;	
+		
+		.breadcrumbs{
+			margin:-8px 0 0 0;	
+		}
+		h1{
+			text-transform:uppercase;
+			font-family:"pfdintextpro-medium";
+			font-size:39px;	
+			margin:12px 0 0 0;
+			@include inline-block;
+			vertical-align:top;	
+		}
+		a{
+			color:#e6330a;
+			font-size:16px;	
+			line-height:16px;
+			font-family:"pfdintextpro-regular";
+			position:relative;
+			
+			&:after{
+				background: image-url("short_link_bottom.png") center bottom no-repeat;
+				height:2px;
+				width:0;
+				content:"";
+				display:block;
+				position:absolute;
+				bottom:0;
+				left:0;
+			}	
+			&:hover{
+				&:after{
+					width:100%;
+				}	
+			}
+		}
+		.social_network{
+			margin:40px  0 0 0;
+			padding:0 0 13px 0;
+			border-bottom:1px solid #e5e5e5;
+			width:331px;
+			
+			li{
+				display: inline-block;
+				vertical-align: top;
+				width:29px;
+				height:29px;
+				margin:0 10px 0 0;
+				
+				a{
+					display: inline-block;
+					vertical-align: top;
+					width:29px;
+					height:29px;
+					@include opacity(1);
+					
+					&:hover{
+						@include opacity(0.5);
+					}
+					&:after{
+						display:none;	
+					}
+				}
+				&.twitter{
+					a{
+						background: image-url("authorisation/twitter.png") center center no-repeat;	
+					}
+				}
+				&.facebook{
+					a{
+						background: image-url("authorisation/facebook.png") center center no-repeat;
+					}
+				}
+				&.vk{
+					a{
+						background: image-url("authorisation/vk.png") center center no-repeat;
+					}
+				}
+				&.instagram{
+					a{
+						background: image-url("authorisation/instagram.png") center center no-repeat;	
+					}
+				}
+			}	
+		}
+		.form_block{
+			margin:15px 0 21px 0;
+			
+			table{
+				tr{
+					td{
+						vertical-align:top;
+						
+						label{
+							font-family:"pfdintextpro-regular";
+							color:#000000;
+							font-size:16px;	 
+							line-height:16px;
+							cursor:default;
+						}
+						input{
+							border:1px solid #bfbfbf;
+							@include border-radius(2px);
+							font-family:"pfdintextpro-regular";
+							color:#000000;
+							font-size:16px;	 
+							line-height:16px;
+							margin:7px 0 24px 0;	
+							padding:13px;
+							width:302px;
+							cursor:text;
+						}	
+						.checkbox-input{
+							@include opacity(0);	
+							width:16px;
+							height:16px;
+							margin:0 0 0 10px;
+
+							&+.checkbox-label{
+								@include inline-block;
+								vertical-align:top;
+								color:#000000;
+								font-size:12px;	
+								background:image-url("checkbox.png") left center no-repeat;
+								margin: 0 0 0 -26px;
+   								padding: 0 0 0 23px;
+								cursor:pointer;
+								height:16px;
+								line-height:16px;
+							}
+							&:checked{
+								&+.checkbox-label{
+									background:image-url("checkbox_checked.png") left center no-repeat;	
+								}	
+							}
+						}
+						.forgot{
+							font-size:12px;	
+							float:right;
+						} 
+					}
+				}
+			}
+			.button{
+				@include inline-block;
+				vertical-align:top;	
+				font-family:"pfdintextpro-medium";	
+				font-size:15px;
+				text-transform:uppercase;
+				width:140px;
+				text-align:center;
+				padding:15px 28px 14px 26px;
+				margin:20px 0 16px 0;
+				color:#ffffff;
+				background:#7aab4b;	
+				
+				&:after{
+					display:none;	
+				}
+			}
+		}
+	}
+}
+
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) { 
+	.authorisation_page{
+		.authorisation{
+			a{
+				&:after{
+					background: image-url("short_link_bottom@2x.png") center bottom no-repeat;
+					@include background-size(320px 1px);
+				}	
+			}
+			.social_network{
+				li{
+					&.twitter{
+						a{
+							background: image-url("authorisation/twitter@2x.png") center center no-repeat;	
+							@include background-size(29px 29px);
+						}
+					}
+					&.facebook{
+						a{
+							background: image-url("authorisation/facebook@2x.png") center center no-repeat;
+							@include background-size(29px 29px);
+						}
+					}
+					&.vk{
+						a{
+							background: image-url("authorisation/vk@2x.png") center center no-repeat;
+							@include background-size(29px 29px);
+						}
+					}
+					&.instagram{
+						a{
+							background: image-url("authorisation/instagram@2x.png") center center no-repeat;
+							@include background-size(29px 29px);	
+						}
+					}
+				}	
+			}
+			.form_block{
+				table{
+					tr{
+						td{
+							.checkbox-input{
+								&+.checkbox-label{
+									background:image-url("checkbox@2x.png") left center no-repeat;
+									@include background-size(15px 15px);
+								}
+								&:checked{
+									&+.checkbox-label{
+										background:image-url("checkbox_checked@2x.png") left center no-repeat;	
+										@include background-size(15px 15px);
+									}	
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,165 @@
+jQuery(function ($) {
+
+
+    // ===================================================== Init all plugins and scripts
+    $.fn.SIInit = function () {
+
+        //Modal photos
+        $("[data-fancybox]").fancybox({
+            loop: true,
+            thumbs: {
+                autoStart: true
+            },
+            youtube: {},
+            vimeo: {}
+        });
+
+        //Forms
+        $('.send-form').SIForms({
+            'validateFields': {
+                'client_name': 'Укажите ваше имя',
+                'client_phone': 'Укажите ваш телефон',
+                'client_mail': 'Укажите ваш e-mail'
+            },
+            'checkExtra': function (form) {
+                if (!$(form).find('.form-agree-check').hasClass('checked')) {
+                    SIPageMessages.show('Для отправки формы вы должны согласиться на обработку персональных данных.');
+                    return false;
+                }
+            },
+            'sendSuccess': function (res) {
+                //grecaptcha.reset(recaptcha);
+                //yaCounter.reachGoal('target' + res.id);
+                //ga('send', 'event', res.gcode, res.gcode);
+            }
+        });
+
+        //Jump links
+        $('.si-jump').SIJump();
+
+        //Page messages
+        SIPageMessages.init();
+    };
+
+    $.fn.SIInit();
+
+
+    // ===================================================== Modals
+    $.fn.SIModalInit = function () {
+        SIModals.init();
+
+        // Init modals
+        SIModals.attachModal('.open-phone-modal', '.phone-modal', {'.send-extra': 'extra'});
+        SIModals.attachModal('.open-authorization-modal', '.authorization-modal', {'.send-extra': 'extra'});
+
+        SIModals.attachModal('.open-text-modal', '.text-modal', false, function () {
+            return '.text-modal-' + $(this).data('id');
+        });
+
+        // Modal controls
+        SIModals.attachClose('.si-close');
+    };
+
+    $.fn.SIModalInit();
+
+    //SIModals.afterOpen = function () {
+    //grecaptcha.reset(recaptcha);
+    //};
+
+    // ===================================================== Styler
+    $('input[type=radio], input[type=checkbox]').styler();
+    $('input[type=radio]').change(function () {
+        var label = $(this).closest('label'),
+            name = $(this).attr('name');
+        $('input[name=' + name + ']').closest('label').removeClass('checked');
+        if ($(this).is(':checked'))
+            label.addClass('checked');
+
+        if (($(this).attr('id') == 'PERSON_TYPE_2') || ($(this).attr('id') == 'PERSON_TYPE_1')) {
+            submitForm();
+        }
+    });
+    $('input[type=checkbox]').change(function () {
+        var label = $(this).closest('label');
+        if ($(this).is(':checked'))
+            label.addClass('checked');
+        else
+            label.removeClass('checked');
+    });
+
+    // ===================================================== Counter
+    var tomorrow = new Date();
+    tomorrow.setHours(24, 0, 0, 0);
+    $('.counter').countdown({
+        until: tomorrow,
+        layout: '<div class="counter-item"><b>{dnn}</b>{dl}</div><div class="counter-separator">:</div>' +
+        '<div class="counter-item"><b>{hnn}</b>{hl}</div><div class="counter-separator">:</div>' +
+        '<div class="counter-item"><b>{mnn}</b>{ml}</div><div class="counter-separator">:</div>' +
+        '<div class="counter-item"><b>{snn}</b>{sl}</div>'
+    });
+
+
+    // =====================================================dotdotdot
+    $('.ellipsis').dotdotdot();
+    $(window).resize(function () {
+        $('.ellipsis').dotdotdot();
+    });
+
+    // ===================================================== custom scripts
+
+    //label
+    $('.ani-label').click(function () {
+        var label = $(this),
+            holder = label.parent(),
+            input = holder.find('.ani-input');
+
+        holder.toggleClass('active');
+        input.focus();
+    });
+
+    //accordion
+    $('.question-item:first').addClass('active').find('.answer').css('display', 'block');
+    $('.question-item').each(function () {
+        var item = $(this),
+            question = item.find('.question'),
+            answer = item.find('.answer');
+        answer.slideUp();
+        if (item.hasClass('active')) {
+            $(this).find('.answer').slideDown();
+        }
+        question.click(function () {
+            if (question.parents('.question-item').hasClass('active')) {
+                answer.slideUp();
+                item.removeClass('active');
+            }
+            else {
+                item.parents('.questions-block').find('.question-item').find('.answer').slideUp();
+                answer.slideDown();
+                item.parents('.questions-block').find('.question-item').removeClass('active');
+                item.addClass('active');
+            }
+        });
+    });
+
+    //equal height
+    function setEqualHeight(block) {
+        var maxHeight = 0;
+
+        block.each(function () {
+            var height = $(this).innerHeight();
+
+            if (height > maxHeight) {
+                maxHeight = height;
+            }
+        });
+
+        return block.css('height', maxHeight);
+    }
+
+    setEqualHeight($('.block'));
+
+
+    $('.filter-page>label').unbind('click');
+
+
+});

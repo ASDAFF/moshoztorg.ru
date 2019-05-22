@@ -1,0 +1,118 @@
+$mobile-width: 640px;
+$tablet-width: 1100px;
+$desktop-width: 1280px;
+
+@mixin small-desktop {
+  @media all and (max-width: #{$desktop-width}) {
+    @content;
+  }
+}
+
+@mixin tablet {
+  @media all and (max-width: #{$tablet-width}) {
+    @content;
+  }
+}
+
+@mixin mobile {
+  @media all and (max-width: #{$mobile-width}) {
+    @content;
+  }
+}
+
+//$small-mobile-width: 580px;
+//$mobile-width: 900px;
+//$mobile-height: 660px;
+//$tablet-width: 1100px;
+//$small-desktop-width: 1280px;
+//$small-desktop-height: 800px;
+//$medium-desktop-width: 1500px;
+//$medium-desktop-height: 940px;
+//$big-desktop-width: 1620px;
+//$big-desktop-height: 1040px;
+//
+//@mixin big-desktop {
+//  @media all and (max-width: #{$big-desktop-width}),
+//  all and (max-height: #{$big-desktop-height}) {
+//    @content;
+//  }
+//}
+//
+//@mixin medium-desktop {
+//  @media all and (max-width: #{$medium-desktop-width}),
+//  all and (max-height: #{$medium-desktop-height}) {
+//    @content;
+//  }
+//}
+//
+//@mixin small-desktop {
+//  @media all and (max-width: #{$small-desktop-width}),
+//  all and (max-height: #{$small-desktop-height}) {
+//    @content;
+//  }
+//}
+//
+//@mixin tablet {
+//  @media all and (max-width: #{$tablet-width}) {
+//    @content;
+//  }
+//}
+//
+//@mixin mobile {
+//  @media all and (max-width: #{$mobile-width}),
+//  all and (max-height: #{$mobile-height}) {
+//    @content;
+//  }
+//}
+//
+//@mixin small-mobile {
+//  @media all and (max-width: #{$small-mobile-width}) {
+//    @content;
+//  }
+//}
+//
+//.hidden-sm {
+//
+//  @include small-desktop {
+//    display: none !important;
+//  }
+//}
+//
+//.visible-sm {
+//  display: none !important;
+//
+//  @include small-desktop {
+//    display: block !important;
+//  }
+//}
+
+.hidden-xs {
+
+  @include mobile {
+    display: none !important;
+  }
+}
+
+.visible-xs {
+  display: none !important;
+
+  @include mobile {
+    display: block !important;
+  }
+}
+
+//.hidden-xxs {
+//  display: block !important;
+//
+//  @include small-mobile {
+//    display: none !important;
+//  }
+//}
+//
+//.visible-xxs {
+//  display: none !important;
+//
+//  @include small-mobile {
+//    display: block !important;
+//  }
+//}

@@ -1,0 +1,47 @@
+ul.heading li a label {
+    font-size: 18px;
+    font-family: 'Plumb-Medium';
+    margin-bottom: 20px;
+    color: #000000;
+    position: relative;
+    left: -10px;
+}
+ul.heading li.active a label {
+    color: #e6330a;
+}
+
+.filter-numbers-fields .filter_title {
+    float: left;
+    padding: 0 10px;
+    text-transform: capitalize;
+    font-family: "plumb-bold";
+    color: #939393;
+    font-size: 14px;
+    line-height: 25px;
+}
+.filter-numbers-fields .cost-min{
+    width: 75px;
+    float: left;
+    border: 1px solid white;
+    background: white;
+    height: 25px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "plumb-bold";
+}
+
+.filter-numbers-fields .cost-max {
+    width: 75px;
+    border: 1px solid white;
+    background: white;
+    height: 25px;
+    padding: 0 10px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    font-family: "plumb-bold";
+}
+
+.filter-numbers-fields .cost_range {
+    margin-bottom: 40px;
+}

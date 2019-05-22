@@ -1,0 +1,300 @@
+@import "compass/css3";
+
+.comparation_page{
+	.search_block{
+		top:5px;	
+	}
+	.comparation{
+		position:relative;
+		width:990px;
+		margin:0 auto;	
+		
+		.breadcrumbs{
+			margin:0;	
+		}
+		h1{
+			text-transform:uppercase;
+			font-family:"pfdintextpro-medium";
+			font-size:28px;	
+			margin:12px 0 0 0;
+			@include inline-block;
+			vertical-align:top;	
+		}
+		.categories{
+			margin:26px 0 0 2px;
+			
+			li{
+				@include inline-block;
+				vertical-align:top;
+				color:#000000;
+				font-size:15px;
+				font-family:"pfdintextpro-regular";	
+				text-transform:uppercase;
+				padding:12px 14px 7px 14px;
+				letter-spacing:0.5px;
+				cursor:pointer;
+							
+				a{
+					color:#000000;
+					position:relative;
+					
+					&:after{
+						background: image-url("catalog_menu_bottom.png") left bottom no-repeat;
+						height:1px;
+						width:0;
+						content:"";
+						display:block;
+						position:absolute;
+						bottom:-1px;
+						left:0;
+					}
+				}
+				&:hover{
+					a{
+						&:after{
+							width:100%;	
+						}	
+					}
+				}	
+				&.active{
+					background:#e81600;
+					color:#ffffff;	
+					
+					a{
+						color:#ffffff;	
+						
+						&:after{
+							display:none;	
+						}
+					}
+				}
+			}	
+		}
+		.comparation_list{
+			margin:10px 0 60px 0;
+			overflow: auto;
+			
+			.compar{
+				display:none;
+				
+				&.active{
+					display:block;	
+				}
+				.row{
+					background:#ffffff;
+					white-space: nowrap;
+
+					*{
+						white-space: normal;
+					}
+						
+					&+.row{
+						&:hover{
+							background:#f6f6f6;	
+						}
+					}
+					.col{
+						@include inline-block;
+						vertical-align:top;
+						color:#000000;
+						font-size:15px;	
+						font-family:"pfdintextpro-regular";	 
+						width:170px;
+						padding:13px 10px;
+						
+						&+.col{
+							width:150px;	
+						}
+						.product{
+							@include inline-block;
+							vertical-align:top;	
+							position:relative;
+							width:135px;
+							margin:28px 45px 7px 0;
+							
+							&.tree{
+								margin:28px 0 0 0;	
+							}
+							.product_name{
+								font-family:"pfdintextpro-medium";
+								text-transform:uppercase;	
+								font-size:15px;	
+								height:auto;
+								position:relative;
+								
+								.remove{
+									color:#ec4b16;
+									position:absolute;
+									top:0;
+									right:0;
+								}
+							}
+							.product_image{
+								width:135px;
+								height:105px;
+								margin:0 0 32px 0;
+								position:relative;
+								
+								img{
+									position:absolute;
+									left:0;
+									top:0;
+									background:#ffffff;
+									display:block;
+									max-width: 100%;
+									
+									&.product_image_original{
+										z-index:1;	
+										@include opacity(1);
+									}
+									&.product_image_hover{
+										z-index:2;	
+										@include opacity(0); 
+									}
+								}
+								&:hover{
+									img{
+										&.product_image_original{
+											@include opacity(0);
+										}
+										&.product_image_hover{	
+											@include opacity(1); 
+										}	
+									}	
+								}
+							}
+							.product_prices_block{
+								position:relative;
+								height:22px;
+								background: image-url("price_border.png") center bottom repeat-x;	
+								
+								.product_price_block{
+									.product_price{
+										@include inline-block;
+										vertical-align:baseline;	
+										font-family:"plumb-bold";
+										font-size:25px;
+										line-height:25px;
+										margin:1px 0 0 0;
+										letter-spacing:-1px;
+										white-space:nowrap;
+										
+										.product_price_value{
+											background:#ffffff;
+											padding:0 6px 0 0;
+										}
+										.rub:before{
+											font-family: "pt_sans-bold";
+											vertical-align: baseline;
+											font-size:20px;
+											line-height:25px;
+											position:relative;
+											top:-4px;
+										}	
+									}
+									.product_cart{
+										display:block;
+										position:absolute;
+										right:0;
+										bottom:0;
+										width:32px;
+										height:52px;
+										cursor:pointer;
+										padding:0 0 0 2px;
+										z-index:2;
+										background: image-url("cart.png") right center no-repeat;	
+										
+										&:hover{
+											background: image-url("cart_hover.png") right center no-repeat;		
+										}	
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+.styles_page .styles {
+	.no-compare-items-notice {
+		margin: 50px auto;
+		padding: 20px;
+		background: #eee;
+		text-align: center;
+
+		p {
+			max-width: none;
+			margin-bottom: 0;
+		}
+	}
+}
+
+
+
+@media screen and (max-width: 640px){
+	.mobile_enabled{
+		.comparation_page{
+			width: 100%;
+			padding: 20px;
+			box-sizing: border-box;
+			.comparation{
+				width: 100%;
+				.categories li{
+					font-size: 13px;
+				}
+			}
+		}
+	}
+}
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) { 
+	.comparation_page{
+		.comparation{
+			.categories{
+				li{
+					a{
+						&:after{
+							background: image-url("catalog_menu_bottom@2x.png") left bottom no-repeat;
+							@include background-size(320px 1px);
+						}
+					}
+				}	
+			}
+			.comparation_list{
+				.compar{
+					.row{
+						.col{
+							.product{
+								.product_prices_block{
+									background: image-url("price_border@2x.png") center bottom repeat-x;	
+									@include background-size(4px 1px);
+									
+									.product_price_block{
+										.product_cart{
+											background: image-url("cart@2x.png") right center no-repeat;	
+											@include background-size(32px 52px);
+											
+											&:hover{
+												background: image-url("cart_hover@2x.png") right center no-repeat;	
+												@include background-size(32px 52px);	
+											}	
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}	
+}

@@ -1,0 +1,99 @@
+@font-face {
+	font-family: "pfd";
+	src: url("./pfdindisplaypro-black.eot");
+	src: url("./pfdindisplaypro-black.woff") format("woff"),
+		url("./pfdindisplaypro-black.ttf") format("truetype"),
+		url("./pfdindisplaypro-black.svg") format("svg");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "pfd";
+	src: url("./pfdindisplaypro-bold.eot");
+	src: url("./pfdindisplaypro-bold.woff") format("woff"),
+		url("./pfdindisplaypro-bold.ttf") format("truetype"),
+		url("./pfdindisplaypro-bold.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "pfd";
+	src: url("./pfdindisplaypro-medium.eot");
+	src: url("./pfdindisplaypro-medium.woff") format("woff"),
+		url("./pfdindisplaypro-medium.ttf") format("truetype"),
+		url("./pfdindisplaypro-medium.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "pfd";
+	src: url("./pfdindisplaypro-regular.eot");
+	src: url("./pfdindisplaypro-regular.woff") format("woff"),
+		url("./pfdindisplaypro-regular.ttf") format("truetype"),
+		url("./pfdindisplaypro-regular.svg") format("svg");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "pfd";
+	src: url("./pfdindisplaypro-light.eot");
+	src: url("./pfdindisplaypro-light.woff") format("woff"),
+		url("./pfdindisplaypro-light.ttf") format("truetype"),
+		url("./pfdindisplaypro-light.svg") format("svg");
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Plumb";
+	src: url("./plumb-black.eot");
+	src: url("./plumb-black.woff") format("woff"),
+		url("./plumb-black.ttf") format("truetype"),
+		url("./plumb-black.svg") format("svg");
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Plumb";
+	src: url("./plumb-bold.eot");
+	src: url("./plumb-bold.woff") format("woff"),
+		url("./plumb-bold.ttf") format("truetype"),
+		url("./plumb-bold.svg") format("svg");
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Plumb";
+	src: url("./plumb-medium.eot");
+	src: url("./plumb-medium.woff") format("woff"),
+		url("./plumb-medium.ttf") format("truetype"),
+		url("./plumb-medium.svg") format("svg");
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Plumb";
+	src: url("./plumb-regular.eot");
+	src: url("./plumb-regular.woff") format("woff"),
+		url("./plumb-regular.ttf") format("truetype"),
+		url("./plumb-regular.svg") format("svg");
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: "Plumb";
+	src: url("./plumb-light.eot");
+	src: url("./plumb-light.woff") format("woff"),
+		url("./plumb-light.ttf") format("truetype"),
+		url("./plumb-light.svg") format("svg");
+	font-weight: 100;
+	font-style: normal;
+}

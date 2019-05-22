@@ -1,0 +1,31 @@
+//==================== tabs
+.nav.nav-tabs {
+  width: 100%;
+  text-align: center;
+}
+
+.tab-link {
+  @include general-transition;
+  cursor: pointer !important;
+}
+
+.tabs-content-container {
+  width: 100%;
+  overflow: hidden;
+}
+
+.tab-content {
+  @include general-transition;
+  width: 100%;
+  height: 0;
+  opacity: 0;
+  overflow: hidden;
+  position: relative;
+  z-index: 5;
+
+  &.active {
+    opacity: 1;
+    height: auto;
+    z-index: 10;
+  }
+}

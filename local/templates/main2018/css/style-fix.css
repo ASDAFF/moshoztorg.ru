@@ -1,0 +1,61 @@
+.heading-slide img{
+	width: 100%;
+}
+
+.sale {
+   color: #e6330a;
+}
+
+.schedule {
+    font-size: 10px;
+}
+
+.stock-item .stock-desc, .stock-miniItem .stock-desc {
+    background-color: rgba(0, 0, 0, 0.05);
+}
+
+.stock-miniItem .stock-desc {
+    /*height: 98%; */
+}
+
+.stock-item .stock-desc {
+    /*height: 99%;*/
+}
+
+.action-first {
+    line-height: 0;
+}
+.stock-item .stock-info {
+    line-height: 1.2;
+
+}
+@media screen and (max-width:640px) {
+.latest .med-title{
+    font-size: 21px;
+
+    line-height: 17px;
+}
+    .latest .latest-info{
+        margin:20px 0;
+    }
+    
+    .stock-item .stock-info {
+        margin-top:35px;
+    }
+}
+
+/* line 513, sass/css_/general.scss */
+.go-up {
+  right: 30px;
+  bottom: 240px;
+  width: 66px;
+  height: 66px;
+  display: none;
+  position: fixed;
+  z-index: 50;
+  opacity: 0.8;
+}
+/* line 522, sass/css_/general.scss */
+.go-up:hover {
+  opacity: 1;
+}

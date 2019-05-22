@@ -1,0 +1,524 @@
+//====================clearfix
+@mixin clearfix {
+
+  &::before {
+    content: "";
+    display: table;
+  }
+
+  &::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+}
+
+//==================== absolute center
+@mixin abs-center {
+  position: absolute !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+//==================== fixed absolute center
+@mixin abs-center-fixed {
+  position: fixed !important;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  margin: auto;
+}
+
+//==================== row with custom padding
+@mixin row-custom-pad($pad) {
+  margin-left: -$pad;
+  margin-right: -$pad;
+
+  > [class*="col-"] {
+    padding: 0 $pad;
+  }
+}
+
+//==================== grid offset
+@mixin grid-offset($width, $pad) {
+  margin-left: $width !important;
+
+  &.pseudo-table-cell {
+    margin-left: 0 !important;
+    padding-left: calc(#{$width} + #{$pad});
+  }
+}
+
+//==================== justify blocks
+@mixin content-justify {
+  text-align: justify;
+  line-height: 0;
+  font-size: 1px;
+  zoom: 1;
+
+  &::after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0;
+    visibility: hidden;
+    overflow: hidden;
+  }
+}
+
+@mixin content-justify-child {
+  display: inline-block;
+  text-align: left;
+  line-height: 1.2;
+  font-size: 1rem;
+  vertical-align: top;
+}
+
+//==================== counter reset
+@mixin ol-counter-reset {
+  counter-reset: li;
+  padding: 0;
+  margin: 0;
+
+  &.row {
+    margin-left: -$pad;
+    margin-right: -$pad;
+  }
+
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+
+    &.row {
+      margin-left: -$pad;
+      margin-right: -$pad;
+    }
+
+    &[class*="col-"] {
+      padding-left: $pad;
+      padding-right: $pad;
+    }
+  }
+}
+
+@mixin li-counter-reset($content1,$content2) {
+  position: relative;
+
+  &::before {
+    @include abs-center;
+    bottom: auto;
+    content: "#{$content1}" counter(li) "#{$content2}";
+    counter-increment: li;
+  }
+}
+
+//==================== square block - must contain inner absolute-centered container!!
+@mixin square-block {
+  position: relative;
+
+  &::after {
+    content: "";
+    display: block;
+    padding-top: 100%;
+  }
+}
+
+//==================== hover icon animation
+@mixin ani-hover($animation) {
+
+  &:hover {
+
+    [class*="-image"] .icon,
+    [class*="-image"] .svg-icon:not([class*="border-"]),
+    [class*="-image"] img {
+      @extend .#{$animation} !optional;
+    }
+  }
+}
+
+//====================zoom
+@mixin img-zoom($background, $opacity, $scale) {
+  display: block;
+  position: relative;
+  cursor: pointer !important;
+
+  img {
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    @include general-transition;
+    @include abs-center;
+    content: "";
+    background: transparentize($background, $opacity);
+    opacity: 0;
+    z-index: 2;
+  }
+
+  &::after {
+    @include general-transition;
+    @include abs-center;
+    @include transform(scale($scale));
+    @extend .icon !optional;
+    @extend .icon-zoom !optional;
+    content: "";
+    opacity: 0;
+    z-index: 3;
+  }
+
+  &:hover,
+  &:active {
+
+    &::before {
+      opacity: 1;
+    }
+
+    &::after {
+      @include transform(scale(1));
+      opacity: 1;
+    }
+  }
+}
+
+@mixin img-zoom-svg($background, $opacity, $scale) {
+  display: block;
+  position: relative;
+  cursor: pointer !important;
+
+  img {
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  &::before {
+    @include general-transition;
+    @include abs-center;
+    content: "";
+    background: transparentize($background, $opacity);
+    opacity: 0;
+    z-index: 2;
+  }
+
+  .svg-icon {
+    @include general-transition;
+    @include abs-center;
+    @include transform(scale($scale));
+    content: "";
+    opacity: 0;
+    z-index: 3;
+  }
+
+  &:hover,
+  &:active {
+
+    &::before {
+      opacity: 1;
+    }
+
+    .svg-icon {
+      @include transform(scale(1));
+      opacity: 1;
+    }
+  }
+}
+
+@mixin img-zoom-text($background, $opacity, $height) {
+  display: block;
+  position: relative;
+  cursor: pointer !important;
+
+  &::before {
+    @include general-transition;
+    @include abs-center;
+    content: "";
+    background: transparentize($background, $opacity);
+    opacity: 0;
+    z-index: 2;
+  }
+
+  &::after {
+    @include general-transition;
+    @include abs-center;
+    content: "";
+    display: block;
+    height: 0;
+    background: $primary-color;
+    opacity: 0;
+    z-index: 3;
+  }
+
+  .photo-overlay-text {
+    @include general-transition;
+    @include abs-center;
+    color: $font-color;
+    text-align: center;
+    height: $height;
+    opacity: 0;
+    z-index: 4;
+  }
+
+  img {
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover {
+
+    &::before,
+    .photo-overlay-text {
+      opacity: 1;
+    }
+
+    &::after {
+      height: $height;
+      opacity: 1;
+    }
+  }
+}
+
+@mixin img-zoom-icon-text($background, $opacity, $scale, $height) {
+  display: block;
+  position: relative;
+  cursor: pointer !important;
+
+  &::before {
+    @include general-transition;
+    @include abs-center;
+    content: "";
+    background: transparentize($background, $opacity);
+    opacity: 0;
+    z-index: 2;
+  }
+
+  &::after {
+    @include general-transition;
+    @include abs-center;
+    @include transform(scale($scale));
+    @extend .icon !optional;
+    @extend .icon-zoom !optional;
+    content: "";
+    opacity: 0;
+    z-index: 3;
+  }
+
+  .photo-overlay-text {
+    @include general-transition;
+    @include abs-center;
+    color: $font-color;
+    text-align: center;
+    height: $height;
+    opacity: 0;
+    z-index: 4;
+  }
+
+  img {
+    display: block;
+    position: relative;
+    z-index: 1;
+  }
+
+  &:hover {
+
+    &::before,
+    .photo-overlay-text {
+      opacity: 1;
+    }
+
+    &::after {
+      @include transform(scale(1));
+      opacity: 1;
+    }
+  }
+}
+
+//====================transform
+@mixin transform($args) {
+  will-change: transform;
+  -webkit-backface-visibility: hidden;
+  -webkit-font-smoothing: antialiased;
+  -webkit-transform: $args;
+  -moz-transform: $args;
+  -ms-transform: $args;
+  -o-transform: $args;
+  transform: $args;
+}
+
+@mixin transition-duration($str) {
+  -webkit-transition-duration: #{$str};
+  -o-transition-duration: #{$str};
+  -moz-transition-duration: #{$str};
+  transition-duration: #{$str};
+}
+
+@mixin transform-origin($str) {
+  -webkit-transform-origin: #{$str};
+  -o-transform-origin: #{$str};
+  -moz-transform-origin: #{$str};
+  transform-origin: #{$str};
+}
+
+//====================animations
+@mixin keyframes($animation-name) {
+  @-webkit-keyframes #{$animation-name} {
+    @content;
+  }
+  @-moz-keyframes #{$animation-name} {
+    @content;
+  }
+  @-ms-keyframes #{$animation-name} {
+    @content;
+  }
+  @keyframes #{$animation-name} {
+    @content;
+  }
+}
+
+@mixin animation($str) {
+  will-change: transform;
+  transform: translate3d(0, 0, 0);
+  -webkit-animation: #{$str};
+  -moz-animation: #{$str};
+  -ms-animation: #{$str};
+  animation: #{$str};
+}
+
+@mixin animation-duration($str) {
+  -webkit-animation-duration: #{$str};
+  -o-animation-duration: #{$str};
+  -moz-animation-duration: #{$str};
+  animation-duration: #{$str};
+}
+
+@mixin animation-delay($str) {
+  -webkit-animation-delay: #{$str};
+  -o-animation-delay: #{$str};
+  -moz-animation-delay: #{$str};
+  animation-delay: #{$str};
+}
+
+//====================button lift effect
+@mixin btn-bordered-lift-animantion {
+
+  &::after {
+    @extend .btn-lift;
+  }
+
+  &:hover {
+
+    &::after {
+      @extend .btn-fall;
+    }
+  }
+}
+
+//====================section skew with bg
+@mixin section-skew($margin-top) {
+  position: relative;
+  margin-top: $margin-top;
+
+  .container {
+    position: relative;
+    z-index: 10;
+  }
+}
+
+@mixin section-skew-bg($skew, $margin-top) {
+  $skew-invert: $skew * -1;
+  $allowance: #{$margin-top} * 1.7;
+  @include abs-center;
+  @include transform(skewY(#{$skew-invert}deg));
+  margin-top: -#{$margin-top};
+  z-index: 1;
+  overflow: hidden;
+
+  &::before {
+    @include abs-center;
+    @include transform(skewY(#{$skew}deg));
+    content: "";
+    display: block;
+    height: calc(100% + #{$allowance} + #{$allowance});
+    background-size: cover !important;
+  }
+}
+
+//====================section with triangles
+@mixin section-triangles($bg) {
+  position: relative;
+  z-index: 1;
+
+  .container {
+    position: relative;
+    z-index: 10;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    margin-left: -2000px;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 1000px 100px 1000px;
+    border-color: transparent transparent $bg transparent;
+    z-index: 5;
+  }
+
+  &::after {
+    content: "";
+    position: absolute;
+    top: -100px;
+    left: 50%;
+    margin-left: 0;
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 0 1000px 100px 1000px;
+    border-color: transparent transparent $bg transparent;
+    z-index: 5;
+  }
+}
+
+//====================section head
+@mixin section-head($height, $background-image) {
+  position: relative;
+  z-index: 10;
+
+  &::before {
+    @include abs-center;
+    top: -$height;
+    bottom: auto;
+    content: "";
+    display: block;
+    height: $height;
+    background: url($background-image) no-repeat 50% 50% transparent;
+    z-index: 2;
+  }
+}
+
+//====================section tail
+@mixin section-tail($height, $background-image) {
+  position: relative;
+  z-index: 10;
+
+  &::after {
+    @include abs-center;
+    top: auto;
+    bottom: -$height;
+    content: "";
+    display: block;
+    height: $height;
+    background: url($background-image) no-repeat 50% 50% transparent;
+    z-index: 2;
+  }
+}

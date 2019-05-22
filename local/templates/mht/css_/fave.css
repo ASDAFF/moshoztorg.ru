@@ -1,0 +1,245 @@
+/* line 4, ../sass/css_/fave.scss */
+.fave_page .search_block {
+  top: 13px;
+}
+/* line 7, ../sass/css_/fave.scss */
+.fave_page .fave {
+  position: relative;
+  width: 990px;
+  margin: 0 auto 49px auto;
+}
+/* line 12, ../sass/css_/fave.scss */
+.fave_page .fave .breadcrumbs {
+  margin: -8px 0 0 0;
+}
+/* line 15, ../sass/css_/fave.scss */
+.fave_page .fave h1 {
+  text-transform: uppercase;
+  font-family: "pfdintextpro-medium";
+  font-size: 29px;
+  margin: 19px 0 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+/* line 23, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products {
+  margin: 20px 0 82px 0;
+  font-family: "pfdintextpro-medium";
+}
+/* line 27, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  position: relative;
+  width: 135px;
+  margin: 28px 45px 0 0;
+  position: relative;
+  top: 0;
+}
+/* line 36, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  color: #e6330a;
+}
+/* line 41, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .close:after {
+  content: '\00d7';
+}
+/* line 45, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .remove {
+  color: #e10a00;
+  font-family: "plumb-bold";
+  font-size: 18px;
+  font-weight: bold;
+  line-height: 50px;
+  text-transform: uppercase;
+  position: absolute;
+  top: -18px;
+  right: 0;
+}
+/* line 56, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product.tree {
+  margin: 28px 0 0 0;
+}
+/* line 59, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_brand {
+  font-family: "pfdintextpro-medium";
+  text-transform: uppercase;
+  font-size: 15px;
+  word-break: break-word;
+}
+/* line 65, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_description {
+  border-top: 1px solid #000000;
+  font-family: "pfdintextpro-regular";
+  overflow: hidden;
+  font-size: 14px;
+  padding: 7px 0 0 0;
+  height: 28px;
+}
+/* line 73, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_assessment_block {
+  margin: 12px 0;
+  cursor: pointer;
+  width: 45px;
+  height: 7px;
+  position: absolute;
+  z-index: 3;
+  bottom: 18px;
+  background: url('/../../../img/asterix_mini.png?1428585798') left center repeat-x;
+}
+/* line 83, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_assessment_block .product_assessment {
+  height: 7px;
+  background: url('/../../../img/asterix_mini_active.png?1428585798') left center repeat-x;
+  cursor: pointer;
+}
+/* line 89, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_image {
+  margin: 0 0 3px 0;
+  position: relative;
+}
+/* line 93, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_image img {
+  max-width: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #ffffff;
+  display: block;
+}
+/* line 101, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_image img.product_image_original {
+  z-index: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 105, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_image img.product_image_hover {
+  z-index: 2;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 112, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_image:hover img.product_image_original {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 115, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_image:hover img.product_image_hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 121, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_prices_block {
+  position: relative;
+  height: 22px;
+  background: url('/../../../img/price_border.png?1428585798') center bottom repeat-x;
+}
+/* line 127, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_prices_block .product_price_block .product_price {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: baseline;
+  font-family: "plumb-bold";
+  font-size: 25px;
+  line-height: 25px;
+  margin: 1px 0 0 0;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+/* line 137, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_prices_block .product_price_block .product_price .product_price_value {
+  background: #ffffff;
+  padding: 0 6px 0 0;
+}
+/* line 141, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_prices_block .product_price_block .product_price .rub:before {
+  font-family: "pt_sans-bold";
+  vertical-align: baseline;
+  font-size: 20px;
+  line-height: 25px;
+  position: relative;
+  top: -4px;
+}
+/* line 150, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_prices_block .product_price_block .product_cart {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 32px;
+  height: 52px;
+  cursor: pointer;
+  padding: 0 0 0 2px;
+  z-index: 2;
+  background: url('/../../../img/cart.png?1428585798') right center no-repeat;
+}
+/* line 162, ../sass/css_/fave.scss */
+.fave_page .fave .fave_products .product .product_prices_block .product_price_block .product_cart:hover {
+  background: url('/../../../img/cart_hover.png?1428585798') right center no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 185, ../sass/css_/fave.scss */
+  .fave_page .fave .fave_products .product .product_assessment_block {
+    background: url('/../../../img/asterix_mini@2x.png?1428585798') left center repeat-x;
+    -moz-background-size: 9px 7px;
+    -o-background-size: 9px 7px;
+    -webkit-background-size: 9px 7px;
+    background-size: 9px 7px;
+  }
+  /* line 189, ../sass/css_/fave.scss */
+  .fave_page .fave .fave_products .product .product_assessment_block .product_assessment {
+    background: url('/../../../img/asterix_mini_active@2x.png?1428585798') left center repeat-x;
+    -moz-background-size: 9px 7px;
+    -o-background-size: 9px 7px;
+    -webkit-background-size: 9px 7px;
+    background-size: 9px 7px;
+  }
+  /* line 194, ../sass/css_/fave.scss */
+  .fave_page .fave .fave_products .product .product_prices_block {
+    background: url('/../../../img/price_border@2x.png?1428585798') center bottom repeat-x;
+    -moz-background-size: 4px 1px;
+    -o-background-size: 4px 1px;
+    -webkit-background-size: 4px 1px;
+    background-size: 4px 1px;
+  }
+  /* line 199, ../sass/css_/fave.scss */
+  .fave_page .fave .fave_products .product .product_prices_block .product_price_block .product_cart {
+    background: url('/../../../img/cart@2x.png?1428585797') right center no-repeat;
+    -moz-background-size: 32px 52px;
+    -o-background-size: 32px 52px;
+    -webkit-background-size: 32px 52px;
+    background-size: 32px 52px;
+  }
+  /* line 203, ../sass/css_/fave.scss */
+  .fave_page .fave .fave_products .product .product_prices_block .product_price_block .product_cart:hover {
+    background: url('/../../../img/cart_hover@2x.png?1428585798') right center no-repeat;
+    -moz-background-size: 32px 52px;
+    -o-background-size: 32px 52px;
+    -webkit-background-size: 32px 52px;
+    background-size: 32px 52px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 220, ../sass/css_/fave.scss */
+  .mobile_enabled .fave_page .fave {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 20px;
+  }
+}

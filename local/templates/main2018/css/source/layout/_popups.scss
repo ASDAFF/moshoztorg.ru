@@ -1,0 +1,38 @@
+//==================== popups
+.si-popup-holder {
+  cursor: pointer !important;
+  position: relative;
+  z-index: 1;
+
+  &.active {
+    z-index: 5;
+  }
+}
+
+.si-popup {
+  @include general-transition;
+  display: none;
+  opacity: 0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 640px;
+  background: #fff;
+  padding: 30px 30px;
+  z-index: 1;
+  cursor: default !important;
+
+  &.visible {
+    @include no-transform;
+    opacity: 1;
+    z-index: 4;
+  }
+}
+
+.si-close-popup {
+  @extend .icon;
+  @extend .close-popup !optional;
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}

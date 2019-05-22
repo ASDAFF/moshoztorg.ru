@@ -1,0 +1,43 @@
+.form-standart {
+    font-family: "pfdintextpro-regular";
+}
+.form-standart .field:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.form-standart:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.form-standart input, .form-standart select{
+	border: 1px solid #AAA;
+	padding: 5px 10px;
+	background-color: #FFF;
+}
+.form-standart select{
+	padding: 0 10px;
+}
+.form-standart option{
+	padding: 5px 10px;
+}
+.form-standart input[type="submit"]{
+    margin-top: 40px;
+    background-color: #80B04C;
+    color: #FFF;
+    padding: 13px 24px 10px;
+    font-family: "pfdintextpro-medium";
+    text-transform: uppercase;
+    border: 0px none;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.form-standart input[type="submit"]:hover{
+    background-color: #F25F3D;
+}
+
+.styles_page .styles .form-standart .right{
+	max-width: 500px;
+}

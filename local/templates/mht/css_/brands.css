@@ -1,0 +1,158 @@
+/* line 6, ../sass/css_/brands.scss */
+.brands_page .search_block {
+  top: 5px;
+}
+/* line 9, ../sass/css_/brands.scss */
+.brands_page .brands {
+  position: relative;
+  width: 990px;
+  margin: 0 auto;
+}
+/* line 14, ../sass/css_/brands.scss */
+.brands_page .brands .breadcrumbs {
+  margin: 0;
+}
+/* line 17, ../sass/css_/brands.scss */
+.brands_page .brands h1 {
+  text-transform: uppercase;
+  font-family: "pfdintextpro-medium";
+  font-size: 28px;
+  margin: 30px 0 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+/* line 25, ../sass/css_/brands.scss */
+.brands_page .brands .select {
+  left: 171px;
+  position: absolute;
+  top: 19px;
+  width: 231px;
+}
+/* line 31, ../sass/css_/brands.scss */
+.brands_page .brands .select .ui-autocomplete-input {
+  width: 184px;
+  padding: 17px 22px 15px 22px;
+  text-transform: capitalize;
+}
+/* line 36, ../sass/css_/brands.scss */
+.brands_page .brands .select .select_arrow {
+  background: url('/../../../img/arrow_bottom_v2.png?1428585798') right center no-repeat;
+  width: 43px;
+  height: 43px;
+}
+/* line 41, ../sass/css_/brands.scss */
+.brands_page .brands .select .select_arrow.active {
+  background: url('/../../../img/arrow_top_v2.png?1428585797') right center no-repeat;
+}
+/* line 46, ../sass/css_/brands.scss */
+.brands_page .brands .brand_list {
+  padding: 54px 0 25px 0;
+  margin: 0 0 0 -36px;
+}
+/* line 50, ../sass/css_/brands.scss */
+.brands_page .brands .brand_list .brand_cat {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  width: 135px;
+  margin: 0 0 69px 31px;
+}
+/* line 56, ../sass/css_/brands.scss */
+.brands_page .brands .brand_list .brand_cat .title {
+  color: #e10a00;
+  font-size: 15px;
+  font-family: "pfdintextpro-medium";
+  text-transform: uppercase;
+  border-bottom: 1px solid #b3b3b3;
+  padding: 0 0 7px 0;
+  margin: 0 0 10px 0;
+}
+/* line 67, ../sass/css_/brands.scss */
+.brands_page .brands .brand_list .brand_cat .brand_names ul li {
+  margin: 3px 0;
+}
+/* line 70, ../sass/css_/brands.scss */
+.brands_page .brands .brand_list .brand_cat .brand_names ul li .categories {
+  margin-left: 20px;
+  width: 130px;
+  padding-bottom: 8px;
+  display: none;
+}
+/* line 76, ../sass/css_/brands.scss */
+.brands_page .brands .brand_list .brand_cat .brand_names ul li .categories a {
+  font-size: 12px;
+}
+/* line 80, ../sass/css_/brands.scss */
+.brands_page .brands .brand_list .brand_cat .brand_names ul li a {
+  font-size: 15px;
+  line-height: 15px;
+  position: relative;
+  color: #000000;
+  font-family: "pfdintextpro-regular";
+  text-transform: uppercase;
+}
+/* line 88, ../sass/css_/brands.scss */
+.brands_page .brands .brand_list .brand_cat .brand_names ul li a:after {
+  background: url('/../../../img/catalog_menu_bottom.png?1428585798') left bottom no-repeat;
+  height: 1px;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+/* line 98, ../sass/css_/brands.scss */
+.brands_page .brands .brand_list .brand_cat .brand_names ul li a:hover {
+  color: #e10a00;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 121, ../sass/css_/brands.scss */
+  .brands_page .brands .select .select_arrow {
+    background: url('/../../../img/arrow_bottom_v2@2x.png?1428585798') right center no-repeat;
+    -moz-background-size: 42px 42px;
+    -o-background-size: 42px 42px;
+    -webkit-background-size: 42px 42px;
+    background-size: 42px 42px;
+  }
+  /* line 125, ../sass/css_/brands.scss */
+  .brands_page .brands .select .select_arrow.active {
+    background: url('/../../../img/arrow_top_v2@2x.png?1428585798') right center no-repeat;
+    -moz-background-size: 42px 42px;
+    -o-background-size: 42px 42px;
+    -webkit-background-size: 42px 42px;
+    background-size: 42px 42px;
+  }
+  /* line 137, ../sass/css_/brands.scss */
+  .brands_page .brands .brand_list .brand_cat .brand_names ul li a:after {
+    background: url('/../../../img/catalog_menu_bottom@2x.png?1428585797') left bottom no-repeat;
+    -moz-background-size: 320px 1px;
+    -o-background-size: 320px 1px;
+    -webkit-background-size: 320px 1px;
+    background-size: 320px 1px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 155, ../sass/css_/brands.scss */
+  .mobile_enabled .brands_page .brands {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  /* line 160, ../sass/css_/brands.scss */
+  .mobile_enabled .brands_page .brands .select {
+    display: block;
+    position: relative;
+    top: 0;
+    left: 0;
+    margin-top: 20px;
+  }
+}

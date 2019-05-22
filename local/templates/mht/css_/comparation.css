@@ -1,0 +1,309 @@
+/* line 4, ../sass/css_/comparation.scss */
+.comparation_page .search_block {
+  top: 5px;
+}
+/* line 7, ../sass/css_/comparation.scss */
+.comparation_page .comparation {
+  position: relative;
+  width: 990px;
+  margin: 0 auto;
+}
+/* line 12, ../sass/css_/comparation.scss */
+.comparation_page .comparation .breadcrumbs {
+  margin: 0;
+}
+/* line 15, ../sass/css_/comparation.scss */
+.comparation_page .comparation h1 {
+  text-transform: uppercase;
+  font-family: "pfdintextpro-medium";
+  font-size: 28px;
+  margin: 12px 0 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+/* line 23, ../sass/css_/comparation.scss */
+.comparation_page .comparation .categories {
+  margin: 26px 0 0 2px;
+}
+/* line 26, ../sass/css_/comparation.scss */
+.comparation_page .comparation .categories li {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  color: #000000;
+  font-size: 15px;
+  font-family: "pfdintextpro-regular";
+  text-transform: uppercase;
+  padding: 12px 14px 7px 14px;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+}
+/* line 37, ../sass/css_/comparation.scss */
+.comparation_page .comparation .categories li a {
+  color: #000000;
+  position: relative;
+}
+/* line 41, ../sass/css_/comparation.scss */
+.comparation_page .comparation .categories li a:after {
+  background: url('/../../../img/catalog_menu_bottom.png?1428585798') left bottom no-repeat;
+  height: 1px;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+/* line 54, ../sass/css_/comparation.scss */
+.comparation_page .comparation .categories li:hover a:after {
+  width: 100%;
+}
+/* line 59, ../sass/css_/comparation.scss */
+.comparation_page .comparation .categories li.active {
+  background: #e81600;
+  color: #ffffff;
+}
+/* line 63, ../sass/css_/comparation.scss */
+.comparation_page .comparation .categories li.active a {
+  color: #ffffff;
+}
+/* line 66, ../sass/css_/comparation.scss */
+.comparation_page .comparation .categories li.active a:after {
+  display: none;
+}
+/* line 73, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list {
+  margin: 10px 0 60px 0;
+  overflow: auto;
+}
+/* line 77, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar {
+  display: none;
+}
+/* line 80, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar.active {
+  display: block;
+}
+/* line 83, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row {
+  background: #ffffff;
+  white-space: nowrap;
+}
+/* line 87, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row * {
+  white-space: normal;
+}
+/* line 92, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row + .row:hover {
+  background: #f6f6f6;
+}
+/* line 96, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  color: #000000;
+  font-size: 15px;
+  font-family: "pfdintextpro-regular";
+  width: 170px;
+  padding: 13px 10px;
+}
+/* line 105, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col + .col {
+  width: 150px;
+}
+/* line 108, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  position: relative;
+  width: 135px;
+  margin: 28px 45px 7px 0;
+}
+/* line 115, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product.tree {
+  margin: 28px 0 0 0;
+}
+/* line 118, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product .product_name {
+  font-family: "pfdintextpro-medium";
+  text-transform: uppercase;
+  font-size: 15px;
+  height: auto;
+  position: relative;
+}
+/* line 125, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product .product_name .remove {
+  color: #ec4b16;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+/* line 132, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product .product_image {
+  width: 135px;
+  height: 105px;
+  margin: 0 0 32px 0;
+  position: relative;
+}
+/* line 138, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product .product_image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #ffffff;
+  display: block;
+  max-width: 100%;
+}
+/* line 146, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product .product_image img.product_image_original {
+  z-index: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 150, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product .product_image img.product_image_hover {
+  z-index: 2;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 157, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product .product_image:hover img.product_image_original {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 160, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product .product_image:hover img.product_image_hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 166, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product .product_prices_block {
+  position: relative;
+  height: 22px;
+  background: url('/../../../img/price_border.png?1428585798') center bottom repeat-x;
+}
+/* line 172, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product .product_prices_block .product_price_block .product_price {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: baseline;
+  font-family: "plumb-bold";
+  font-size: 25px;
+  line-height: 25px;
+  margin: 1px 0 0 0;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+/* line 182, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product .product_prices_block .product_price_block .product_price .product_price_value {
+  background: #ffffff;
+  padding: 0 6px 0 0;
+}
+/* line 186, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product .product_prices_block .product_price_block .product_price .rub:before {
+  font-family: "pt_sans-bold";
+  vertical-align: baseline;
+  font-size: 20px;
+  line-height: 25px;
+  position: relative;
+  top: -4px;
+}
+/* line 195, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product .product_prices_block .product_price_block .product_cart {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 32px;
+  height: 52px;
+  cursor: pointer;
+  padding: 0 0 0 2px;
+  z-index: 2;
+  background: url('/../../../img/cart.png?1428585798') right center no-repeat;
+}
+/* line 207, ../sass/css_/comparation.scss */
+.comparation_page .comparation .comparation_list .compar .row .col .product .product_prices_block .product_price_block .product_cart:hover {
+  background: url('/../../../img/cart_hover.png?1428585798') right center no-repeat;
+}
+
+/* line 222, ../sass/css_/comparation.scss */
+.styles_page .styles .no-compare-items-notice {
+  margin: 50px auto;
+  padding: 20px;
+  background: #eee;
+  text-align: center;
+}
+/* line 228, ../sass/css_/comparation.scss */
+.styles_page .styles .no-compare-items-notice p {
+  max-width: none;
+  margin-bottom: 0;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 239, ../sass/css_/comparation.scss */
+  .mobile_enabled .comparation_page {
+    width: 100%;
+    padding: 20px;
+    box-sizing: border-box;
+  }
+  /* line 243, ../sass/css_/comparation.scss */
+  .mobile_enabled .comparation_page .comparation {
+    width: 100%;
+  }
+  /* line 245, ../sass/css_/comparation.scss */
+  .mobile_enabled .comparation_page .comparation .categories li {
+    font-size: 13px;
+  }
+}
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 265, ../sass/css_/comparation.scss */
+  .comparation_page .comparation .categories li a:after {
+    background: url('/../../../img/catalog_menu_bottom@2x.png?1428585797') left bottom no-repeat;
+    -moz-background-size: 320px 1px;
+    -o-background-size: 320px 1px;
+    -webkit-background-size: 320px 1px;
+    background-size: 320px 1px;
+  }
+  /* line 277, ../sass/css_/comparation.scss */
+  .comparation_page .comparation .comparation_list .compar .row .col .product .product_prices_block {
+    background: url('/../../../img/price_border@2x.png?1428585798') center bottom repeat-x;
+    -moz-background-size: 4px 1px;
+    -o-background-size: 4px 1px;
+    -webkit-background-size: 4px 1px;
+    background-size: 4px 1px;
+  }
+  /* line 282, ../sass/css_/comparation.scss */
+  .comparation_page .comparation .comparation_list .compar .row .col .product .product_prices_block .product_price_block .product_cart {
+    background: url('/../../../img/cart@2x.png?1428585797') right center no-repeat;
+    -moz-background-size: 32px 52px;
+    -o-background-size: 32px 52px;
+    -webkit-background-size: 32px 52px;
+    background-size: 32px 52px;
+  }
+  /* line 286, ../sass/css_/comparation.scss */
+  .comparation_page .comparation .comparation_list .compar .row .col .product .product_prices_block .product_price_block .product_cart:hover {
+    background: url('/../../../img/cart_hover@2x.png?1428585798') right center no-repeat;
+    -moz-background-size: 32px 52px;
+    -o-background-size: 32px 52px;
+    -webkit-background-size: 32px 52px;
+    background-size: 32px 52px;
+  }
+}

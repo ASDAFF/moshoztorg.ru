@@ -1,0 +1,19 @@
+p.catalogitemprice {
+    font-size: 16px;
+    font-weight: 700;
+    color: #000000;
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 4px;
+    position: relative;
+}
+
+p.catalogitemprice::after {
+    font-family: Flaticon;
+    content: "\f10b";
+    font-size: 8px;
+    color: #000000;
+    font-weight: bold;
+    top: 0;
+    position: absolute;
+}

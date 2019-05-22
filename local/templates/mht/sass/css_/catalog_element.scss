@@ -1,0 +1,1115 @@
+@import "compass/css3"; 
+
+.catalog-element_page{
+	.pluso{
+		display: block;
+		text-align: right;
+		margin: 5px 0;
+	}
+	.fav-no .fav-yes,
+	.fav-yes .fav-no,
+	.compare-no .compare-yes,
+	.compare-yes .compare-no{
+		display: none !important;
+	}
+	.catalog-element{
+		position:relative;
+		width:990px;
+		margin:0 auto;	
+		
+		.category-link{
+			text-transform: uppercase;
+			color: #b6b6b6;
+			font-family:"pfdintextpro-medium";
+			font-size: 20px;
+		}	
+		.h1_block{
+			margin-top: 20px;
+			h1{
+				text-transform:uppercase;
+				font-family:"pfdintextpro-medium";
+				font-size:39px;	
+				margin:11px 0 0 0;
+				@include inline-block;
+				vertical-align:top;	
+				width: 100%;
+
+				span{
+					vertical-align: middle;
+				}
+				.rating{
+					display: inline-block;
+					vertical-align: middle;
+					height: 20px;
+					margin-top: -8px;
+
+					.product_assessment_block{
+						@include inline-block;
+						vertical-align:top;	
+						margin:0 0 0 20px;					
+						height:14px;
+						width:85px;
+						background: image-url("asterix.png") left center repeat-x;
+						cursor:pointer;
+						overflow:hidden;
+			
+						.product_assessment{
+							height:14px;
+							background: image-url("asterix_active.png") left center repeat-x;
+							cursor:pointer;	
+						}
+					}	
+					.product_share_count{
+						@include inline-block;
+						vertical-align:top;	
+						background: image-url("man.png") left center no-repeat;	
+						font-family: "plumb-medium";
+						font-size: 12px;
+						line-height: 12px;
+						margin: 0 0 0 11px;
+						padding: 0 0 0 18px;
+						color:#000000;
+						cursor:pointer;
+					}
+				}
+			}
+			
+		}
+		.about{
+			.product{
+				@include inline-block;
+				vertical-align:top;	
+				position:relative;
+				width:465px;
+				
+				.made_in{
+					position:absolute;
+					left:0;
+					top:33px;
+					z-index:3;	
+				}
+				.product_image{
+					@include inline-block;
+					vertical-align:top;	
+					width:465px;
+					height:330px;
+					position:relative;
+					margin:33px 0 0 0;
+        			top: 0;
+
+        			.zoomy{
+            			display: none;
+						position: absolute;
+						top: 0;
+						left: 100%;
+						width:500px;
+						height:100%;
+						background: #fff;
+						z-index: 20;
+						overflow: hidden;
+
+						img{
+	            			cursor: pointer;
+						}
+						.img{
+							position: absolute;
+							top: 0;
+							left: 0;
+	            		}
+					}
+					
+					img{
+						position:absolute;
+						left:0;
+						top:0;
+						background:#ffffff;
+						display:block;
+						cursor: pointer !important;
+
+						&.product_image_original{
+							z-index:1;	
+							@include opacity(1);
+						}
+						&.product_image_hover{
+							display: none;
+							z-index:2;	
+							@include opacity(0); 
+						}
+					}
+					/*
+					&:hover{
+						img{
+							&.product_image_original{
+								@include opacity(0);
+							}
+							&.product_image_hover{	
+								@include opacity(1); 
+							}	
+						}	
+					}
+					*/
+				}
+				.product_images{
+					div{
+						@include inline-block;
+						vertical-align:top;		
+						width:155px;
+						height:155px;
+						cursor:pointer;
+						position:relative;
+						overflow: hidden;
+						
+						img{
+							cursor:pointer;	
+							height: 100%;
+							width: auto;
+						}
+						&.video{
+							&:after{
+								content:"";
+								position:absolute;
+								width:32px;
+								height:32px;
+								left:50%;
+								top:50%;
+								margin:-16px 0 0 -16px;
+								background:image-url("play.png") center center no-repeat;
+								background-size:32px 32px;	
+								opacity:0.5;
+							}
+							&:hover{
+								&:after{
+									opacity:1;	
+								}	
+							}
+						}
+					}	
+				}	
+				.product_tabs{
+					margin:50px 0 0 0;
+					
+					.product_tabs_link{
+						border-bottom:1px solid #bfbfbf;
+						height:24px;
+						
+						li{
+							@include inline-block;
+							vertical-align:top;	
+							margin:0 38px 0 0;
+							
+							span{
+								font-family:"plumb-medium";
+								font-size:18px;
+								color:#a3a3a3;
+								text-transform:uppercase;	
+								letter-spacing:-1px;		
+							}
+							a{
+								font-family:"plumb-medium";
+								font-size:18px;
+								color:#e6330a;
+								text-transform:uppercase;	
+								position:relative;
+								letter-spacing:-1px;
+								
+								&:after{
+									background: image-url("short_link_bottom.png") center bottom no-repeat;
+									height:2px;
+									width:0;
+									content:"";
+									display:block;
+									position:absolute;
+									bottom:-6px;
+									left:50%;
+								}
+							}
+							&:hover{
+								a{
+									&:after{
+										width:100%;
+										left:0;
+									}
+								}
+							}
+							&.active{
+								span{
+									font-family: "pfdindisplaypro-medium";
+									font-size:20px;
+									cursor:default;
+									color:#000000;
+									letter-spacing:0;	
+								}
+								a{
+									font-family: "pfdindisplaypro-medium";
+									font-size:20px;
+									cursor:default;
+									color:#000000;
+									letter-spacing:0;
+									
+									&:after{
+										width:0;	
+									}	
+								}
+							}	
+						}	
+					}
+					.product_tabs_block{
+						margin:13px 0 0 0;
+						
+						.product_tab{
+							width:100%;
+							
+							.dealers_block{
+								@include inline-block;
+								vertical-align:top;	
+								width:100%;
+								
+								.dealer{
+									@include inline-block;
+									vertical-align:top;		
+									background: image-url("dealers_point.png") 0 0 no-repeat;
+									width:130px;
+									margin-bottom:18px;
+									color:#000000;
+									margin-left:35px;
+									
+									a{
+										color:#000000;	
+									}
+									&.four{
+										margin-left:0;	
+									}
+									.dealer_street{
+										font-family: "pfdindisplaypro-medium";
+										font-size:12px;	
+										text-transform:uppercase;
+										margin:30px 0 0 0;	
+									}
+									.dealer_build{
+										font-family: "pfdintextpro-regular";
+										font-size:13px;		
+										
+										.dealer_build_number{
+											font-family:"plumb-blacksoft";
+											font-size:25px;	
+										}
+									}
+									.dealer_time_title{
+										font-family: "pfdindisplaypro-medium";
+										font-size:10px;	
+										text-transform:uppercase;
+										color:rgba(0,0,0,0.8);
+										margin:8px 0 0 0;	
+									}
+									.dealer_time{
+										font-family: "plumb-bold";
+										font-size: 20px;
+										letter-spacing: -1px;
+										margin: 1px 0 0 0;
+									}
+									.dealer_count{
+										border-top:1px solid #bfbfbf;	
+										font-family: "pfdindisplaypro-medium";
+										font-size:10px;	
+										color:#a3a3a3;
+										text-transform:uppercase;
+										margin:11px 0 0 0;
+										padding:9px 0 0 0;
+										width:105px;
+										
+										span{
+											font-family:"plumb-blacksoft";
+											font-size:14px;
+											color:#000000;	
+										}
+									}
+									.dealer_map{
+										margin: 3px 0 0 0;
+										
+										span{
+											font-family:"pfdintextpro-bold";
+											font-size:10px;	
+											text-transform:uppercase;
+											color:#e6330a;
+											background: image-url("next_arrow.png") right center no-repeat;
+											padding:0 11px 0 0;
+											position:relative;
+											left:100%;
+											@include opacity(0);
+										}
+									}
+									&:hover{
+										background: image-url("dealers_point_hover.png") 0 0 no-repeat;	
+										
+										.dealer_map{
+											span{
+												left:0;
+												@include opacity(1);
+											}
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+			}
+			.description{
+				@include inline-block;
+				vertical-align:top;	
+				margin:0 0 0 27px;
+				width:498px;
+				
+				.product_price{
+					@include inline-block;
+					vertical-align:baseline;	
+					font-family:"plumb-bold";
+					font-size:48px;
+					line-height:50px;
+					margin:28px 0 0 0;
+					letter-spacing:-1px;
+					white-space:nowrap;
+					
+					.product_price_value{
+						background:#ffffff;
+						padding:0 6px 0 0;
+					}
+					.rub:before{
+						font-family: "pt_sans-bold";
+						font-size: 38px;
+						line-height:50px;
+						vertical-align: baseline;
+						position:relative;
+						top:-7px;
+					}	
+				}	
+				.not-in-stock{
+					display: block;
+					margin: 27px 0 30px 0;
+					text-transform: uppercase;
+
+					font-size: 22px;
+					font-family: "plumb-bold";
+					color: #b6b6b6;
+					letter-spacing: -1px;
+				}
+				.short_link{
+					text-transform:uppercase;
+					margin:9px 0 0 0;	
+					
+					li{
+						@include inline-block;
+						vertical-align:top;	
+						font-family:"plumb-medium";	
+						font-size:12px;
+						height:12px;
+						color:#b6b6b6;
+						margin:0 14px 0 0;
+						
+						&+li{
+							border-left:1px solid #7f7f7f;
+							padding:0 0 0 14px;
+						}
+						span{
+							color:#000000;
+						}
+						a{
+							font-family:"pfdintextpro-medium";	
+							position:relative;
+							color:#e6330a;
+							font-size:12px;
+							
+							&:after{
+								background: image-url("short_link_bottom.png") left bottom no-repeat;
+								height:1px;
+								width:0;
+								content:"";
+								display:block;
+								position:absolute;
+								bottom:-1px;
+								left:0;
+							}
+							&:hover{
+								&:after{
+									width:100%;	
+								}	
+							}
+						}
+					}
+				}
+				.amount{
+					font-family:"pfdintextpro-medium";	
+					margin: 20px 0 20px 0; 
+					.unit{
+						margin-left: 5px;
+						font-size: 13px;
+					}
+				}
+				.buttons{
+					margin:25px 0 0 0;
+
+					&.only-mobile{
+						a.product_catalog-element {
+							padding: 20px 0;
+							margin: 0;
+						}
+					}
+					
+					a{
+						@include inline-block;
+						vertical-align:top;	
+						font-family:"pfdintextpro-medium";	
+						font-size:15px;
+						text-transform:uppercase;
+						width:140px;
+						text-align:center;
+						padding:16px 13px 14px 11px;
+						margin:0 10px 0 3px;
+						color:#7aab4b;
+	
+						&.product_catalog-element{
+							color:#ffffff;
+							background:#7aab4b;
+
+
+						}							
+						&:hover,
+						&.product_catalog-element:hover{
+							color:#ffffff;
+							background-color: #8989e4;
+						}
+						&.notify{
+							width: 230px;
+							background-color: #ABABAB;
+							&:hover{
+								background-color: #bbb;
+							}
+						}
+					}	
+
+					.one-click{
+						width: 190px;	
+					}
+				}
+				.description_text{
+					margin:31px 0 0 3px;
+					
+					p{
+						font-family:"pfdintextpro-regular";	
+						font-size:13px;
+						line-height:16px;
+						color:#000000;
+						margin:0 0 19px 0;
+					}	
+				}
+				.features{
+					margin:30px 0 0 3px;
+					
+					table{
+						width: 100%;
+						white-space: normal;
+						tr{
+							td{
+								font-family:"pfdintextpro-regular";	
+								color:#b6b6b6;
+								font-size:13px;
+								background: image-url("price_border.png") center 14px repeat-x;
+								padding:6px 0 5px 0;	
+								width:192px;
+
+								&:first-child{
+									white-space:nowrap;
+								}
+								
+								span{
+									background:#ffffff;	
+									padding:0 2px 0 0;
+								}
+								&+td{
+									padding:6px 0 5px 2px;	
+									background:none;
+									color:#000000;
+									font-family:"pfdintextpro-bold";	
+								}	
+							}	
+						}	
+					}
+					.all_features{
+						@include inline-block;
+						vertical-align:top;	
+						font-family:"pfdintextpro-medium";	
+						position:relative;
+						color:#e6330a;
+						font-size:12px;
+						text-transform:uppercase;	
+						margin:24px 0 0 0;
+						
+						&:after{
+							background: image-url("short_link_bottom.png") left bottom no-repeat;
+							height:1px;
+							width:0;
+							content:"";
+							display:block;
+							position:absolute;
+							bottom:-1px;
+							left:0;
+						}
+						&:hover{
+							&:after{
+								width:100%;	
+							}	
+						}
+					}	
+				}
+				.subtitle{
+					font-family:"pfdintextpro-medium";
+					text-transform:uppercase;
+					font-size:20px;
+					color:#000000;
+					border-bottom:1px solid #bfbfbf;
+					height:24px;
+					margin:47px 0 0 2px;
+					
+					span{
+						float:right;
+						color:#e6330a;	
+					}
+				}
+				.related_products{
+					margin:0 0 0 2px;
+					
+					.product{
+						@include inline-block;
+						vertical-align:top;	
+						position:relative;
+						width:135px;
+						margin:28px 45px 0 0;
+						
+						&.tree{
+							margin:28px 0 0 0;	
+						}
+						.product_brand{
+							font-family:"pfdintextpro-medium";
+							text-transform:uppercase;	
+							font-size:15px;	
+							height:20px;
+						}
+						.product_description{
+							border-top: 1px solid #000000;
+							font-family: "pfdintextpro-regular";
+							overflow:hidden;
+							font-size:14px;	
+							padding:7px 0 0 0;
+							height:28px;
+						}
+						.product_assessment_block{
+							margin:12px 0;					
+							cursor:pointer;
+							width:45px;
+							height:7px;
+							position:absolute;
+							z-index:3;	
+							bottom:18px;
+							background: image-url("asterix_mini.png") left center repeat-x;
+		
+							.product_assessment{
+								height:7px;
+								background: image-url("asterix_mini_active.png") left center repeat-x;
+								cursor:pointer;	
+							}
+						}
+						.product_image{
+							width:135px;
+							height:105px;
+							margin:0 0 3px 0;
+							position:relative;
+							
+							img{
+								position:absolute;
+								left:0;
+								top:0;
+								background:#ffffff;
+								display:block;
+								width:135px;	
+								height:105px;
+								
+								&.product_image_original{
+									z-index:1;	
+									@include opacity(1);
+								}
+								&.product_image_hover{
+									z-index:2;	
+									@include opacity(0); 
+								}
+							}
+							&:hover{
+								img{
+									&.product_image_original{
+										@include opacity(0);
+									}
+									&.product_image_hover{	
+										@include opacity(1); 
+									}	
+								}	
+							}
+						}
+						.product_prices_block{
+							position:relative;
+							height:22px;
+							background: image-url("price_border.png") center bottom repeat-x;	
+							
+							.product_price_block{
+								.product_price{
+									@include inline-block;
+									vertical-align:baseline;	
+									font-family:"plumb-bold";
+									font-size:25px;
+									line-height:25px;
+									margin:1px 0 0 0;
+									letter-spacing:-1px;
+									white-space:nowrap;
+									
+									.product_price_value{
+										background:#ffffff;
+										padding:0 6px 0 0;
+									}
+									.rub:before{
+										font-family: "pt_sans-bold";
+										vertical-align: baseline;
+										font-size:20px;
+										line-height:25px;
+										position:relative;
+										top:-4px;
+									}	
+								}
+								.product_cart{
+									display:block;
+									position:absolute;
+									right:0;
+									bottom:0;
+									width:32px;
+									height:52px;
+									cursor:pointer;
+									padding:0 0 0 2px;
+									z-index:2;
+									background: image-url("cart.png") right center no-repeat;	
+									
+									&:hover{
+										background: image-url("cart_hover.png") right center no-repeat;		
+									}	
+								}
+							}
+						}
+					}
+				}
+			}	
+		}
+		.similar_products{
+			margin:35px 0 0 0;
+			
+			h2{
+				font-family:"pfdintextpro-medium";
+				text-transform:uppercase;
+				font-size:20px;
+				color:#000000;	
+			}
+			.products_block{
+				.product{
+					@include inline-block;
+					vertical-align:top;	
+					width:272px;
+					margin:23px 87px 56px 0;
+					position:relative;
+					
+					&.tree{
+						margin:23px 0 56px 0;	
+					}
+					.product_new{
+						float:right;
+						text-transform:uppercase;
+						color:#f9a411;
+						font-size:12px;
+						font-family:"pfdintextpro-bold";
+						border:2px solid #f9a411;
+						margin:0 2px 0 0;
+						padding:1px 2px 0 1px;
+					}
+					.product_brand{
+						font-family:"pfdintextpro-medium";
+						font-size:30px;
+						text-transform:uppercase;	
+					}
+					.product_name{
+						font-family:"pfdintextpro-medium";
+						font-size:16px;
+						text-transform:uppercase;	
+						height:auto;	
+					}
+					.product_description{
+						border-top: 1px solid #000000;
+						font-family: "pfdintextpro-regular";
+						font-size: 16px;
+						padding: 16px 0 0 0;
+						height:32px;
+						overflow:hidden;
+					}
+					.product_assessment_block{
+						margin:12px 0;					
+						height:14px;
+						width:85px;
+						background: image-url("asterix.png") left center repeat-x;
+						cursor:pointer;
+	
+						.product_assessment{
+							height:14px;
+							background: image-url("asterix_active.png") left center repeat-x;
+							cursor:pointer;	
+						}
+					}
+					.product_image{
+						width:270px;
+						height:210px;
+						position:relative;
+						margin:14px 0 18px 0;
+						text-align: center;
+						
+						img{
+							position:absolute;
+							left:0;
+							top:0;
+							background:#ffffff;
+							display:block;
+							
+							&.product_image_original{
+								z-index:1;	
+								@include opacity(1);
+							}
+							&.product_image_hover{
+								z-index:2;	
+								@include opacity(0); 
+							}
+						}
+						&:hover{
+							img{
+								&.product_image_original{
+									@include opacity(0);
+								}
+								&.product_image_hover{	
+									@include opacity(1); 
+								}	
+							}	
+						}
+					}
+					.product_prices_block{
+						position:relative;
+						height:54px;
+						background: image-url("price_border.png") center bottom repeat-x;	
+						z-index: 10;
+						
+						.product_old_price{
+							font-family:"plumb-regular";
+							font-size:20px;
+							height:20px;
+							width:100%;
+							color:#e6330a;	
+							margin:12px 0 0 0;
+							
+							.rub:before{
+								font-family: "pt_sans-bold";
+								font-size: 14px;
+								line-height: 16px;
+								vertical-align: baseline;	
+								position:relative;
+								top:-4px;
+							}
+						}	
+						.product_price_block{
+							.product_price{
+								@include inline-block;
+								vertical-align:baseline;	
+								font-family:"plumb-bold";
+								font-size:40px;
+								line-height:40px;
+								margin:14px 0 0 0;
+								letter-spacing:-1px;
+								white-space:nowrap;
+								
+								.product_price_value{
+									background:#ffffff;
+									padding:0 6px 0 0;
+								}
+								.rub:before{
+									font-family: "pt_sans-bold";
+									font-size: 30px;
+									line-height:40px;
+									vertical-align: baseline;
+									position:relative;
+									top:-7px;
+								}	
+							}
+							.product_cart{
+								display:block;
+								position:absolute;
+								right:0;
+								bottom:0;
+								width:32px;
+								height:52px;
+								cursor:pointer;
+								padding:0 0 0 2px;
+								z-index:2;
+								background: image-url("cart.png") right center no-repeat;	
+								
+								&:hover{
+									background: image-url("cart_hover.png") right center no-repeat;		
+								}	
+							}
+						}
+					}
+				}
+			}	
+		}
+	}
+}
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) { 
+	.catalog-element_page{
+		.catalog-element{	
+			.h1_block{
+				.product_assessment_block{
+					background: image-url("asterix@2x.png") left center repeat-x;
+					@include background-size(17px 14px);
+		
+					.product_assessment{
+						background: image-url("asterix_active@2x.png") left center repeat-x;
+						@include background-size(17px 14px);
+					}
+				}	
+				.product_share_count{
+					background: image-url("man@2x.png") left center no-repeat;
+					@include background-size(12px 12px);	
+				}
+			}
+			.about{
+				.product{
+					.product_images{
+						div{
+							&.video{
+								&:after{
+									background:image-url("play@2x.png") center center no-repeat;
+									background-size:32px 32px;	
+								}
+							}
+						}	
+					}
+					.product_tabs{
+						.product_tabs_link{
+							li{
+								a{
+									&:after{
+										background: image-url("short_link_bottom@2x.png") center bottom no-repeat;
+										@include background-size(320px 1px);
+									}
+								}	
+							}	
+						}
+						.product_tabs_block{
+							.product_tab{
+								.dealers_block{
+									.dealer{	
+										background: image-url("dealers_point@2x.png") 0 0 no-repeat;
+										@include background-size(15px 18px);
+		
+										.dealer_map{
+											span{
+												background: image-url("next_arrow@2x.png") right center no-repeat;
+												@include background-size(5px 8px);
+											}
+										}
+										&:hover{
+											background: image-url("dealers_point_hover@2x.png") 0 0 no-repeat;	
+											@include background-size(15px 18px);
+										}
+									}
+								}
+							}
+						}
+					}
+				}
+				.description{
+					.short_link{
+						li{
+							a{
+								&:after{
+									background: image-url("short_link_bottom@2x.png") left bottom no-repeat;
+									@include background-size(320px 1px);
+								}
+							}
+						}
+					}
+					.features{
+						table{
+							tr{
+								td{
+									background: image-url("price_border@2x.png") center 14px repeat-x;	
+									@include background-size(4px 1px);
+								}	
+							}	
+						}
+						.all_features{
+							&:after{
+								background: image-url("short_link_bottom@2x.png") left bottom no-repeat;
+								@include background-size(320px 1px);
+							}
+						}	
+					}
+					.related_products{
+						.product{
+							.product_assessment_block{
+								background: image-url("asterix_mini@2x.png") left center repeat-x;
+								@include background-size(9px 7px);
+			
+								.product_assessment{
+									background: image-url("asterix_mini_active@2x.png") left center repeat-x;
+									@include background-size(9px 7px);
+								}
+							}
+							.product_prices_block{
+								background: image-url("price_border@2x.png") center bottom repeat-x;
+								@include background-size(4px 1px);	
+								
+								.product_price_block{
+									.product_cart{
+										background: image-url("cart@2x.png") right center no-repeat;
+										@include background-size(32px 52px);	
+										
+										&:hover{
+											background: image-url("cart_hover@2x.png") right center no-repeat;	
+											@include background-size(32px 52px);	
+										}	
+									}
+								}
+							}
+						}
+					}
+				}	
+			}
+			.similar_products{
+				.products_block{
+					.product{
+						.product_assessment_block{
+							background: image-url("asterix@2x.png") left center repeat-x;
+							@include background-size(17px 14px);
+		
+							.product_assessment{
+								background: image-url("asterix_active@2x.png") left center repeat-x;
+								@include background-size(17px 14px);
+							}
+						}
+						.product_prices_block{
+							background: image-url("price_border@2x.png") center bottom repeat-x;	
+							@include background-size(4px 1px);
+		
+							.product_price_block{
+								.product_cart{
+									background: image-url("cart@2x.png") right center no-repeat;
+									@include background-size(32px 52px);	
+									
+									&:hover{
+										background: image-url("cart_hover@2x.png") right center no-repeat;
+										@include background-size(32px 52px);		
+									}	
+								}
+							}
+						}
+					}
+				}	
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 640px){
+	.mobile_enabled{
+	
+		.catalog-element_page{
+			.pluso{
+				text-align: left !important;
+				margin-top: 20px !important;
+			}
+			width: 100%;
+			box-sizing: border-box;
+			padding: 20px;
+			.catalog_page .catalog_block .catalog_menu{
+				left: -40px;
+				right: -40px;
+			}
+			.catalog-element{
+				width: 100%;
+				.h1_block{
+					h1{
+						word-wrap: break-word;
+						width: 100%;
+						font-size: 28px;
+					}
+					.product_assessment_block,
+					.product_share_count{
+						display: none;
+					}
+				}
+
+				.similar_products{
+					.products_block{
+						.product{
+							margin: 30px auto 35px auto;
+							text-align: left;
+						}
+						text-align: center;
+					}
+				}
+				.about {
+					.description{
+						width: 100%;
+						position: relative;
+						margin-left: 0;
+
+						.buttons{
+							float: right;
+							margin-bottom: 21px;
+							a.product_catalog-element{
+								padding: 17px 0;
+								margin: 7px 0 0 0;
+							}
+						}
+						.product_price{
+							.product_price_value{
+								font-size: 30px;
+							}
+							.rub:before{
+								font-size: 28px;
+							}
+						}
+					}
+					.product{
+						width: 100%;
+						.product_image{
+							width: 100%;
+							height: auto;
+						}
+					}
+					.amount{
+						position: absolute;
+						top: -32px;
+						right: 30px;
+						z-index: 10;
+					}
+				}
+			}
+
+		}
+	}
+}

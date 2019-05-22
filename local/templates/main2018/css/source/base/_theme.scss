@@ -1,0 +1,58 @@
+//====================theme colors, transition & grad mixins
+@mixin general-transition {
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+
+@mixin no-transition {
+  will-change: none;
+  transform: none;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+}
+
+@mixin no-transform {
+  will-change: none !important;
+  -webkit-transform: none !important;
+  -moz-transform: none !important;
+  -ms-transform: none !important;
+  -o-transform: none !important;
+  transform: none !important;
+}
+
+@mixin no-animation {
+  will-change: none !important;
+  transform: none !important;
+  -webkit-animation: none !important;
+  -moz-animation: none !important;
+  -ms-animation: none !important;
+  animation: none !important;
+}
+
+$font-color: #000;
+$primary-color: #f95319;
+$accent-color: #F9940C;
+$offtop-color: rgba(#000, .5);
+$link-color: #00a1dd;
+$error-color: #cb0707;
+$menu-color: #292929;
+
+@mixin btn-grad {
+  background: #f0962b;
+  background: -moz-linear-gradient(top, #f0962b 0%, $primary-color 100%);
+  background: -webkit-linear-gradient(top, #f0962b 0%, $primary-color 100%);
+  background: linear-gradient(to bottom, #f0962b 0%, $primary-color 100%);
+}
+
+@mixin btn-grad-hov {
+  background: #c8380a;
+  background: -moz-linear-gradient(top, #c8380a 0%, $primary-color 100%);
+  background: -webkit-linear-gradient(top, #c8380a 0%,$primary-color 100%);
+  background: linear-gradient(to bottom, #c8380a 0%,$primary-color 100%);
+}

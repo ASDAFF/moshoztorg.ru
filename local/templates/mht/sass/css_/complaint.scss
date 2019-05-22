@@ -1,0 +1,181 @@
+@import "compass/css3";
+
+.complaint{
+	position:fixed;
+	z-index:1000;
+	left:0;
+	top:0;
+	right:0;
+	bottom:0;
+	width:100%;
+	height:100%;
+	background:#282828;	
+	display:none;
+	
+	.title{
+		color: #dbdbdb;
+		font-family: "pfdintextpro-light";
+		font-size: 20px;
+		left: 145px;
+		position: absolute;
+		top: 45px;	
+	}
+	.close{
+		position:absolute;
+		top:45px;
+		right:45px;
+		background:image-url("close.png") center center no-repeat;
+		width:14px;
+		height:15px;
+		cursor:pointer;	
+	}
+	.points{
+		position:absolute;
+		right:45px;
+		top:50%;
+		width:15px;
+		margin:-50px 0 0 0;
+		
+		ul{
+			width:15px;
+			
+			li{
+				@include inline-block;
+				vertical-align:top;
+				width:15px;
+				height:15px;
+				@include border-radius(50%);
+				background:#c5c5c5;	
+				margin:5px 0;
+				
+				&.active{
+					background:#131313;	
+				}
+			}	
+		}	
+	}
+	.button_block{
+		position:absolute;	
+		right:45px;
+		bottom:45px;
+		
+		.next{
+			background:#131313;
+			color:#dbdbdb;
+			font-size:20px;
+			line-height:20px;
+			height:20px;
+			width:100px;
+			text-align:center;
+			vertical-align:middle;
+			font-family:"pfdintextpro-medium";	
+			padding:13px 19px;
+			cursor:pointer;
+		}
+		.notis{
+			color:#dbdbdb;
+			font-size:15px;
+			font-family: "pfdintextpro-light";	
+			text-align:center;
+			margin:5px 0 0 0;
+		}
+	}
+	.steps{
+		position:absolute;
+		left:145px;
+		right:145px;
+		top:50%;
+		margin:-100px 0 0 0;
+		
+		label{
+			color:#dbdbdb;
+			font-size:30px;
+			line-height:30px;
+			font-family:"pfdintextpro-medium";
+			display:block;	
+			margin:0 0 30px 0;
+			width:100%;
+			position:relative;
+		}	
+		input{
+			color:#dbdbdb;
+			font-size:40px;
+			line-height:45px;
+			font-family:"pfdintextpro-regular";
+			display:block;	
+			border:none;
+			outline:none;
+			background:none;
+			border-bottom:1px solid #131313;	
+			left:0;
+			right:0;
+			position:relative;
+			width: 550px;
+
+		}
+		textarea{
+			color:#dbdbdb;
+			font-size:40px;
+			line-height:45px;
+			font-family:"pfdintextpro-regular";
+			display:block;	
+			outline:none;
+			background:none;
+			border:1px solid #131313;	
+			resize:none;
+			padding:40px;
+			left:0;
+			right:120px;
+			height:200px;
+			position:relative;
+			width: 550px;
+		}
+		.step{
+			display:none;
+			position:relative;
+			
+			&.active{
+				display:block;	
+			}
+			.result{
+				color:#dbdbdb;
+				font-size:60px;
+				line-height:30px;
+				font-family:"pfdintextpro-regular";
+				display:none;
+				
+				span{
+					font-size:30px;
+					line-height:30px;	
+				}
+				&.active{
+					display:block;	
+				}
+			}
+			.notis{
+				position:absolute;
+				margin:-50px 0 0 0;
+				color:#e6330a;
+				font-size:15px;
+				line-height:15px;
+				font-family:"pfdintextpro-medium";
+				display:none;
+			}
+		}
+	}
+}
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) { 
+	.complaint{
+		.close{
+			background:image-url("close@2x.png") center center no-repeat;
+			@include background-size(14px 15px);
+		}
+	}
+}

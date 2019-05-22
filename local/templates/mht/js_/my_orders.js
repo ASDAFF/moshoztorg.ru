@@ -1,0 +1,23 @@
+$(function(){
+	$(".product_assessment_block").each(
+		function(){
+			$(this).attr("data-progress",$(this).find(".product_assessment").width());
+		}
+	);
+	$(".product_assessment_block").mousemove(
+		function(e){
+			$(this).find(".product_assessment").width(e.pageX-$(this).offset().left);
+		}
+	);
+	$(".product_assessment_block").hover(
+		function(){},
+		function(){
+			$(this).find(".product_assessment").width($(this).attr("data-progress"));
+		}
+	);
+	$(".product_assessment_block").click(
+		function(){
+			$(this).attr("data-progress",$(this).find(".product_assessment").width());	
+		}
+	);	
+});

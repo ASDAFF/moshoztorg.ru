@@ -1,0 +1,1 @@
+<? require($_SERVER["DOCUMENT_ROOT"]."/bitrix/modules/scrollup.bxd/admin/bxd_admin.php");?>

@@ -1,0 +1,377 @@
+//========================================================== animation floating
+@include keyframes(floating) {
+  from {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(-5px, 10px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+.si-floating {
+  @include animation(floating infinite ease-in-out 5s);
+}
+
+//========================================================== animation floating2
+@include keyframes(floating2) {
+  from {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(5px, 10px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+.si-floating2 {
+  @include animation(floating2 infinite ease-in-out 5s);
+}
+
+//========================================================== animation floating3
+@include keyframes(floating3) {
+  from {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(0px, 10px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+.si-floating3 {
+  @include animation(floating3 infinite ease-in-out 5s);
+}
+
+//========================================================== animation floating4
+@include keyframes(floating4) {
+  from {
+    transform: translate(0, 0px);
+  }
+  50% {
+    transform: translate(-10px, -10px);
+  }
+  to {
+    transform: translate(0, -0px);
+  }
+}
+
+.si-floating4 {
+  @include animation(floating4 infinite ease-in-out 5s);
+}
+
+//========================================================== animation scale1
+@include keyframes(scale) {
+  from {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.3);
+  }
+  to {
+    transform: scale(1);
+  }
+}
+
+.si-scale {
+  @include animation(scale infinite ease-in-out 2s);
+}
+
+//========================================================== animation scale2
+@include keyframes(scale2) {
+  from {
+    transform: scale(1) rotate(-4deg);
+  }
+  50% {
+    transform: scale(1.3) rotate(4deg) translate(-5px, -10px);
+  }
+  to {
+    transform: scale(1) rotate(-4deg);
+  }
+}
+
+.si-scale2 {
+  @include animation(scale2 infinite ease-in-out 2s);
+}
+
+//========================================================== animation pulse-button
+@include keyframes(si-button-pulse) {
+  from {
+    box-shadow: 0 0 8px 6px $accent-color, 0 0 12px 14px $accent-color;
+  }
+  to {
+    box-shadow: 0 0 18px 6px transparentize($accent-color, 1), 0 0 4px 71px transparentize($accent-color, 1);
+  }
+}
+
+.si-button-pulse {
+
+  &:hover {
+    @include animation(si-button-pulse 0.8s 0s ease-out 1);
+    box-shadow: none;
+  }
+}
+
+//========================================================== animation btn-border-expand
+@include keyframes(border-expand) {
+  from {
+    -webkit-box-shadow: 0 0 0 3px transparent;
+    box-shadow: 0 0 0 3px transparent;
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 3px $accent-color;
+    box-shadow: 0 0 0 3px $accent-color;
+  }
+}
+
+.border-expand {
+  @include animation(border-expand .3s ease-out both .15s);
+}
+
+@include keyframes(border-shrink) {
+  from {
+    -webkit-box-shadow: 0 0 0 3px $accent-color;
+    box-shadow: 0 0 0 3px $accent-color;
+  }
+  to {
+    -webkit-box-shadow: 0 0 0 3px transparent;
+    box-shadow: 0 0 0 3px transparent;
+    border: 0 solid $accent-color;
+  }
+}
+
+.border-shrink {
+  @include animation(border-shrink .3s ease-out both);
+}
+
+//========================================================== animation shake
+@include keyframes(shake) {
+  0%, 100% {
+    transform: translate3d(0, 0, 0);
+  }
+  10%, 30%, 50%, 70%, 90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+  20%, 40%, 60%, 80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+.si-error {
+  @include animation(shake 1 linear 0.8s);
+}
+
+//========================================================== animation buzz-out
+@include keyframes(buzz-out) {
+  10% {
+    transform: translateX(3px) rotate(2deg)
+  }
+  20% {
+    transform: translateX(-3px) rotate(-2deg)
+  }
+  30% {
+    transform: translateX(3px) rotate(2deg)
+  }
+  40% {
+    transform: translateX(-3px) rotate(-2deg)
+  }
+  50% {
+    transform: translateX(2px) rotate(1deg)
+  }
+  60% {
+    transform: translateX(-2px) rotate(-1deg)
+  }
+  70% {
+    transform: translateX(2px) rotate(1deg)
+  }
+  80% {
+    transform: translateX(-2px) rotate(-1deg)
+  }
+  90% {
+    transform: translateX(1px) rotate(0deg)
+  }
+  100% {
+    transform: translateX(-1px) rotate(0deg)
+  }
+}
+
+.buzz-out {
+  @include animation(buzz-out 1 linear 1.0s);
+}
+
+//========================================================== animation rotate
+@include keyframes(si-rotate) {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.si-rotate {
+  @include animation(si-rotate infinite linear 1.8s);
+}
+
+//========================================================== animation pulse
+@include keyframes(pulse) {
+  0% {
+    @include transform(scale(1));
+  }
+  25% {
+    @include transform(scale(0.9));
+  }
+  50% {
+    @include transform(scale(1));
+  }
+  75% {
+    @include transform(scale(0.95));
+  }
+  100% {
+    @include transform(scale(1));
+  }
+}
+
+.pulse {
+  @include animation(pulse 4s ease infinite);
+}
+
+//========================================================== animation carpet-float
+@include keyframes(carpet-float) {
+  from {
+    @include transform(translateY(5px));
+  }
+  50% {
+    @include transform(translateY(-5px));
+  }
+  to {
+    @include transform(translateY(5px));
+  }
+}
+
+.carpet-float {
+  @include animation(carpet-float 1.6s ease infinite);
+}
+
+//========================================================== animation btn-ani-shadow
+@include keyframes(btn-ani-shadow) {
+  from {
+    @include transform(scale(0));
+    opacity: 1;
+    border-radius: 40px;
+  }
+  to {
+    @include transform(scale(1.2));
+    opacity: 0;
+    border-radius: 0;
+  }
+}
+
+.btn-ani-shadow {
+  @include animation(btn-ani-shadow 0.3s ease both);
+}
+
+//========================================================== animation btn-fall
+@include keyframes(btn-fall) {
+  from {
+    @include transform(scale(1));
+    opacity: 1;
+    height: 0;
+    top: 0;
+  }
+  to {
+    @include transform(scale(1));
+    opacity: 1;
+    height: 100%;
+    top: 0;
+  }
+}
+
+.btn-fall {
+  @include animation(btn-fall 0.3s ease forwards);
+}
+
+//========================================================== animation btn-lift
+@include keyframes(btn-lift) {
+  from {
+    @include transform(scale(1));
+    opacity: 1;
+    height: 100%;
+    top: auto;
+    bottom: 0;
+  }
+  to {
+    @include transform(scale(1));
+    opacity: 1;
+    height: 0;
+    top: auto;
+    bottom: 0;
+  }
+}
+
+.btn-lift {
+  @include animation(btn-lift 0.3s ease forwards);
+}
+
+//========================================================== animation rotate-loader
+@include keyframes(rotate-loader) {
+  from {
+    @include transform(rotate(0deg));
+  }
+  to {
+    @include transform(rotate(360deg));
+  }
+}
+
+.rotate-loader {
+  @include animation(rotate-loader 1.5s linear infinite);
+}
+
+//========================================================== animation loader-bar
+@include keyframes(loader-bar) {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0.2;
+  }
+}
+
+.loader-bar {
+  @include animation(loader-bar 1s linear infinite);
+}
+
+//========================================================== animation on hover
+.hover-scale-1 {
+  @include ani-hover(si-scale);
+}
+
+.hover-scale-2 {
+  @include ani-hover(si-scale2);
+}
+
+.hover-scale-3 {
+  @include ani-hover(pulse);
+}
+
+.hover-buzz-out {
+  @include ani-hover(buzz-out);
+}
+
+.hover-shake {
+  @include ani-hover(si-error);
+}
+
+.hover-rotate {
+  @include ani-hover(si-rotate);
+}
+
+.hover-float {
+  @include ani-hover(carpet-float);
+}

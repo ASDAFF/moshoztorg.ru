@@ -1,0 +1,1073 @@
+@import "compass/css3";
+
+
+.beauty_bg{
+	background-position: left top;
+	background-repeat: no-repeat;
+	@include background-size(100% auto);
+	position:absolute;
+	left:50%;
+	top:55px;
+	width:100%;
+	height:825px;
+	min-width: 1920px;
+	margin-left: -960px;
+}
+.beauty_fg{
+
+	position: absolute;
+	bottom: 338px;
+	width: 100%;
+
+	> img{
+		margin-bottom: 40px;
+	}
+	.buttons{
+		.right,
+		.left{
+			position: absolute;
+			bottom: 12px;
+			left: 0;
+			background: image-url("left-right.png") left top no-repeat;
+			width: 32px;
+			height: 52px;
+			cursor: pointer;
+		}
+		.left,
+		.right,
+		.dot{
+			&:hover{
+				opacity: 0.6;
+			}
+		}
+		.right{
+			left: auto;
+			right: 0;
+			background-position: -32px 0
+		}
+		.dots{
+			position: absolute;
+			bottom: 10px;
+			left: 50%;
+			width: 200px;
+			margin-left: -100px;
+			text-align: center;
+
+			.dot{
+				display: inline-block;
+				width: 7px;
+				height: 7px;
+				background-color: white;
+				border-radius: 30px;
+				margin-right: 8px;
+				&.active{
+					background-color: red;
+				}
+			}
+		}
+	}
+}
+.beauty{
+	position:relative;
+	height:880px;
+	width:990px;
+	margin:0 auto;
+	
+	.logotype{
+		position:absolute;
+		left:0;
+		top:99px;	
+	}	
+	.phone_block{
+		position:absolute;
+		right:0;
+		top:79px;
+		
+		.phone{
+			text-align:right;
+			margin: 20px 0 0 0;
+			
+			.phone_number{
+				font-family:"plumb-blacksoft";
+				font-size:35px;
+				color:#ffffff;	
+				text-shadow: 1px 1px 2px rgba(0,0,0,0.75);
+				
+				a{
+					color:#ffffff;	
+				}
+				.phone_code{
+					font-family:"plumb-regular";	
+					letter-spacing:-1px;
+				}
+			}	
+			.phone_notis{
+				font-family:"pfdindisplaypro-medium";
+				font-size:12px;
+				color:#ffffff;	
+			}
+		}	
+	} 
+	.offert_block{
+		left: 0;
+		position: absolute;
+		top: 390px;	
+		
+		.offert_name{
+			color: #ffffff;
+			font-family: "pfdintextpro-bold";
+			font-size: 100px;
+			letter-spacing: -2px;
+			line-height: 78px;
+			margin: 0 0 0 -6px;
+			position: relative;
+			text-transform:uppercase;
+			
+			span{
+				font-family:"pfdintextpro-light";	
+			}
+		}
+		.offert_text{
+			color: #000000;
+			font-family: "pfdindisplaypro-bold";
+			font-size: 30px;
+			line-height: 26px;
+			margin: 0 0 30px;
+		}
+		.offert_procent_value{
+			color: #ffffff;
+			font-family: "pfdintextpro-bold";
+			font-size: 150px;
+			letter-spacing: -6px;
+			margin: 0 0 0 -11px;
+			
+			.offert_procent{
+				font-family: "pfdintextpro-regular"	
+			}
+		}
+	}
+	.search_block{
+		right: 0;
+		top: auto;
+		position: absolute;
+		border: 0;
+		bottom: 420px;
+		
+		.search_field{
+			color: #000000;
+			font-family: "pfdindisplaypro-light";
+			font-size: 12px;
+			padding: 15px 40px 16px 16px;
+			width: 109px;
+			@include border-radius(2px);
+			border:none;
+			background:#ffffff;
+			cursor:text;
+			border: 1px solid #cdcdcd;
+		}
+		.search_submit{
+			position:absolute;	
+			background: image-url("search_submit.png") center center no-repeat;	
+			cursor:pointer;
+			width:14px;
+			height:14px;
+			border:none;
+			right:14px;
+			top:16px;
+		}	
+	}
+	.best_info_block{
+		left: 0;
+		position: absolute;
+		bottom: 0;	
+		width:100%;
+		
+		.best_products{
+			width:100%;
+			height:165px;
+			
+			.best_product{
+				@include inline-block;
+				vertical-align:bottom;	
+				width:330px;
+				height:165px;	
+				position:relative;
+				overflow:hidden;
+				
+				img{
+					position:absolute;
+					z-index:1;	
+					left:0;
+					top:0;
+					
+					&.best_product_bg{
+						z-index:1;	
+						width:330px;
+						height:165px;
+					}
+					&.best_product_content{
+						z-index:2;	
+						width:330px;
+						height:165px;
+					}		
+				}
+				&:hover{
+					img{
+						&.best_product_bg{
+							width:350px;
+							height:175px;
+							margin:-5px 0 0 -10px;
+						}	
+					}	
+				}
+			}	
+		}
+		.best_info{
+			width:100%;
+			height:165px;
+			
+			.best_info_block_inf{
+				@include inline-block;
+				vertical-align:bottom;	
+				width:165px;
+				height:165px;	
+				overflow:hidden;
+				position:relative;
+
+				.number{
+
+					position: absolute;
+					bottom: 20px;
+					left: 31px;
+					z-index: 10;
+					color: #fff;
+					font-family: "pfdindisplaypro-bold";
+					font-size: 20px;
+					&.right{
+						left: auto;
+						right: 31px;
+					}
+				}
+				
+				img{
+					position:absolute;
+					z-index:1;	
+					
+					&.best_product_bg{
+						z-index:1;	
+						width:165px;
+						height:165px;
+					}
+					&.best_product_content{
+						z-index:2;	
+						width:165px;
+						height:165px;
+					}	
+				}
+				&:hover{
+					img{
+						&.best_product_bg{
+							width:175px;
+							height:175px;
+							margin:-5px 0 0 -5px;
+						}	
+					}	
+				}
+			}	
+			.best_info_central{
+				@include inline-block;
+				vertical-align:bottom;	
+				height:165px;	
+				width:660px;
+				background:#ffffff;
+				
+				.best_info_central_title{
+					color:#000000;
+					font-size:20px;	
+					font-family:"pfdintextpro-medium";
+					text-transform:uppercase;
+					text-align:center;
+					margin:29px 0 0 0;
+				}
+				.best_info_central_subtitle{
+					color:#000000;
+					font-size:32px;	
+					font-family:"pfdintextpro-bold";
+					text-transform:uppercase;
+					text-align:center;
+					margin:4px 0 0 0;
+				}
+				.best_info_central_description{
+					color:#000000;
+					font-size:14px;	
+					font-family:"pfdintextpro-regular";
+					text-transform:lowercase;
+					text-align:center;
+					margin:13px 0 0 0;	
+				}
+			}		
+		}
+	}
+}
+
+.index_page{
+
+	.best_info_central_buttons{
+		width:990px;
+		margin:-45px auto 0 auto;
+		text-align:center;
+		position:relative;
+		z-index:10; 
+		
+		a{
+			@include inline-block;
+			vertical-align:bottom;	
+			font-family:"pfdintextpro-medium";
+			font-size:15px;
+			color:#ffffff;
+			text-decoration: none;	
+			text-transform:uppercase;
+			width:164px;
+			height:45px;
+			text-align:center;
+			line-height:45px;
+			margin:0 1px;
+			@include background-image(linear-gradient(#89b74e, #7aab4c));
+			
+			&:hover{
+				@include background-image(linear-gradient(#8989e4, #9967ff));
+			}
+			&.active{
+				@include background-image(linear-gradient(#8989e4, #9967ff));
+			}
+		}	
+		.row{	
+			height:45px;
+			display:none;
+			
+			&.active{
+				display:block;	
+			}
+		}
+		.between_row{
+			height:85px;	
+			width:100%;
+			position:relative;
+			display:none;
+			
+			&.active{
+				display:block;	
+			}
+			.lt{
+				width:25px;
+				height:25px;
+				background:image-url("lines/left-top.png") center center no-repeat;
+				position:absolute;
+				left:50%;
+			}
+			.rt{
+				width:25px;
+				height:25px;
+				background:image-url("lines/right-top.png") center center no-repeat;
+				position:absolute;
+				right:50%;
+			}
+			.v{
+				width:2px;
+				height:48px;
+				background:image-url("lines/pixel.png") center center repeat-y;
+				position:absolute;
+				left:50%;
+				margin:0 0 0 -1px;
+			}
+			.h{
+				width:2px;
+				height:2px;
+				background:image-url("lines/pixel.png") center center repeat-x;
+				position:absolute;
+				top:23px;
+			}
+			.lb{
+				width:25px;
+				height:25px;
+				background:image-url("lines/right-bottom.png") center center no-repeat;
+				position:absolute;
+				top:23px;
+				right:50%;
+				margin:0 -25px 0 0;
+			}
+			.rb{
+				width:25px;
+				height:25px;
+				background:image-url("lines/left-bottom.png") center center no-repeat;
+				position:absolute;
+				top:23px;
+				left:50%;
+				margin:0 0 0 -25px;
+			}
+			.title{
+				position:absolute;
+				top:55px;
+				left:0;
+				width:100%;
+				text-align:center;	
+				font-family:"pfdintextpro-regular";
+				font-size:14px;
+			}
+		}
+	}
+	.products_block{
+		width:990px;
+		margin:30px auto;
+
+		.mobile-beauty{
+			display: none;
+		}
+		
+		.product{
+			@include inline-block;
+			vertical-align:top;	
+			width:272px;
+			margin:29px;
+			
+			
+			.product_new{
+				float:right;
+				text-transform:uppercase;
+				color:#f9a411;
+				font-size:12px;
+				line-height:12x;
+				height:12px;
+				text-align:center;
+				vertical-align:middle;
+				font-family:"pfdintextpro-bold";
+				border:2px solid #f9a411;
+				margin:0 2px 0 0;
+				padding:2px 2px 0 2px;
+			}
+			.product_brand{
+				font-family:"pfdintextpro-medium";
+				font-size:30px;
+				text-transform:uppercase;	
+				
+				a{
+					color:#000000;	
+				}
+			}
+			.product_name{
+				font-family:"pfdintextpro-medium";
+				font-size:16px;
+				text-transform:uppercase;	
+				height:auto;	
+				
+				a{
+					color:#000000;	
+				}
+			}
+			.product_description{
+				border-top: 1px solid #000000;
+				font-family: "pfdintextpro-regular";
+				font-size: 16px;
+				padding: 16px 0 0 0;
+				height:80px;
+			}
+			.product_image{
+				position:relative;
+				
+				img{
+					position:absolute;
+					left:0;
+					top:0;
+					background:#ffffff;
+					display:block;
+					
+					&.product_image_original{
+						z-index:1;	
+						@include opacity(1);
+					}
+					&.product_image_hover{
+						z-index:2;	
+						@include opacity(0); 
+					}
+				}
+				&:hover{
+					img{
+						&.product_image_original{
+							@include opacity(0);
+						}
+						&.product_image_hover{	
+							@include opacity(1); 
+						}	
+					}	
+				}
+			}
+			.product_prices_block{
+				position:relative;
+				height:54px;
+				background: image-url("price_border.png") center bottom repeat-x;	
+				
+				.product_old_price{
+					font-family:"plumb-regular";
+					font-size:20px;
+					height:20px;
+					width:100%;
+					color:#e6330a;	
+					margin:12px 0 0 0;
+					
+					.rub:before{
+						font-family: "pt_sans-regular";
+						font-size: 14px;
+						line-height: 16px;
+						vertical-align: baseline;
+						top:-4px;
+						position:relative;	
+					}
+				}	
+				.product_price_block{
+					.product_price{
+						@include inline-block;
+						font-family:"plumb-bold";
+						font-size:40px;
+						line-height: 40px;
+						vertical-align:baseline;
+						margin:2px 0 0 0;
+						letter-spacing:-1px;
+						white-space:nowrap;
+						
+						.product_price_value{
+							line-height: 40px;
+							vertical-align:baseline;
+							background:#ffffff;
+							padding:0 6px 0 0;
+						}
+						.rub{
+							&:before{
+								font-family: "pt_sans-bold";
+								font-size: 30px;
+								line-height: 40px;
+								vertical-align: baseline;
+								top:-7px;
+								position:relative;
+							}
+						}
+					}
+					.product_cart{
+						display:block;
+						position:absolute;
+						right:0;
+						bottom:0;
+						width:32px;
+						height:52px;
+						cursor:pointer;
+						padding:0 0 0 2px;
+						background: #ffffff image-url("cart.png") right center no-repeat;	
+						
+						&:hover{
+							background: #ffffff image-url("cart_hover.png") right center no-repeat;		
+						}	
+					}
+				}
+			}
+		}
+	}
+	.behaviors{
+		width:990px;
+		margin:30px auto;
+		
+		.behavior{
+			@include inline-block;
+			vertical-align:top;
+			width:495px;
+			height:165px;
+			overflow:hidden;
+			
+			.behavior_hover{
+				position:absolute;
+				width:495px;
+				height:165px;	
+				z-index:1;
+				@include opacity(0);
+			}
+			.behavior_title{
+				font-family:"pfdintextpro-regular";
+				font-size:40px;
+				text-transform:uppercase;
+				color:#ffffff;	
+				margin:29px 0 0 28px;
+				position:relative;
+				z-index:2;
+				
+				&:after{
+					background:#ffffff;	
+					bottom: -3px;
+					content: "";
+					height: 3px;
+					left: 0;
+					position: absolute;
+					width: 0;
+					@include opacity(0);
+				}
+			}
+			.behavior_description{
+				color: #ffffff;
+				font-family: "pfdintextpro-medium";
+				font-size: 19px;
+				line-height: 22px;
+				margin: 10px 0 0 30px;
+				left:100%;
+				position:relative;
+				@include opacity(0);
+				z-index:2;
+			}
+			&.offers{
+				background: image-url("index/behavior_offers.png") -20px center no-repeat;	
+				
+				.behavior_hover{
+					background: image-url("index/behavior_offers_hover.png") -20px center no-repeat;		
+				}
+			}
+			&.news{
+				background: image-url("index/behavior_news.png") -20px center no-repeat;	
+				
+				.behavior_hover{
+					background: image-url("index/behavior_news_hover.png") -20px center no-repeat;		
+				}
+			}
+			&:hover{
+				background-position:0 center;
+				
+				.behavior_hover{
+					background-position:0 center;
+					@include opacity(0.75);	
+				}
+				.behavior_title{
+					&:after{
+						width:439px;	
+						@include opacity(1);
+					}	
+				}
+				.behavior_description{
+					left:0;	
+					@include opacity(1);
+				}
+			}
+		}	
+	}
+	.dealers{
+		width:990px;
+		margin:46px auto 0 auto;
+		
+		.area_block{
+			@include inline-block;
+			vertical-align:top;	
+			width:195px;
+			margin:7px 0 0 0;
+			
+			.area_block_title{
+				font-family: "pfdindisplaypro-medium";
+				font-size:10px;	
+				text-transform:uppercase;
+			}
+			.ui-autocomplete-input{
+				margin:13px 0 0 0;	
+			}
+		}	
+		.dealers_block{
+			@include inline-block;
+			vertical-align:top;	
+			width:795px;
+			
+			.dealer{
+				@include inline-block;
+				vertical-align: top;
+				background: image-url("dealers_point.png") 0 0 no-repeat;
+				width:130px;
+				margin-bottom:18px;
+				margin-right: 31px;
+				color:#000000;
+
+				&.coming-soon{
+					font-family: "pfdindisplaypro-medium";
+					font-size:12px;	
+					position: relative;
+					top: 0;
+
+					*{
+						opacity: 0.7;
+					}
+
+					&:before{
+						content: 'Скоро открытие!';
+						color: #f00;
+						position: absolute;
+						top: 0;
+						right: 0;
+					}
+				}
+
+				a{
+					color:#000000;	
+				}
+				.dealer_street{
+					font-family: "pfdindisplaypro-medium";
+					font-size:12px;	
+					text-transform:uppercase;
+					margin:30px 0 0 0;	
+				}
+				.dealer_build{
+					font-family: "pfdintextpro-regular";
+					font-size:13px;		
+					
+					.dealer_build_number{
+						font-family:"plumb-blacksoft";
+						font-size:16px;	
+					}
+				}
+				.dealer_time_title{
+					font-family: "pfdindisplaypro-medium";
+					font-size:10px;	
+					text-transform:uppercase;
+					color:rgba(0,0,0,0.8);
+					margin:8px 0 0 0;	
+				}
+				.dealer_time{
+					font-family: "plumb-bold";
+					font-size: 20px;
+					letter-spacing: -1px;
+					margin: 1px 0 0 0;
+				}
+				.dealer_map{
+					margin: 3px 0 0 0;
+					
+					span{
+						font-family:"pfdintextpro-bold";
+						font-size:10px;	
+						text-transform:uppercase;
+						color:#e6330a;
+						background: image-url("next_arrow.png") right center no-repeat;
+						padding:0 11px 0 0;
+						position:relative;
+						left:100%;
+						@include opacity(0);
+					}
+				}
+			}
+		}
+	}
+
+	.index-brands{
+		width: 990px;
+		margin: 50px auto;
+		font-family: "pfdintextpro-regular";
+		font-size: 14px;
+
+
+		> li{
+			display: inline-block;
+			vertical-align: top;
+			margin-bottom: 30px;
+			width: 130px;
+			margin-right: 38px;
+			&:last-child{
+				margin-right: 0;
+			}
+		}
+
+		.name{
+			color: #e6330a;
+			text-transform: uppercase;
+			border-bottom: 1px solid #b3b3b3;
+			padding-bottom: 5px;
+			margin-bottom: 10px;
+			font-weight: bold;
+
+		}
+
+		.brand-list{
+			text-transform: uppercase;
+			> li{
+				margin-bottom: 4px;
+			}
+		}
+	}
+}
+
+.notouch .index_page .dealers .dealers_block .dealer:hover{
+	background: image-url("dealers_point_hover.png") 0 0 no-repeat;	
+	
+	.dealer_map{
+		span{
+			left:0;
+			@include opacity(1);
+		}
+	}
+}
+
+@media screen and (max-width: 640px){
+	.mobile_enabled{
+	
+		.index_page,
+		.contacts_page .contacts{
+			.dealers{
+				background-color: #e5e5e5;
+				padding: 20px;
+				width: 100%;
+				box-sizing: border-box;
+
+				.dealers_block{
+					width: 100%;
+					.dealer,
+					.dealer.nomarg{
+						margin: 0 40px 20px 0 !important;
+					}
+					.dealer{
+						display: block;
+						position: relative;
+						top: 0;
+						height: 80px;
+						background: none !important;
+						width: 100%;
+						border-bottom: 1px solid #ddd;
+
+						&.coming-soon{
+							&:before{
+								left: 0;
+								bottom: 10px;
+								right: auto;
+								top: auto;
+							}
+						}
+
+						a{
+							display: block;
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+							display: block;
+							vertical-align: top;
+							z-index: 5;
+						}
+
+						&:after{
+							content: 'На карте';
+							position: absolute;
+							top: 0;
+							right: 0;
+							background-color: #e6330a;
+							padding: 20px 25px;
+							border-radius: 6px;
+							color: #fff;
+							font-family: "pfdindisplaypro-medium";
+							text-transform: uppercase;
+							font-size: 13px;
+							z-index: 4;
+						}
+						.dealer_street{
+							margin: 0;
+						}
+						.dealer_time{
+							position: absolute;
+							top: 18px;;
+							right: 116px;
+							font-size: 15px;
+							&:before{
+								content: '';
+								display: inline-block;
+								right: 116px;
+								left: auto;
+								width: 11px;
+								height: 11px;
+								background: url('/img/mobile/small-clock@2x.png');
+								background-size: 100% 100%;
+								background-position: center center;
+								margin-right: 5px;
+							}
+						}
+						.dealer_build {
+							margin-top: 10px;
+							.dealer_build_number {
+								font-size: 20px;
+							}
+						}
+						.dealer_time_title{
+							display: none;
+						}
+					}
+				}
+
+				.area_block{
+					display: block;
+					width: 100%;
+					margin-bottom: 20px;
+
+					.select{
+						width: 100%;
+
+						.select_arrow{
+							top: 3px;
+							right: 4px;
+						}
+
+						input{
+							width: 100%;
+							box-sizing: border-box;
+							height: 38px;
+							border: 2px solid #aaa;
+							border-radius: 3px;
+						}
+					}
+				}
+			}
+		}
+		.contacts_page .contacts{
+			.dealers{
+				width: auto;
+				margin: -20px -20px -30px -20px;
+				.area_block{
+					margin: 20px 0 0 0;
+				}
+			}
+		}
+		.index_page{
+			.beauty_bg,
+			.beauty,
+			.best_info_central_buttons,
+			.behaviors{
+				display: none;
+			}
+			.products_block{
+
+				.mobile-beauty{
+					margin: 10px 0 50px 0;
+					display: block;
+					position: relative;
+					top: 0;
+					width: 100%;
+					img{
+						width: 100%;
+						height: auto;
+						
+						&.best_product_content{
+							position: absolute;
+							top: 0;
+							left: 0;
+						}
+					}
+				}
+				width: 100%;
+				.product{
+					display: block;
+					margin: 10px auto 30px auto;
+				}
+			}
+		}
+	}
+}
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) { 
+	.index_page{
+		.beauty{
+			.search_block{			
+				.search_submit{
+					background: image-url("search_submit@2x.png") center center no-repeat;	
+					@include background-size(14px 14px);
+				}	
+			}
+		}
+		.between_row{
+			.lt{
+				background:image-url("lines/left-top@2x.png") center center no-repeat;
+				@include background-size(25px 25px);
+			}
+			.rt{
+				background:image-url("lines/right-top@2x.png") center center no-repeat;
+				@include background-size(25px 25px);
+			}
+			.v{
+				background:image-url("lines/pixel@2x.png") center center repeat-y;
+				@include background-size(2px 2px);
+			}
+			.h{
+				background:image-url("lines/pixel@2x.png") center center repeat-x;
+				@include background-size(2px 2px);
+			}
+			.lb{
+				background:image-url("lines/right-bottom@2x.png") center center no-repeat;
+				@include background-size(25px 25px);
+			}
+			.rb{
+				background:image-url("lines/left-bottom@2x.png") center center no-repeat;
+				@include background-size(25px 25px);
+			}
+		}
+		.products_block{ 
+			.product{
+				.product_prices_block{
+					background: image-url("price_border@2x.png") center bottom repeat-x;
+					@include background-size(4px 1px);	
+	
+					.product_price_block{
+						.product_cart{
+							background: #ffffff image-url("cart@2x.png") right center no-repeat;
+							@include background-size(32px 52px);	
+							
+							&:hover{
+								background: #ffffff image-url("cart_hover@2x.png") right center no-repeat;	
+								@include background-size(32px 52px);	
+							}	
+						}
+					}
+				} 
+			}
+		}
+		.behaviors{
+			.behavior{
+				&.offers{
+					background: image-url("index/behavior_offers@2x.png") -20px center no-repeat;	
+					@include background-size(515px 165px);
+					
+					.behavior_hover{
+						background: image-url("index/behavior_offers_hover@2x.png") -20px center no-repeat;	
+						@include background-size(515px 165px);	
+					}
+				}
+				&.news{
+					background: image-url("index/behavior_news@2x.png") -20px center no-repeat;	
+					@include background-size(515px 165px);
+					
+					.behavior_hover{
+						background: image-url("index/behavior_news_hover@2x.png") -20px center no-repeat;	
+						@include background-size(515px 165px);	
+					}
+				}
+			}	
+		}
+		.dealers{
+			.dealers_block{
+				.dealer{	
+					background: image-url("dealers_point@2x.png") 0 0 no-repeat;
+					@include background-size(15px 18px);
+		
+					.dealer_map{
+						span{
+							background: image-url("next_arrow@2x.png") right center no-repeat;
+							@include background-size(5px 8px);
+						}
+					}
+					&:hover{
+						background: image-url("dealers_point_hover@2x.png") 0 0 no-repeat;	
+						@include background-size(15px 18px);
+					}
+				}
+			}
+		}
+	}
+}

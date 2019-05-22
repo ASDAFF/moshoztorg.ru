@@ -1,0 +1,140 @@
+//====================fonts
+//================= Gotham
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothaProReg.eot');
+  src: url('../fonts/GothaProReg.eot') format('embedded-opentype'),
+  url('../fonts/GothaProReg.woff2') format('woff2'),
+  url('../fonts/GothaProReg.woff') format('woff'),
+  url('../fonts/GothaProReg.ttf') format('truetype'),
+  url('../fonts/GothaProReg.svg#GothaProReg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothaProIta.eot');
+  src: url('../fonts/GothaProIta.eot') format('embedded-opentype'),
+  url('../fonts/GothaProIta.woff2') format('woff2'),
+  url('../fonts/GothaProIta.woff') format('woff'),
+  url('../fonts/GothaProIta.ttf') format('truetype'),
+  url('../fonts/GothaProIta.svg#GothaProIta') format('svg');
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothaProLig.eot');
+  src: url('../fonts/GothaProLig.eot') format('embedded-opentype'),
+  url('../fonts/GothaProLig.woff2') format('woff2'),
+  url('../fonts/GothaProLig.woff') format('woff'),
+  url('../fonts/GothaProLig.ttf') format('truetype'),
+  url('../fonts/GothaProLig.svg#GothaProLig') format('svg');
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothaProLigIta.eot');
+  src: url('../fonts/GothaProLigIta.eot') format('embedded-opentype'),
+  url('../fonts/GothaProLigIta.woff2') format('woff2'),
+  url('../fonts/GothaProLigIta.woff') format('woff'),
+  url('../fonts/GothaProLigIta.ttf') format('truetype'),
+  url('../fonts/GothaProLigIta.svg#GothaProLigIta') format('svg');
+  font-weight: 300;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothaProMed.eot');
+  src: url('../fonts/GothaProMed.eot') format('embedded-opentype'),
+  url('../fonts/GothaProMed.woff2') format('woff2'),
+  url('../fonts/GothaProMed.woff') format('woff'),
+  url('../fonts/GothaProMed.ttf') format('truetype'),
+  url('../fonts/GothaProMed.svg#GothaProMed') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothaProMedIta.eot');
+  src: url('../fonts/GothaProMedIta.eot') format('embedded-opentype'),
+  url('../fonts/GothaProMedIta.woff2') format('woff2'),
+  url('../fonts/GothaProMedIta.woff') format('woff'),
+  url('../fonts/GothaProMedIta.ttf') format('truetype'),
+  url('../fonts/GothaProMedIta.svg#GothaProMedIta') format('svg');
+  font-weight: 500;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothaProBol.eot');
+  src: url('../fonts/GothaProBol.eot') format('embedded-opentype'),
+  url('../fonts/GothaProBol.woff2') format('woff2'),
+  url('../fonts/GothaProBol.woff') format('woff'),
+  url('../fonts/GothaProBol.ttf') format('truetype'),
+  url('../fonts/GothaProBol.svg#GothaProBol') format('svg');
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothaProBolIta.eot');
+  src: url('../fonts/GothaProBolIta.eot') format('embedded-opentype'),
+  url('../fonts/GothaProBolIta.woff2') format('woff2'),
+  url('../fonts/GothaProBolIta.woff') format('woff'),
+  url('../fonts/GothaProBolIta.ttf') format('truetype'),
+  url('../fonts/GothaProBolIta.svg#GothaProBolIta') format('svg');
+  font-weight: 700;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothaProBla.eot');
+  src: url('../fonts/GothaProBla.eot') format('embedded-opentype'),
+  url('../fonts/GothaProBla.woff2') format('woff2'),
+  url('../fonts/GothaProBla.woff') format('woff'),
+  url('../fonts/GothaProBla.ttf') format('truetype'),
+  url('../fonts/GothaProBla.svg#GothaProBla') format('svg');
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Gotham';
+  src: url('../fonts/GothaProBlaIta.eot');
+  src: url('../fonts/GothaProBlaIta.eot') format('embedded-opentype'),
+  url('../fonts/GothaProBlaIta.woff2') format('woff2'),
+  url('../fonts/GothaProBlaIta.woff') format('woff'),
+  url('../fonts/GothaProBlaIta.ttf') format('truetype'),
+  url('../fonts/GothaProBlaIta.svg#GothaProBlaIta') format('svg');
+  font-weight: 900;
+  font-style: italic;
+}
+//================= Gotham Pro Narrow
+
+@font-face {
+  font-family: 'GothamNarrow';
+  src: url('../fonts/GothamProNarrow-Medium.eot');
+  src: url('../fonts/GothamProNarrow-Medium.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamProNarrow-Medium.woff2') format('woff2'),
+  url('../fonts/GothamProNarrow-Medium.woff') format('woff'),
+  url('../fonts/GothamProNarrow-Medium.ttf') format('truetype'),
+  url('../fonts/GothamProNarrow-Medium.svg#GothamProNarrow-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'GothamNarrow';
+  src: url('../fonts/GothamProNarrow-Bold.eot');
+  src: url('../fonts/GothamProNarrow-Bold.eot?#iefix') format('embedded-opentype'),
+  url('../fonts/GothamProNarrow-Bold.woff2') format('woff2'),
+  url('../fonts/GothamProNarrow-Bold.woff') format('woff'),
+  url('../fonts/GothamProNarrow-Bold.ttf') format('truetype'),
+  url('../fonts/GothamProNarrow-Bold.svg#GothamProNarrow-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+}

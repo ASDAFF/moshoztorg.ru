@@ -1,0 +1,162 @@
+.complaint-form{
+	position: fixed;
+	z-index: 1000;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	width: 100%;
+	height: 100%;
+	background: #282828;
+	display: none;
+}
+.complaint-form__complaint{
+}
+.complaint-form__title{
+	color: #dbdbdb;
+	font-family: "pfdintextpro-light";
+	font-size: 20px;
+	left: 145px;
+	position: absolute;
+	top: 45px;
+}
+.complaint-form__close{
+	position: absolute;
+	top: 45px;
+	right: 45px;
+	background: url('/../../../img/close.png?1428585798') center center no-repeat;
+	width: 14px;
+	height: 15px;
+	cursor: pointer;
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+	.complaint-form__close{
+		background: url('/../../../img/close@2x.png?1428585798') center center no-repeat;
+		background-size: 14px 15px;
+	}
+}
+.complaint-form__steps{
+	position: absolute;
+	left: 145px;
+	right: 145px;
+	top: 50%;
+	margin: -100px 0 0 0;
+}
+.complaint-form-steps__step{
+	display: none;
+	position: relative;
+}
+.complaint-form-steps__step.is-active{
+	display: block;
+}
+.complaint-form-steps-step__notis{
+	position: absolute;
+	margin: -50px 0 0 0;
+	color: #e6330a;
+	font-size: 15px;
+	line-height: 1;
+	font-family: "pfdintextpro-medium";
+	display: none;
+}
+.complaint-form-steps-step__label{
+	color: #dbdbdb;
+	font-size: 30px;
+	line-height: 1;
+	font-family: "pfdintextpro-medium";
+	display: block;
+	margin: 0 0 30px 0;
+	width: 100%;
+	position: relative;
+}
+.complaint-form-steps-step__input{
+	color: #dbdbdb;
+	font-size: 40px;
+	line-height: 1.1;
+	font-family: "pfdintextpro-regular";
+	display: block;
+	border: none;
+	outline: none;
+	background: none;
+	border-bottom: 1px solid #131313;
+	left: 0;
+	right: 0;
+	position: relative;
+	width: 550px;
+}
+textarea.complaint-form-steps-step__input{
+	resize: none;
+	height: 280px;
+}
+.complaint-form-steps-step__result{
+	color: #dbdbdb;
+	font-size: 60px;
+	line-height: 1;
+	font-family: "pfdintextpro-regular";
+	display: none;
+}
+.complaint-form-steps-step__result.is-active{
+	display: block;
+}
+.complaint-form-steps-step__result span{
+	font-size: 30px;
+	line-height: 1;
+}
+.complaint-form__points{
+	position: absolute;
+	right: 45px;
+	top: 50%;
+	width: 15px;
+	margin: -50px 0 0 0;
+}
+.complaint-form__points ul {
+	width: 15px;
+}
+.complaint-form__points li {
+	display: inline-block;
+	vertical-align: middle;
+	*vertical-align: auto;
+	*zoom: 1;
+	*display: inline;
+	vertical-align: top;
+	width: 15px;
+	height: 15px;
+	-moz-border-radius: 50%;
+	-webkit-border-radius: 50%;
+	border-radius: 50%;
+	background: #c5c5c5;
+	margin: 5px 0;
+}
+.complaint-form__points li.is-active {
+	background: #131313;
+}
+.complaint-form__button-block{
+	position: absolute;
+	right: 45px;
+	bottom: 45px;
+}
+.complaint-form-button-block__next{
+	background: #131313;
+	color: #dbdbdb;
+	font-size: 20px;
+	line-height: 1;
+	height: 20px;
+	width: 100px;
+	text-align: center;
+	vertical-align: middle;
+	font-family: "pfdintextpro-medium";
+	padding: 13px 19px;
+	cursor: pointer;
+}
+.complaint-form-button-block__notis{
+	color: #dbdbdb;
+	font-size: 15px;
+	font-family: "pfdintextpro-light";
+	text-align: center;
+	margin: 5px 0 0 0;
+}

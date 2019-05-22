@@ -1,0 +1,353 @@
+@import "compass/css3";
+@import "_mixin";
+
+.panoram_view{
+	width:1000px;
+	height:500px;	
+}
+.contacts_page{
+	.search_block{
+		top:13px;	
+	}
+	.contacts{
+		position:relative;
+		width:990px;
+		margin:0 auto 37px auto;
+
+		.area_block{
+			margin: 60px 20px 0 0;
+			display: inline-block;
+			vertical-align: top;
+
+			.area_block_title{
+				font-family: "pfdindisplaypro-medium";
+				font-size: 10px;
+				text-transform: uppercase;
+				margin: 0 0 6px;
+			}
+		}	
+		
+		.breadcrumbs{
+			margin:-8px 0 0 0;	
+		}
+		h1{
+			text-transform:uppercase;
+			font-family:"pfdintextpro-medium";
+			font-size:39px;	
+			margin:12px 0 0 0;
+			@include inline-block;
+			vertical-align:top;	
+		}
+		.dealers_block{
+			margin: 40px 0 101px 5px;
+			display: inline-block;
+			width: 1020px;
+			
+			.dealer{
+				@include inline-block;
+				vertical-align:top;		
+				background: image-url("dealers_point.png") 0 0 no-repeat;
+				width:130px;
+				margin-bottom:18px;
+				color:#000000;
+				margin:0 31px 18px 0;
+
+				&.coming-soon{
+					font-family: "pfdindisplaypro-medium";
+					font-size:12px;	
+					position: relative;
+					top: 0;
+
+					*{
+						opacity: 0.7;
+					}
+
+					&:before{
+						content: 'Скоро открытие!';
+						color: #f00;
+						position: absolute;
+						top: 0;
+						right: 0;
+					}
+				}
+				
+				&.nomarg{
+					margin-left:0;	
+				}
+				a{
+					color:#000000;	
+				}
+				.dealer_street{
+					font-family: "pfdindisplaypro-medium";
+					font-size:12px;	
+					text-transform:uppercase;
+					margin:30px 0 0 0;	
+				}
+				.dealer_build{
+					font-family: "pfdintextpro-regular";
+					font-size:13px;		
+					
+					.dealer_build_number{
+						font-family:"plumb-blacksoft";
+						font-size:16px;	
+					}
+				}
+				.dealer_phones{
+					margin: 4px 0;
+					.dealer_phone{
+						@include pie();
+						font-family: "pfdindisplaypro-medium";
+						font-size:12px;	
+						text-transform:uppercase;
+						color:rgba(0,0,0,0.9);
+						margin:8px 0 0 0;	
+					}
+				}
+				.dealer_time_title{
+					@include pie();
+					font-family: "pfdindisplaypro-medium";
+					font-size:10px;	
+					text-transform:uppercase;
+					color:rgba(0,0,0,0.8);
+					margin:8px 0 0 0;	
+				}
+				.dealer_time{
+					font-family: "plumb-bold";
+					font-size: 20px;
+					letter-spacing: -1px;
+					margin: 1px 0 0 0;
+				}
+				.dealer_map{
+					margin: 3px 0 0 0;
+					
+					span{
+						@include pie();
+						font-family:"pfdintextpro-bold";
+						font-size:10px;	
+						text-transform:uppercase;
+						color:#e6330a;
+						background: image-url("next_arrow.png") right center no-repeat;
+						padding:0 11px 0 0;
+						position:relative;
+						left:100%;
+						@include opacity(0);
+					}
+				}
+				&:hover{
+					background: image-url("dealers_point_hover.png") 0 0 no-repeat;	
+					
+					.dealer_map{
+						span{
+							@include pie();
+							left:0;
+							@include opacity(1);
+						}
+					}
+				}
+			}
+		}
+	}
+	.map{
+		width:100%;
+		height:441px;
+		
+		.map_mark{
+			background:image-url("contacts/map_mark.png") center center no-repeat;	
+			width:20px;
+			height:24px;
+			position:relative;
+			
+			&.active{
+				background:image-url("contacts/map_mark_hover.png") center center no-repeat;		
+			}
+		}	
+	}
+	.ymaps-2-1-23-balloon__layout{
+		@include pie();
+		@include background-image(linear-gradient(#ffffff, #f2f2f2));
+		@include box-shadow(#000000 0 0 20px);	
+		 
+		.ymaps-2-1-23-balloon__close-button{
+			@include pie();
+			background:image-url("close.png") center center no-repeat;
+			width:14px;
+			height:15px;
+			position: absolute;
+			right: 1px;
+			top: 5px;	
+			@include opacity(1);
+		}
+		.balloonContent{
+			background:none;
+			margin:0;
+			padding:25px 20px 5px 20px;
+
+			.contact_block{
+				@include inline-block;
+				vertical-align:top;
+				
+				.dealer_street{
+					font-family: "pfdindisplaypro-medium";
+					font-size:12px;	
+					color:#000000;
+					text-transform:uppercase;
+					margin:0 0 0 0;	
+				}
+				.dealer_build{
+					font-family: "pfdintextpro-regular";
+					font-size:13px;		
+					
+					.dealer_build_number{
+						font-family:"plumb-blacksoft";
+						font-size:25px;	
+					}
+				}
+				.dealer_time_title{
+					font-family: "pfdindisplaypro-medium";
+					font-size:10px;	
+					text-transform:uppercase;
+					color:rgba(0,0,0,0.6);
+					margin:8px 0 0 0;	
+				}
+				.dealer_time{
+					font-family: "plumb-bold";
+					font-size: 20px;
+					letter-spacing: -1px;
+					margin: 1px 0 0 0;
+				}
+			}
+			.image{
+				text-align:right;
+				@include inline-block;
+				vertical-align:top;
+				width:180px;
+				height:135px;	
+				margin:0 0 0 20px;
+				
+				img{
+					width:180px;
+					height:110px;		
+				}
+				.panoram_view{
+					width:180px;
+					height:110px;	
+				}
+			}
+			.panoram_href{
+				@include inline-block;
+				vertical-align:top;
+				font-family: "pfdintextpro-regular";
+				font-size: 12px;
+				cursor:pointer;	
+				text-align:right;
+				position:relative;
+				margin:-5px 0 0 0;
+				
+				&:after{
+					background: image-url("catalog_menu_bottom.png") left bottom no-repeat;
+					height:1px;
+					width:0;
+					content:"";
+					display:block;
+					position:absolute;
+					bottom:5px;
+					left:0;
+				}
+				&:hover{
+					&:after{
+						width:100%;	
+					}	
+				}
+			}
+		}
+	}
+}
+
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) { 
+	.contacts_page{
+		.contacts{
+			.dealers_block{
+				.dealer{	
+					background: image-url("dealers_point@2x.png") 0 0 no-repeat;
+					@include background-size(15px 18px);
+
+
+					
+					.dealer_map{
+						span{
+							background: image-url("next_arrow@2x.png") right center no-repeat;
+							@include background-size(5px 8px);
+						}
+					}
+					&:hover{
+						background: image-url("dealers_point_hover@2x.png") 0 0 no-repeat;	
+						@include background-size(15px 18px);
+					}
+				}
+			}
+		}
+		.map{
+			.map_mark{
+				background:image-url("contacts/map_mark@2x.png") center center no-repeat;	
+				@include background-size(20px 24px);
+
+				&.active{
+					background:image-url("contacts/map_mark_hover@2x.png") center center no-repeat;	
+					@include background-size(20px 24px);	
+				}
+			}	
+		}
+		.ymaps-2-1-23-balloon__layout{
+			.ymaps-2-1-23-balloon__close-button{
+				background:image-url("close@2x.png") center center no-repeat;
+				@include background-size(14px 15px);
+			}
+			.ymaps-2-1-23-balloon__content{
+				background-color: transparent;
+				.panoram_href{
+					&:after{
+						background: image-url("catalog_menu_bottom@2x.png") left bottom no-repeat;
+						@include background-size(320px 1px);
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 640px){
+	.mobile_enabled{
+
+		.contacts_page{
+			.contacts{
+				width: 100%;
+				padding: 20px;
+				box-sizing: border-box;
+				margin-bottom: 10px;
+			}
+			.map{
+				max-height: 50%;
+				position: relative;
+				top: 0;
+
+				&:after{
+					content: '';
+					background: #f00;
+					opacity: 0;
+					position: absolute;
+					top: 0;
+					left: 0;
+					width: 100%;
+					height: 100%;
+				}
+			}
+		}
+	}
+}

@@ -1,0 +1,576 @@
+/* line 8, ../sass/css_/subscribe.scss */
+.subscribe_page .search_block {
+  top: 13px;
+}
+/* line 11, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe {
+  position: relative;
+  width: 990px;
+  margin: 0 auto;
+}
+/* line 16, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .breadcrumbs {
+  margin: -8px 0 0 0;
+}
+/* line 19, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe h1 {
+  text-transform: uppercase;
+  font-family: "pfdintextpro-medium";
+  font-size: 39px;
+  margin: 12px 0 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+/* line 27, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .authorization {
+  margin: 36px 0 0 0;
+}
+/* line 31, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .authorization .row .col {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  color: #000000;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "pfdintextpro-regular";
+  width: 206px;
+}
+/* line 40, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .authorization .row .col.title {
+  color: #7e7e7e;
+  width: 190px;
+}
+/* line 44, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .authorization .row .col a {
+  color: #e6330a;
+  position: relative;
+}
+/* line 48, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .authorization .row .col a:after {
+  background: url('/../../../img/short_link_bottom.png?1428585798') center bottom no-repeat;
+  height: 2px;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* line 59, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .authorization .row .col a:hover:after {
+  width: 100%;
+}
+/* line 65, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .authorization .row.h3 {
+  color: #000000;
+  font-size: 16px;
+  font-family: "plumb-bold";
+  text-transform: uppercase;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 0 6px 0;
+  margin: 0 0 21px 0;
+}
+/* line 76, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .settings {
+  margin: 37px 0 0 0;
+}
+/* line 80, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .settings .row .col {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  color: #000000;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "pfdintextpro-regular";
+  width: 400px;
+}
+/* line 89, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .settings .row .col .description {
+  margin: 21px 0 0 0;
+  max-width: 335px;
+}
+/* line 93, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .settings .row .col label {
+  display: block;
+  margin: 3px 0 8px 0;
+}
+/* line 97, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .settings .row .col input {
+  border: 1px solid #bfbfbf;
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  background: #ffffff;
+  color: #000000;
+  font-size: 16px;
+  line-height: 24px;
+  font-family: "pfdintextpro-regular";
+  height: 24px;
+  padding: 9px 18px;
+  width: 292px;
+  margin: 0 0 0 0;
+}
+/* line 110, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .settings .row .col .checkbox-input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  width: 16px;
+  height: 16px;
+  margin: 0 0 0 10px;
+}
+/* line 116, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .settings .row .col .checkbox-input + .checkbox-label {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  color: #000000;
+  font-family: "pfdintextpro-regular";
+  font-size: 16px;
+  background: url('/../../../img/checkbox.png?1428585798') left center no-repeat;
+  margin: 0 0 0 -26px;
+  padding: 0 0 0 23px;
+  cursor: pointer;
+  height: 16px;
+  line-height: 16px;
+}
+/* line 130, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .settings .row .col .checkbox-input:checked + .checkbox-label {
+  background: url('/../../../img/checkbox_checked.png?1428585798') left center no-repeat;
+}
+/* line 135, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .settings .row .col .field {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  width: 120px;
+  margin: -3px 0 0 26px;
+}
+/* line 141, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .settings .row .col .field:first-child {
+  margin-left: -15px;
+}
+/* line 145, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .settings .row .col .field .radio-input {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+  width: 16px;
+  height: 16px;
+  margin: 0 0 0 10px;
+}
+/* line 151, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .settings .row .col .field .radio-input + .radio-label {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  color: #000000;
+  font-family: "pfdintextpro-regular";
+  font-size: 16px;
+  background: url('/../../../img/radio.png?1428585798') left top no-repeat;
+  margin: 0 0 0 -26px;
+  padding: 0 0 0 23px;
+  cursor: pointer;
+  height: 16px;
+  line-height: 16px;
+}
+/* line 165, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .settings .row .col .field .radio-input:checked + .checkbox-label {
+  background: url('/../../../img/radio_checked.png?1428585798') top center no-repeat;
+}
+/* line 171, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .settings .row .col .h4 {
+  color: #000000;
+  font-size: 16px;
+  font-family: "pfdintextpro-bold";
+  margin: 34px 0 16px 0;
+}
+/* line 178, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .settings .row.h3 {
+  color: #000000;
+  font-size: 16px;
+  font-family: "plumb-bold";
+  text-transform: uppercase;
+  border-bottom: 1px solid #e5e5e5;
+  padding: 0 0 4px 0;
+  margin: 0 0 21px 0;
+}
+/* line 189, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .buttons {
+  margin: 46px 0 94px 0;
+}
+/* line 192, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .buttons a {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iI2M3YzdjNyIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzk2OTY5NyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #c7c7c7), color-stop(100%, #969697));
+  background-image: -moz-linear-gradient(#c7c7c7, #969697);
+  background-image: -webkit-linear-gradient(#c7c7c7, #969697);
+  background-image: linear-gradient(#c7c7c7, #969697);
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  text-transform: uppercase;
+  color: #ffffff;
+  font-size: 15px;
+  height: 18px;
+  line-height: 18px;
+  width: 100px;
+  text-align: center;
+  vertical-align: middle;
+  font-family: "pfdintextpro-medium";
+  padding: 16px 17px 12px 18px;
+  margin: 0 30px 0 0;
+}
+/* line 208, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .buttons a:hover {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg5Yjc0ZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzdhYWI0YiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #89b74e), color-stop(100%, #7aab4b));
+  background-image: -moz-linear-gradient(#89b74e, #7aab4b);
+  background-image: -webkit-linear-gradient(#89b74e, #7aab4b);
+  background-image: linear-gradient(#89b74e, #7aab4b);
+}
+/* line 213, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .h2 {
+  color: #000000;
+  font-size: 20px;
+  font-family: "pfdintextpro-medium";
+  text-transform: uppercase;
+  border-bottom: 1px solid #000000;
+  padding: 0 0 5px 0;
+  margin: -3px 0 0 0;
+}
+/* line 222, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products {
+  margin: 0 0 105px 0;
+}
+/* line 225, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  position: relative;
+  width: 135px;
+  margin: 28px 45px 0 0;
+}
+/* line 232, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product.tree {
+  margin: 28px 0 0 0;
+}
+/* line 235, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_brand {
+  font-family: "pfdintextpro-medium";
+  text-transform: uppercase;
+  font-size: 15px;
+  height: 20px;
+}
+/* line 241, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_description {
+  border-top: 1px solid #000000;
+  font-family: "pfdintextpro-regular";
+  overflow: hidden;
+  font-size: 14px;
+  padding: 7px 0 0 0;
+  height: 28px;
+}
+/* line 249, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_assessment_block {
+  margin: 12px 0;
+  cursor: pointer;
+  width: 45px;
+  height: 7px;
+  position: absolute;
+  z-index: 3;
+  bottom: 18px;
+  background: url('/../../../img/asterix_mini.png?1428585798') left center repeat-x;
+}
+/* line 259, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_assessment_block .product_assessment {
+  height: 7px;
+  background: url('/../../../img/asterix_mini_active.png?1428585798') left center repeat-x;
+  cursor: pointer;
+}
+/* line 265, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_image {
+  width: 135px;
+  height: 105px;
+  margin: 0 0 3px 0;
+  position: relative;
+}
+/* line 271, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_image img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #ffffff;
+  display: block;
+  width: 135px;
+  height: 105px;
+}
+/* line 280, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_image img.product_image_original {
+  z-index: 1;
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 284, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_image img.product_image_hover {
+  z-index: 2;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 291, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_image:hover img.product_image_original {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=0);
+  opacity: 0;
+}
+/* line 294, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_image:hover img.product_image_hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+/* line 300, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_prices_block {
+  position: relative;
+  height: 22px;
+  background: url('/../../../img/price_border.png?1428585798') center bottom repeat-x;
+}
+/* line 306, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_prices_block .product_price_block .product_price {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: baseline;
+  font-family: "plumb-bold";
+  font-size: 25px;
+  line-height: 25px;
+  margin: 1px 0 0 0;
+  letter-spacing: -1px;
+  white-space: nowrap;
+}
+/* line 316, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_prices_block .product_price_block .product_price .product_price_value {
+  background: #ffffff;
+  padding: 0 6px 0 0;
+}
+/* line 320, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_prices_block .product_price_block .product_price .rub:before {
+  font-family: "pt_sans-bold";
+  vertical-align: baseline;
+  font-size: 20px;
+  line-height: 25px;
+  position: relative;
+  top: -4px;
+}
+/* line 329, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_prices_block .product_price_block .product_cart {
+  display: block;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  width: 32px;
+  height: 52px;
+  cursor: pointer;
+  padding: 0 0 0 2px;
+  z-index: 2;
+  background: url('/../../../img/cart.png?1428585798') right center no-repeat;
+}
+/* line 341, ../sass/css_/subscribe.scss */
+.subscribe_page .subscribe .viewed_products .product .product_prices_block .product_price_block .product_cart:hover {
+  background: url('/../../../img/cart_hover.png?1428585798') right center no-repeat;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 366, ../sass/css_/subscribe.scss */
+  .subscribe_page .subscribe .authorization .row .col a:after {
+    background: url('/../../../img/short_link_bottom@2x.png?1428585798') center bottom no-repeat;
+    -moz-background-size: 320px 1px;
+    -o-background-size: 320px 1px;
+    -webkit-background-size: 320px 1px;
+    background-size: 320px 1px;
+  }
+  /* line 378, ../sass/css_/subscribe.scss */
+  .subscribe_page .subscribe .settings .row .col .checkbox-input + .checkbox-label {
+    background: url('/../../../img/checkbox@2x.png?1428585798') left center no-repeat;
+    -moz-background-size: 15px 15px;
+    -o-background-size: 15px 15px;
+    -webkit-background-size: 15px 15px;
+    background-size: 15px 15px;
+  }
+  /* line 383, ../sass/css_/subscribe.scss */
+  .subscribe_page .subscribe .settings .row .col .checkbox-input:checked + .checkbox-label {
+    background: url('/../../../img/checkbox_checked@2x.png?1428585798') left center no-repeat;
+    -moz-background-size: 15px 15px;
+    -o-background-size: 15px 15px;
+    -webkit-background-size: 15px 15px;
+    background-size: 15px 15px;
+  }
+  /* line 391, ../sass/css_/subscribe.scss */
+  .subscribe_page .subscribe .settings .row .col .field .radio-input + .radio-label {
+    background: url('/../../../img/radio@2x.png?1428585798') left top no-repeat;
+    -moz-background-size: 12px 12px;
+    -o-background-size: 12px 12px;
+    -webkit-background-size: 12px 12px;
+    background-size: 12px 12px;
+  }
+  /* line 396, ../sass/css_/subscribe.scss */
+  .subscribe_page .subscribe .settings .row .col .field .radio-input:checked + .checkbox-label {
+    background: url('/../../../img/radio_checked@2x.png?1428585798') top center no-repeat;
+    -moz-background-size: 12px 12px;
+    -o-background-size: 12px 12px;
+    -webkit-background-size: 12px 12px;
+    background-size: 12px 12px;
+  }
+  /* line 408, ../sass/css_/subscribe.scss */
+  .subscribe_page .subscribe .viewed_products .product .product_assessment_block {
+    background: url('/../../../img/asterix_mini@2x.png?1428585798') left center repeat-x;
+    -moz-background-size: 9px 7px;
+    -o-background-size: 9px 7px;
+    -webkit-background-size: 9px 7px;
+    background-size: 9px 7px;
+  }
+  /* line 412, ../sass/css_/subscribe.scss */
+  .subscribe_page .subscribe .viewed_products .product .product_assessment_block .product_assessment {
+    background: url('/../../../img/asterix_mini_active@2x.png?1428585798') left center repeat-x;
+    -moz-background-size: 9px 7px;
+    -o-background-size: 9px 7px;
+    -webkit-background-size: 9px 7px;
+    background-size: 9px 7px;
+  }
+  /* line 417, ../sass/css_/subscribe.scss */
+  .subscribe_page .subscribe .viewed_products .product .product_prices_block {
+    background: url('/../../../img/price_border@2x.png?1428585798') center bottom repeat-x;
+    -moz-background-size: 4px 1px;
+    -o-background-size: 4px 1px;
+    -webkit-background-size: 4px 1px;
+    background-size: 4px 1px;
+  }
+  /* line 422, ../sass/css_/subscribe.scss */
+  .subscribe_page .subscribe .viewed_products .product .product_prices_block .product_price_block .product_cart {
+    background: url('/../../../img/cart@2x.png?1428585797') right center no-repeat;
+    -moz-background-size: 32px 52px;
+    -o-background-size: 32px 52px;
+    -webkit-background-size: 32px 52px;
+    background-size: 32px 52px;
+  }
+  /* line 426, ../sass/css_/subscribe.scss */
+  .subscribe_page .subscribe .viewed_products .product .product_prices_block .product_price_block .product_cart:hover {
+    background: url('/../../../img/cart_hover@2x.png?1428585798') right center no-repeat;
+    -moz-background-size: 32px 52px;
+    -o-background-size: 32px 52px;
+    -webkit-background-size: 32px 52px;
+    background-size: 32px 52px;
+  }
+}
+/* line 439, ../sass/css_/subscribe.scss */
+.new-subscribe {
+  font-family: "pfdintextpro-regular";
+  width: 990px;
+  margin: 0 auto 100px auto;
+  line-height: 25px;
+}
+/* line 445, ../sass/css_/subscribe.scss */
+.new-subscribe .text-heading {
+  font-weight: bold;
+  display: inline-block;
+  margin: 14px 0 8px 0;
+}
+/* line 451, ../sass/css_/subscribe.scss */
+.new-subscribe h1 {
+  text-transform: uppercase;
+  font-family: "pfdintextpro-medium";
+  font-size: 39px;
+  margin: 12px 0 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+/* line 460, ../sass/css_/subscribe.scss */
+.new-subscribe a {
+  color: #e6330a;
+  text-decoration: underline;
+}
+/* line 465, ../sass/css_/subscribe.scss */
+.new-subscribe td {
+  padding-top: 10px;
+}
+/* line 467, ../sass/css_/subscribe.scss */
+.new-subscribe td.heading {
+  text-transform: uppercase;
+  font-size: 16px;
+  width: 100%;
+  padding: 40px 0 10px 0;
+  border-bottom: 1px solid #dfdfdf;
+  margin: 40px 0 25px;
+  color: #000;
+  font-family: "pfdintextpro-medium";
+}
+/* line 481, ../sass/css_/subscribe.scss */
+.new-subscribe input[type=text] {
+  padding: 11px 8px;
+  border: 1px solid #aaa;
+  background-color: #fff;
+  margin: 10px 0;
+}
+/* line 487, ../sass/css_/subscribe.scss */
+.new-subscribe input[type=radio] {
+  display: inline-block !important;
+}
+/* line 490, ../sass/css_/subscribe.scss */
+.new-subscribe input[type=checkbox] {
+  margin-right: 5px;
+}
+/* line 493, ../sass/css_/subscribe.scss */
+.new-subscribe input[type=submit], .new-subscribe input[type=reset] {
+  margin-top: 40px;
+  background-color: #80b04c;
+  cursor: pointer;
+  color: #fff;
+  padding: 13px 24px;
+  font-family: "pfdintextpro-medium";
+  text-transform: uppercase;
+  border: 0;
+  margin-right: 10px;
+  cursor: pointer;
+}
+/* line 506, ../sass/css_/subscribe.scss */
+.new-subscribe input[type=submit]:hover, .new-subscribe input[type=reset]:hover {
+  background-color: #A2C878;
+}
+/* line 510, ../sass/css_/subscribe.scss */
+.new-subscribe input[type=submit]:hover, .new-subscribe input[type=reset]:hover {
+  background-color: #F25F3D;
+}

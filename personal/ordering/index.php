@@ -1,0 +1,9 @@
+<?
+require($_SERVER["DOCUMENT_ROOT"]."/bitrix/header.php");
+$APPLICATION->SetTitle("Заказ");
+?><?$APPLICATION->IncludeComponent(
+	"bitrix:sale.personal.order",
+	"",
+	Array(
+	)
+);?><?require($_SERVER["DOCUMENT_ROOT"]."/bitrix/footer.php");?>

@@ -1,0 +1,578 @@
+@import "compass/css3";
+
+.sub_footer{
+	padding-bottom: 225px;	
+}
+.footer{
+	margin:-225px 0 0 0; 
+	background:#000000;
+	height:225px;
+	width:100%;	
+	
+	.footer_content{
+		width:990px;
+		margin:0 auto;
+		color:#ffffff;
+	
+		[id^="bx_incl_area"]{
+			display: inline-block;
+		}	
+
+		.contact_block{
+			@include inline-block;
+			vertical-align:top;	
+			width:330px;
+			
+			.logotype_block{
+				margin:25px 0 0 0;	
+			}
+			.phone_block{
+				margin:39px 0 0 0;
+				width:266px;
+				
+				.phone{
+					background: image-url("phone_icon.png") right top no-repeat;
+					
+					.phone_number{
+						@include inline-block;
+						vertical-align:top;	
+						font-family:"plumb-medium";
+						font-size:21px;	
+						width:165px;
+						white-space:nowrap;
+						margin:0 5px 10px -9px;
+						text-align:right;
+						
+						a{
+							color:#ffffff;	
+						}
+						.phone_code{
+							font-family:"plumb-light";	
+							letter-spacing: -1px;
+						}
+					}	
+					.phone_notis{
+						@include inline-block;
+						vertical-align:top;	
+						font-family:"pfdindisplaypro-light";
+						font-size:10px;	
+					}
+				}	
+			}
+			.shops_adress{
+				.select{
+					margin:6px 0 0 0;
+					@include inline-block;
+					vertical-align:top;	
+					
+					.ui-autocomplete-input{
+						color:#ffffff;
+						background:#000000;		
+					}
+					.select_arrow{
+						background:	image-url("arrow_bottom_white.png") center center no-repeat;	
+						height:28px;
+					}
+				}
+				.shops_adress_title{
+					@include inline-block;
+					vertical-align:top;	
+					font-family:"pfdindisplaypro-regular";
+					color:#ffffff;
+					font-size:11px;	
+					text-transform:uppercase;
+					margin:17px 0 0 32px;
+				}
+			}	
+		}	
+		.menu_block{
+			@include inline-block;
+			vertical-align:top;	
+			margin:29px 0 0 30px;	
+			width:495px;
+			
+			.menu{
+				@include inline-block;
+				vertical-align:top;	
+				width:155px;	
+				
+				.menu_title{
+					font-family:"pfdindisplaypro-bold";
+					font-size:11px;
+					text-transform:uppercase;
+					margin:0 0 5px 0;
+
+					a{
+						color: #fff;
+					}
+				}	
+				ul{
+					li{
+						margin:0 0 3px 0;
+						
+						a{
+							color:#b8b8b8;
+							font-family:"pfdindisplaypro-regular";	
+							font-size:11px;
+							text-transform:uppercase;
+							
+							&:hover{
+								color:#e6330a;	
+							}
+						}	
+					}	
+				}
+			}
+		}
+		.social_block{
+			display: inline-block;
+			margin: 29px 0 0 0;
+			vertical-align: top;
+			width: 135px;	
+			
+			.social_block_title{
+				font-family:"pfdindisplaypro-bold";
+				font-size:11px;	
+				text-transform:uppercase;
+			}
+			.social_network{
+				margin:8px 0 17px 0;
+				
+				li{
+					display: inline-block;
+					vertical-align: top;
+					width:24px;
+					height:24px;
+					margin:0 3px 0 0;
+					
+					a{
+						display: inline-block;
+						vertical-align: top;
+						width:25px;
+						height:24px;
+					}
+					&.twitter{
+						a{
+							background: image-url("twitter.png") center center no-repeat;	
+							
+							&:hover{
+								background: image-url("twitter_hover.png") center center no-repeat;		
+							}
+						}
+					}
+					&.facebook{
+						a{
+							background: image-url("facebook.png") center center no-repeat;
+							
+							&:hover{
+								background: image-url("facebook_hover.png") center center no-repeat;		
+							}	
+						}
+					}
+					&.vk{
+						a{
+							background: image-url("vk.png") center center no-repeat;
+							
+							&:hover{
+								background: image-url("vk_hover.png") center center no-repeat;		
+							}
+						}
+					}
+					&.instagram{
+						a{
+							background: image-url("instagram.png") center center no-repeat;	
+							
+							&:hover{
+								background: image-url("instagram_hover.png") center center no-repeat;		
+							}
+						}
+					}
+					&.ok{
+						a{
+							background: image-url("ok.png") center center no-repeat;	
+							
+							&:hover{
+								background: image-url("ok_hover.png") center center no-repeat;		
+							}
+						}
+					}
+				}	
+			}
+			.mobile-payments{
+				display: none;
+			}
+			.payments{
+				margin:8px 0 0 0;
+				li{
+					display: inline-block;
+					vertical-align: top;
+					width:24px;
+					height:17px;
+					margin:0 3px 0 0;
+					
+					a{
+						display: inline-block;
+						vertical-align: top;
+						width:24px;
+						height:17px;
+					}
+					&.visa{
+						a{
+							background: image-url("visa.png") center center no-repeat;	
+							
+							&:hover{
+								background: image-url("visa_hover.png") center center no-repeat;		
+							}
+						}
+					}
+					&.mastercard{
+						a{
+							background: image-url("mastercard.png") center center no-repeat;	
+							
+							&:hover{
+								background: image-url("mastercard_hover.png") center center no-repeat;		
+							}
+						}
+					}
+					&.qiwi{
+						a{
+							background: image-url("qiwi.png") center center no-repeat;	
+							
+							&:hover{
+								background: image-url("qiwi_hover.png") center center no-repeat;		
+							}
+						}
+					}
+					&.yandex{
+						a{
+							background: image-url("yandex.png") center center no-repeat;	
+							
+							&:hover{
+								background: image-url("yandex_hover.png") center center no-repeat;		
+							}
+						}
+					}
+					&.webmoney{
+						a{
+							background: image-url("webmoney.png") center center no-repeat;	
+							
+							&:hover{
+								background: image-url("webmoney_hover.png") center center no-repeat;		
+							}
+						}
+					}
+				}
+			}
+			.copyright_block{
+				color:#ffffff;
+				font-family:"pfdindisplaypro-regular";	
+				font-size:10px;	
+				text-transform:uppercase;
+				margin:47px 0 0 0;
+				
+				.show-full,
+				.show-mobile{
+					display: none;
+					margin-bottom: 8px;
+				}
+
+				span{
+					color:#b8b8b8;	
+					
+					a{
+						color:#b8b8b8;	
+					}
+				}
+				a{
+					color:#ffffff;	
+				}
+				.webstudio{
+					margin:5px 0 0 0;	
+				}
+			}
+		}
+	}
+}
+@media
+only screen and (-webkit-min-device-pixel-ratio: 2),
+only screen and (   min--moz-device-pixel-ratio: 2),
+only screen and (     -o-min-device-pixel-ratio: 2/1),
+only screen and (        min-device-pixel-ratio: 2),
+only screen and (                min-resolution: 192dpi),
+only screen and (                min-resolution: 2dppx) { 
+	.footer{
+		.footer_content{
+			.contact_block{
+				.phone_block{
+					.phone{
+						background: image-url("phone_icon@2x.png") right top no-repeat;
+						@include background-size(13px 16px);
+					}	
+				}
+				.shops_adress{
+					.select{
+						.select_arrow{
+							background:	image-url("arrow_bottom_white@2x.png") center center no-repeat;	
+							@include background-size(31px 31px);
+						}
+					}
+				}	
+			}	
+			.social_block{
+				.social_network{
+					li{
+						&.twitter{
+							a{
+								background: image-url("twitter@2x.png") center center no-repeat;	
+								@include background-size(24px 24px);
+								
+								&:hover{
+									background: image-url("twitter_hover@2x.png") center center no-repeat;	
+									@include background-size(24px 24px);	
+								}
+							}
+						}
+						&.facebook{
+							a{
+								background: image-url("facebook@2x.png") center center no-repeat;
+								@include background-size(24px 24px);
+								
+								&:hover{
+									background: image-url("facebook_hover@2x.png") center center no-repeat;	
+									@include background-size(24px 24px);	
+								}	
+							}
+						}
+						&.vk{
+							a{
+								background: image-url("vk@2x.png") center center no-repeat;
+								@include background-size(24px 24px);
+								
+								&:hover{
+									background: image-url("vk_hover@2x.png") center center no-repeat;
+									@include background-size(24px 24px);		
+								}
+							}
+						}
+						&.instagram{
+							a{
+								background: image-url("instagram@2x.png") center center no-repeat;	
+								@include background-size(24px 24px);
+								
+								&:hover{
+									background: image-url("instagram_hover@2x.png") center center no-repeat;
+									@include background-size(24px 24px);		
+								}
+							}
+						}
+						&.ok{
+							a{
+								background: image-url("ok@2x.png") center center no-repeat;	
+								@include background-size(24px 24px);
+								
+								&:hover{
+									background: image-url("ok_hover@2x.png") center center no-repeat;
+									@include background-size(24px 24px);		
+								}
+							}
+						}
+					}	
+				}
+				.payments{
+					li{
+						&.visa{
+							a{
+								background: image-url("visa@2x.png") center center no-repeat;	
+								@include background-size(24px 17px);
+								
+								&:hover{
+									background: image-url("visa_hover@2x.png") center center no-repeat;	
+									@include background-size(24px 17px);	
+								}
+							}
+						}
+						&.mastercard{
+							a{
+								background: image-url("mastercard@2x.png") center center no-repeat;	
+								@include background-size(24px 17px);
+								
+								&:hover{
+									background: image-url("mastercard_hover@2x.png") center center no-repeat;
+									@include background-size(24px 17px);		
+								}
+							}
+						}
+						&.qiwi{
+							a{
+								background: image-url("qiwi@2x.png") center center no-repeat;	
+								@include background-size(24px 17px);
+								
+								&:hover{
+									background: image-url("qiwi_hover@2x.png") center center no-repeat;		
+									@include background-size(24px 17px);
+								}
+							}
+						}
+						&.yandex{
+							a{
+								background: image-url("yandex@2x.png") center center no-repeat;	
+								@include background-size(24px 17px);
+								
+								&:hover{
+									background: image-url("yandex_hover@2x.png") center center no-repeat;		
+									@include background-size(24px 17px);
+								}
+							}
+						}
+						&.webmoney{
+							a{
+								background: image-url("webmoney@2x.png") center center no-repeat;	
+								@include background-size(24px 17px);
+								
+								&:hover{
+									background: image-url("webmoney_hover@2x.png") center center no-repeat;	
+									@include background-size(24px 17px);	
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 640px){
+	.footer .footer_content .social_block .copyright_block .show-mobile{
+		display: block;
+	}
+
+
+	.mobile_enabled{
+		.footer{
+			height: auto;
+			.footer_content{
+				width:100%;
+				box-sizing: border-box;
+				padding: 20px;
+				.social_block{
+					width: 100%;
+
+					.copyright_block{
+						.show-full{
+							display: block;
+						}
+						.show-mobile{
+							display: none;
+						}
+					}
+
+					.social_network{
+						li{
+							width: 38px;
+							height: 38px;
+							margin-right: 25px;
+
+							&.facebook a{
+								background-position: -43px 0 !important;
+							}
+
+							&.vk a{
+								background-position: -86px 0 !important;
+							}
+
+							&.instagram a{
+								background-position: -129px 0 !important;
+							}
+							a{
+								width: 38px;
+								height: 38px;
+								background-image: url('/img/mobile/social.png') !important;
+								background-position: 0px 0px !important;
+								background-size: 166px 38px !important;
+							}
+						}
+					}
+					.social_block_title{
+						font-family: "pfdindisplaypro-regular";
+						font-size: 16px;
+						color: #555;
+						letter-spacing: 2px;
+						margin-bottom: 8px;
+					}	
+					.payments{
+						display: none;
+					}
+
+					.mobile-payments{
+						display: block;
+						width: 222px;
+						img{
+							max-width: 100%;
+						}
+					}
+				}
+				.menu_block{
+					width: 100%;
+					margin: 20px 0 0 0;
+					.menu{
+						margin-top: 20px;
+						border-top: 1px solid #525e5e;
+						width: 100%;
+						padding-top: 20px;
+						line-height: 20px;
+						.menu_title{
+							display: none;
+						}
+						ul{
+							li:nth-child(odd){
+								float: left;
+							}
+							li:nth-child(odd){
+								float: right;
+							}
+							li{
+								a{
+									font-size: 15px;
+								}
+							}
+						}
+					}
+				}
+				.contact_block{
+					display: block;
+					width: 100%; 
+					.shops_adress .shops_adress_title{
+						float: right;
+						width: 90px;
+						vertical-align: middle;
+						text-align: right;
+						line-height: 15px;
+						font-size: 11px;
+					}
+					.shops_adress .shops_adress_title a{
+						color: #e6330a !important;
+					}
+					.logotype_block .make-call{
+						width: 40px;
+						height: 40px;
+						background: url('/img/phone-call.png') no-repeat center center;
+						display: inline-block;
+						float: right;
+					}
+					.phone_block{
+						width: 100%;
+					}
+					.phone_block .phone{
+						background-image: none;
+					}
+					.phone_block .phone .phone_notis{
+						float: right;
+						text-align: right;
+					}
+				}
+			}
+		}
+
+	}
+}

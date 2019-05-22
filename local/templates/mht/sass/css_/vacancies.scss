@@ -1,0 +1,271 @@
+@import "compass/css3";
+
+.vacancies_page{
+	.search_block{
+		top:13px;	
+	}
+	.vacancies{
+		position:relative;
+		width:990px;
+		margin:0 auto;	
+		
+		.breadcrumbs{
+			margin:-8px 0 0 0;	
+		}
+		h1{
+			text-transform:uppercase;
+			font-family:"pfdintextpro-medium";
+			font-size:39px;	
+			margin:12px 0 0 0;
+			@include inline-block;
+			vertical-align:top;	
+		}
+		.vacancies_block{
+			margin:43px 0 0 0;
+			
+			.vacancies_menu{
+				@include inline-block;
+				vertical-align:top;	
+				width:195px;
+				
+				li{
+					font-size:16px;
+					font-family:"pfdintextpro-regular";
+					color:#000000;
+					margin:0 0 9px 0;
+					
+					a{
+						color:#e6330a;
+						position:relative;
+						
+						&:after{
+							background: image-url("short_link_bottom.png") left bottom no-repeat;
+							height:1px;
+							width:0;
+							content:"";
+							display:block;
+							position:absolute;
+							bottom:-1px;
+							left:0;
+						}
+						&:hover{
+							&:after{
+								width:100%;	
+							}	
+						}
+					}	
+					&.active{
+						a{
+							color:#000000;	
+							
+							&:after{
+								width:0;	
+							}
+						}	
+					}
+				}
+			}	
+			.vacancies_list{
+				@include inline-block;
+				vertical-align:top;	
+				width:795px;
+				margin:0 0 60px 0;
+				
+				.vacancy{
+					margin:1px 0;
+					
+					.vacancy_header{
+						background:#f3f3f3;
+						height:80px;
+						position:relative;
+						cursor: pointer;
+						
+						.name{
+							position:absolute;
+							top:19px;
+							left:40px;
+							color:#000000;
+							font-size:22px;
+							font-family:"pfdintextpro-medium";	
+						}	
+						.address{
+							position:absolute;
+							background:image-url("dealers_point.png") left center no-repeat;
+							color:#676767;
+							font-family:"pfdintextpro-regular";	
+							top:42px;
+							left:39px;
+							padding:8px 0 0 22px;
+						}
+						.salary{
+							font-family:"pfdintextpro-regular";	
+							position:absolute;
+							color:#000000;
+							font-size:22px;
+							left:645px;
+							top:19px;
+							
+							.salary_value{
+								font-family:"pfdintextpro-bold";	
+							}	
+						}
+						.button{
+							position:absolute;
+							cursor:pointer;
+							color:#e6330a;
+							font-family:"pfdintextpro-regular";	
+							font-size:15px;	
+							left:645px;
+							top:50px; 
+						}
+					}	
+					.vacancy_description{
+						background:#fafafa;	
+						border-top:1px solid #dbdbdb;
+						border-bottom:1px solid #dbdbdb;
+						display:none;
+						padding:22px 40px 22px 40px;
+						
+						h4{
+							font-family:"pfdintextpro-bold";
+							color:#000000;
+							font-size:16px;	
+							line-height: 24px;
+							margin:0 0 8px 0;
+						}
+						p{
+							font-family:"pfdintextpro-regular";		
+							color:#000000;
+							font-size:16px;
+							line-height: 24px; 
+							margin:8px 0 20px 0;
+							
+							a{
+								color:#e6330a;
+								position:relative;
+								
+								&:after{
+									background: image-url("short_link_bottom.png") left bottom no-repeat;
+									height:1px;
+									width:0;
+									content:"";
+									display:block;
+									position:absolute;
+									bottom:-1px;
+									left:0;
+								}
+								&:hover{
+									&:after{
+										width:100%;	
+									}	
+								}	
+							}
+						}	
+						ul{
+							margin:0 0 18px 0;
+							
+							li{
+								color: #000000;
+								font-family: "pfdintextpro-regular";
+								font-size: 16px;
+								line-height: 24px;
+								margin: 7px 0 0 40px;	
+							}	
+						}
+					}
+					&.active{
+						.vacancy_description{
+							display:block;
+						}	
+					}
+				}
+			}
+		}
+	}
+}
+
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) { 
+	.vacancies_page{
+		.vacancies{
+			.vacancies_block{
+				.vacancies_menu{
+					li{
+						a{
+							&:after{
+								background: image-url("short_link_bottom@2x.png") left bottom no-repeat;
+								@include background-size(320px 1px);
+							}
+						}	
+					}
+				}	
+				.vacancies_list{
+					.vacancy{
+						.vacancy_header{
+							.address{
+								background:image-url("dealers_point@2x.png") left center no-repeat;
+								@include background-size(15px 18px);
+							}
+						}	
+						&.active{
+							.vacancy_description{
+								p{
+									a{
+										&:after{
+											background: image-url("short_link_bottom@2x.png") left bottom no-repeat;
+											@include background-size(320px 1px);
+										}
+									}
+								}	
+							}	
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 640px){
+	.mobile_enabled{
+		.vacancies_page{
+			.vacancies{
+
+				width: 100%;
+				padding: 20px;
+				box-sizing: border-box;
+
+				.vacancies_block{
+					.vacancies_menu{
+						margin-bottom: 20px;
+					}
+					.vacancies_list{
+						width: 100%;
+
+						.vacancy .vacancy_header {
+							padding: 20px;
+							height: auto;
+
+							.address,
+							.salary,
+							.name{
+								margin-bottom: 5px;
+								display: inline-block;
+								position: static;
+							}
+							.button{
+								display: none;
+							}
+						}
+					}
+				}
+			}
+		}
+	}
+}

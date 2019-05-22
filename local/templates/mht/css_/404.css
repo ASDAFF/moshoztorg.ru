@@ -1,0 +1,75 @@
+/* line 4, ../sass/css_/404.scss */
+.p404_page .search_block {
+  top: 13px;
+}
+/* line 7, ../sass/css_/404.scss */
+.p404_page .p404 {
+  position: relative;
+  width: 990px;
+  margin: 0 auto 49px auto;
+}
+/* line 12, ../sass/css_/404.scss */
+.p404_page .p404 .image {
+  margin: 8px 0 0 0;
+}
+/* line 15, ../sass/css_/404.scss */
+.p404_page .p404 h1 {
+  color: #000000;
+  text-transform: uppercase;
+  font-family: "plumb-bold";
+  font-size: 16px;
+  margin: 28px 0 28px 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+/* line 24, ../sass/css_/404.scss */
+.p404_page .p404 p {
+  color: #000000;
+  font-size: 16px;
+  line-height: 23px;
+  font-family: "pfdintextpro-regular";
+}
+/* line 30, ../sass/css_/404.scss */
+.p404_page .p404 p a {
+  position: relative;
+  color: #e10a00;
+}
+/* line 34, ../sass/css_/404.scss */
+.p404_page .p404 p a:after {
+  background: url('/../../../img/short_link_bottom.png?1428585798') center bottom no-repeat;
+  height: 2px;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+/* line 45, ../sass/css_/404.scss */
+.p404_page .p404 p a:hover:after {
+  width: 100%;
+}
+/* line 51, ../sass/css_/404.scss */
+.p404_page .p404 .search_block {
+  position: relative;
+  top: 0;
+  right: auto;
+  left: 0;
+  margin: 20px 0 75px 0;
+  width: 339px;
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 75, ../sass/css_/404.scss */
+  .mobile-enabled .p404_page .p404 p a:after {
+    background: url('/../../../img/short_link_bottom@2x.png?1428585798') center bottom no-repeat;
+    -moz-background-size: 320px 1px;
+    -o-background-size: 320px 1px;
+    -webkit-background-size: 320px 1px;
+    background-size: 320px 1px;
+  }
+}

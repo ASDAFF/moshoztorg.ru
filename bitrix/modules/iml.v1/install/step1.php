@@ -1,0 +1,1 @@
+<?if(!check_bitrix_sessid()) return;?><?IncludeModuleLangFile(__FILE__);?><form action="<?echo $APPLICATION->GetCurPage()?>">	<input type="hidden" name="lang" value="<?echo LANG?>">	<?=GetMessage("IPOLIML_INSTALL_TEXT")?><br><?if(!function_exists('curl_init'))	echo "<br>".GetMessage("IPOLIML_NOCURL");?>	<input type="submit" name="" value="OK"></form>

@@ -1,0 +1,273 @@
+/* line 4, ../sass/css_/faq.scss */
+.faq_page .search_block {
+  top: 12px;
+}
+/* line 7, ../sass/css_/faq.scss */
+.faq_page .faq {
+  position: relative;
+  width: 990px;
+  margin: 0 auto;
+}
+/* line 12, ../sass/css_/faq.scss */
+.faq_page .faq .breadcrumbs {
+  margin: -7px 0 0 0;
+}
+/* line 15, ../sass/css_/faq.scss */
+.faq_page .faq h1 {
+  text-transform: uppercase;
+  font-family: "pfdintextpro-medium";
+  font-size: 39px;
+  margin: 12px 0 37px 0;
+}
+/* line 21, ../sass/css_/faq.scss */
+.faq_page .faq h3 {
+  text-transform: uppercase;
+  font-family: "plumb-bold";
+  font-size: 16px;
+  margin: 40px 0 24px 0;
+}
+/* line 27, ../sass/css_/faq.scss */
+.faq_page .faq p {
+  font-family: "pfdintextpro-regular";
+  font-size: 16px;
+  line-height: 22px;
+  width: 820px;
+  margin: 20px 0;
+}
+/* line 34, ../sass/css_/faq.scss */
+.faq_page .faq p a {
+  color: #e6330a;
+  position: relative;
+}
+/* line 38, ../sass/css_/faq.scss */
+.faq_page .faq p a:after {
+  background: url('/../../../img/short_link_bottom.png?1428585798') left bottom no-repeat;
+  height: 1px;
+  width: 0;
+  content: "";
+  display: block;
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+}
+/* line 49, ../sass/css_/faq.scss */
+.faq_page .faq p a:hover:after {
+  width: 100%;
+}
+/* line 55, ../sass/css_/faq.scss */
+.faq_page .faq .question_block {
+  width: 825px;
+  margin: 1px 0 1px 0;
+}
+/* line 59, ../sass/css_/faq.scss */
+.faq_page .faq .question_block .question {
+  background: #f3f3f3;
+  color: #696969;
+  font-family: "pfdintextpro-regular";
+  font-size: 16px;
+  padding: 15px 60px 15px 20px;
+  border-top: 1px solid #ffffff;
+  position: relative;
+  cursor: pointer;
+}
+/* line 69, ../sass/css_/faq.scss */
+.faq_page .faq .question_block .question .button {
+  background: url('/../../../img/plus.png?1428585797') center center no-repeat;
+  position: absolute;
+  right: 27px;
+  top: 15px;
+  width: 11px;
+  height: 11px;
+}
+/* line 78, ../sass/css_/faq.scss */
+.faq_page .faq .question_block .answer {
+  display: none;
+  background: #ffffff;
+  color: #696969;
+  font-family: "pfdintextpro-regular";
+  font-size: 16px;
+  line-height: 22px;
+  padding: 18px 20px 18px 20px;
+  border-top: 1px solid #dbdbdb;
+  border-bottom: 1px solid #dfdfdf;
+}
+/* line 91, ../sass/css_/faq.scss */
+.faq_page .faq .question_block.active .question .button {
+  background: url('/../../../img/cross.png?1428585798') center center no-repeat;
+}
+/* line 95, ../sass/css_/faq.scss */
+.faq_page .faq .question_block.active .answer {
+  display: block;
+}
+/* line 100, ../sass/css_/faq.scss */
+.faq_page .faq .hr {
+  width: 820px;
+  height: 1px;
+  background: #e5e5e5;
+  margin: 70px 0 30px 0;
+}
+/* line 106, ../sass/css_/faq.scss */
+.faq_page .faq h2 {
+  font-family: "pfdintextpro-bold";
+  color: #e10a00;
+  text-transform: uppercase;
+  font-size: 30px;
+  margin: 30px 0 5px 0;
+}
+/* line 113, ../sass/css_/faq.scss */
+.faq_page .faq h4 {
+  font-family: "pfdintextpro-medium";
+  color: #333333;
+  text-transform: uppercase;
+  font-size: 20px;
+  margin: 5px 0 34px 0;
+}
+/* line 121, ../sass/css_/faq.scss */
+.faq_page .faq .add_block form {
+  margin: 0 0 50px 0;
+}
+/* line 126, ../sass/css_/faq.scss */
+.faq_page .faq .add_block form table tr td {
+  padding: 0 30px 0 0;
+}
+/* line 130, ../sass/css_/faq.scss */
+.faq_page .faq .add_block form table tr td.captcha-holder input {
+  width: 151px;
+}
+/* line 134, ../sass/css_/faq.scss */
+.faq_page .faq .add_block form table tr td.captcha-holder img {
+  vertical-align: middle;
+  margin-right: 20px;
+  width: 130px !important;
+  height: 44px !important;
+}
+/* line 141, ../sass/css_/faq.scss */
+.faq_page .faq .add_block form table tr td label {
+  color: #000000;
+  font-size: 16px;
+  font-family: "pfdintextpro-regular";
+  margin: 0 0 8px 0;
+}
+/* line 147, ../sass/css_/faq.scss */
+.faq_page .faq .add_block form table tr td input {
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  height: 16px;
+  width: 303px;
+  border: 1px solid #bfbfbf;
+  padding: 13px;
+  font-family: "pfdintextpro-regular";
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin: 8px 0 30px 0;
+}
+/* line 159, ../sass/css_/faq.scss */
+.faq_page .faq .add_block form table tr td textarea {
+  color: #000000;
+  font-size: 16px;
+  line-height: 16px;
+  height: 82px;
+  width: 663px;
+  border: 1px solid #bfbfbf;
+  padding: 13px;
+  font-family: "pfdintextpro-regular";
+  -moz-border-radius: 2px;
+  -webkit-border-radius: 2px;
+  border-radius: 2px;
+  margin: 6px 0 24px 0;
+  resize: none;
+}
+/* line 172, ../sass/css_/faq.scss */
+.faq_page .faq .add_block form table tr td .submit {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  font-family: "pfdintextpro-medium";
+  font-size: 15px;
+  text-transform: uppercase;
+  width: 140px;
+  text-align: center;
+  padding: 16px 27px 14px 28px;
+  color: #ffffff;
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg5Yjc0ZSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzdhYWI0YyIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #89b74e), color-stop(100%, #7aab4c));
+  background-image: -moz-linear-gradient(#89b74e, #7aab4c);
+  background-image: -webkit-linear-gradient(#89b74e, #7aab4c);
+  background-image: linear-gradient(#89b74e, #7aab4c);
+}
+/* line 184, ../sass/css_/faq.scss */
+.faq_page .faq .add_block form table tr td .submit:hover {
+  background-image: url('data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0idXRmLTgiPz4gPHN2ZyB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+PGRlZnM+PGxpbmVhckdyYWRpZW50IGlkPSJncmFkIiBncmFkaWVudFVuaXRzPSJvYmplY3RCb3VuZGluZ0JveCIgeDE9IjAuNSIgeTE9IjAuMCIgeDI9IjAuNSIgeTI9IjEuMCI+PHN0b3Agb2Zmc2V0PSIwJSIgc3RvcC1jb2xvcj0iIzg5ODllNCIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iIzk5NjdmZiIvPjwvbGluZWFyR3JhZGllbnQ+PC9kZWZzPjxyZWN0IHg9IjAiIHk9IjAiIHdpZHRoPSIxMDAlIiBoZWlnaHQ9IjEwMCUiIGZpbGw9InVybCgjZ3JhZCkiIC8+PC9zdmc+IA==');
+  background-size: 100%;
+  background-image: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, #8989e4), color-stop(100%, #9967ff));
+  background-image: -moz-linear-gradient(#8989e4, #9967ff);
+  background-image: -webkit-linear-gradient(#8989e4, #9967ff);
+  background-image: linear-gradient(#8989e4, #9967ff);
+}
+
+@media only screen and (-webkit-min-device-pixel-ratio: 2), only screen and (min--moz-device-pixel-ratio: 2), only screen and (-o-min-device-pixel-ratio: 2 / 1), only screen and (min-device-pixel-ratio: 2), only screen and (min-resolution: 192dpi), only screen and (min-resolution: 2dppx) {
+  /* line 207, ../sass/css_/faq.scss */
+  .faq_page .faq p a:after {
+    background: url('/../../../img/short_link_bottom@2x.png?1428585798') left bottom no-repeat;
+    -moz-background-size: 320px 1px;
+    -o-background-size: 320px 1px;
+    -webkit-background-size: 320px 1px;
+    background-size: 320px 1px;
+  }
+  /* line 215, ../sass/css_/faq.scss */
+  .faq_page .faq .question_block .question .button {
+    background: url('/../../../img/plus@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 11px 11px;
+    -o-background-size: 11px 11px;
+    -webkit-background-size: 11px 11px;
+    background-size: 11px 11px;
+  }
+  /* line 222, ../sass/css_/faq.scss */
+  .faq_page .faq .question_block.active .question .button {
+    background: url('/../../../img/cross@2x.png?1428585798') center center no-repeat;
+    -moz-background-size: 9px 10px;
+    -o-background-size: 9px 10px;
+    -webkit-background-size: 9px 10px;
+    background-size: 9px 10px;
+  }
+}
+@media screen and (max-width: 640px) {
+  /* line 237, ../sass/css_/faq.scss */
+  .mobile_enabled .faq_page .faq {
+    box-sizing: border-box;
+    padding: 20px;
+  }
+  /* line 242, ../sass/css_/faq.scss */
+  .mobile_enabled .faq_page .faq,
+  .mobile_enabled .faq_page .faq p,
+  .mobile_enabled .faq_page .faq .question_block {
+    width: 100%;
+  }
+  /* line 248, ../sass/css_/faq.scss */
+  .mobile_enabled .faq_page .faq .add_block form table {
+    width: 100%;
+  }
+  /* line 250, ../sass/css_/faq.scss */
+  .mobile_enabled .faq_page .faq .add_block form table tr td {
+    padding: 0;
+    width: 50%;
+  }
+  /* line 254, ../sass/css_/faq.scss */
+  .mobile_enabled .faq_page .faq .add_block form table tr td input {
+    width: 70%;
+  }
+  /* line 257, ../sass/css_/faq.scss */
+  .mobile_enabled .faq_page .faq .add_block form table tr td textarea {
+    width: 90%;
+  }
+  /* line 264, ../sass/css_/faq.scss */
+  .mobile_enabled .faq_page .faq .hr {
+    margin-top: 30px;
+  }
+}

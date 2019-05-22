@@ -1,0 +1,67 @@
+/* line 3, ../sass/css_/jquery.fancybox-thumbs.scss */
+#fancybox-thumbs {
+  position: fixed;
+  left: 0;
+  width: 100%;
+  overflow: hidden;
+  z-index: 8050;
+}
+
+/* line 11, ../sass/css_/jquery.fancybox-thumbs.scss */
+#fancybox-thumbs.bottom {
+  bottom: 2px;
+}
+
+/* line 15, ../sass/css_/jquery.fancybox-thumbs.scss */
+#fancybox-thumbs.top {
+  top: 2px;
+}
+
+/* line 19, ../sass/css_/jquery.fancybox-thumbs.scss */
+#fancybox-thumbs ul {
+  position: relative;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+/* line 26, ../sass/css_/jquery.fancybox-thumbs.scss */
+#fancybox-thumbs ul li {
+  float: left;
+  padding: 1px;
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=50);
+  opacity: 0.5;
+}
+
+/* line 32, ../sass/css_/jquery.fancybox-thumbs.scss */
+#fancybox-thumbs ul li.active {
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=75);
+  opacity: 0.75;
+  padding: 0;
+  border: 1px solid #fff;
+}
+
+/* line 38, ../sass/css_/jquery.fancybox-thumbs.scss */
+#fancybox-thumbs ul li:hover {
+  filter: progid:DXImageTransform.Microsoft.Alpha(enabled=false);
+  opacity: 1;
+}
+
+/* line 42, ../sass/css_/jquery.fancybox-thumbs.scss */
+#fancybox-thumbs ul li a {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  border: 1px solid #222;
+  background: #111;
+  outline: none;
+}
+
+/* line 51, ../sass/css_/jquery.fancybox-thumbs.scss */
+#fancybox-thumbs ul li img {
+  display: block;
+  position: relative;
+  border: 0;
+  padding: 0;
+  max-width: none;
+}

@@ -1,0 +1,66 @@
+@import "compass/css3";
+
+.cart_success_page{
+	.cart_success{
+		position:relative;
+		width:990px;
+		margin:0 auto;	
+		
+		.breadcrumbs{
+			margin:-8px 0 0 0;	
+		}
+		h1{
+			text-transform:uppercase;
+			font-family:"pfdintextpro-medium";
+			font-size:40px;	
+			margin:11px 0 0 0;
+			@include inline-block;
+			vertical-align:top;	
+		}
+		.order_info{
+			padding:0 0 33px 0;
+			
+			p{
+				font-family:"pfdintextpro-regular";
+				font-size:16px;
+				line-height:16px;
+				color:#000000;	
+				margin:8px 0 8px 0;
+			}
+			.h2{
+				font-family:"plumb-bold";
+				font-size:16px;
+				line-height:16px;
+				color:#000000;
+				text-transform:uppercase; 	
+				margin:40px 0 24px 0;	
+			}	
+			a{
+				color:#e10a00;	
+			}
+		}
+	}
+}
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) { 
+
+}
+
+@media screen and (max-width: 640px){
+	.mobile_enabled{
+	
+		.cart_success_page{
+			.cart_success{
+				width: 100%;
+				box-sizing: border-box;
+				padding: 20px;
+			}
+		}
+
+	}
+}

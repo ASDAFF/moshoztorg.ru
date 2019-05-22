@@ -1,0 +1,139 @@
+//====================global footer
+.layout-footer {
+  padding: 70px 0 70px;
+  background-color: #000;
+  color: #fff;
+  @include mobile {
+    padding-top: 50px;
+  }
+  .si-phone {
+    padding-top: 0;
+    font-size: 24px;
+
+    @include mobile {
+      font-size: 36px;
+      margin-top: 43px;
+    }
+    .phone-link {
+      margin-bottom: 14px;
+    }
+    .phone { // svg-icon
+      width: 15px !important;
+      height: 15px !important;
+
+      position: relative;
+      top: -2px;
+      left: -5px;
+    }
+  }
+  .btn {
+    font-size: 11px;
+    @include mobile {
+      font-size: 17px;
+      width: 361px;
+      height: 68px;
+    }
+  }
+}
+
+.moreInfo {
+  li {
+    display: block !important;
+    font-size: 12px;
+    line-height: 27px;
+
+    @include mobile {
+      font-size: 16px;
+    }
+    a {
+      text-align: left !important;
+    }
+  }
+  .moreInfo-title {
+    font-weight: 700;
+    font-size: 14px;
+    text-transform: uppercase;
+    line-height: 22px;
+    margin-bottom: 10px;
+
+    @include mobile {
+      font-size: 16px;
+    }
+  }
+}
+
+.schedule {
+  text-transform: uppercase;
+  font-size: 10px;
+  line-height: 16px;
+  margin-top: 20px;
+
+  @include mobile {
+    font-size: 16px;
+    margin-bottom: 72px;
+    margin-top: 40px;
+
+    position: relative;
+    left: 62px;
+  }
+}
+
+.company-info-block {
+
+  p {
+    margin-bottom: 0px;
+  }
+}
+
+.copyright {
+  margin-top: 0px;
+}
+
+.social {
+  padding-left: 35px;
+
+  @include mobile {
+    padding-left: 0;
+    padding-top: 25px;
+  }
+  &-title {
+    text-transform: uppercase;
+    color: #fff;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+
+    @include mobile {
+      font-size: 18px;
+      margin-bottom: 18px;
+    }
+  }
+  &-icons {
+    margin-bottom: 27px;
+    margin-top: 7px;
+    text-align: center;
+
+    & > a {
+      margin-left: 5px;
+      @include mobile {
+        margin-left: 11px;
+      }
+    }
+
+    svg:hover,
+    svg:active {
+      fill: $primary-color;
+    }
+  }
+  &-card {
+    text-align: center;
+
+    img {
+      margin-left: 10px;
+    }
+  }
+}
+.mht-mob {
+  position: absolute;
+  right: 110px;
+}

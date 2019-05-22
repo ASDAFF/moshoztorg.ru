@@ -1,0 +1,202 @@
+@import "compass/css3";
+
+.csstransitions {
+	.maket{
+		.select_container{
+			.select{
+				li{
+					a{
+						@include transition-property(background-color,color);
+						@include transition-duration(0.5s);
+					}
+				}	
+			}
+		}
+		.header{
+			.header_content{
+				.region{
+					@include transition-property(color);
+					@include transition-duration(0.5s);	
+				}
+				.backet{
+					@include transition-property(color);
+					@include transition-duration(0.5s);
+				}
+				.user{
+					@include transition-property(color);
+					@include transition-duration(0.5s);
+				}
+				.top_menu{
+					li{
+						&:after{
+							@include transition-property(left,width);
+							@include transition-duration(0.5s);	
+						}
+					}	
+				}
+			}
+		}
+		.head_block{
+			.submenu{
+				li{
+					a{
+						&:after{
+							@include transition-property(left,width);
+							@include transition-duration(0.5s);	
+						}
+					}	
+				}	
+			}
+		}
+		.beauty{			
+			.search_block{
+				.search_field{
+					@include transition-property(width);
+					@include transition-duration(0.5s);
+				}	
+			}	
+			.best_info_block{
+				.best_products{
+					.best_product{
+						img{
+							@include transition-property(width,height,margin);
+							@include transition-duration(0.5s);	
+						}
+					}	
+				}	
+				.best_info{
+					.best_info_block_inf{
+						img{
+							@include transition-property(width,height,margin);
+							@include transition-duration(0.5s);	
+						}
+					}
+				}
+			}
+		}
+		.product{
+			.product_image{
+				img{
+					@include transition-property(opacity);
+					@include transition-duration(0.5s);
+				}	
+			}	
+			.product_images{
+				div{
+					&.video{
+						&:after{
+							@include transition-property(opacity);
+							@include transition-duration(0.5s);	
+						}
+					}	
+				}	
+			}
+		}
+		.behaviors{
+			.behavior{
+				@include transition-property(background-position);
+				@include transition-duration(0.5s);
+				
+				.behavior_hover{
+					@include transition-property(background-position,opacity);
+					@include transition-duration(0.5s);	
+				}
+				.behavior_title{
+					&:after{
+						@include transition-property(width,opacity);
+						@include transition-duration(0.5s);
+					}	
+				}	
+				.behavior_description{
+					@include transition-property(left,opacity);
+					@include transition-duration(0.5s);
+					font-family: "pfdintextpro-thin";
+				}
+			}	
+		}
+		.dealer{
+			.dealer_map{
+				span{
+					@include transition-property(left,opacity);
+					@include transition-duration(0.5s);	
+				}	
+			}	
+		}	
+		.catalog_block{
+			.catalog_menu{
+				li{
+					a{
+						&:after{
+							@include transition-property(left,width);
+							@include transition-duration(0.5s);	
+						}
+					}	
+				}		
+			}
+		}
+		.breadcrumbs{
+			li{
+				a{
+					&:after{
+						@include transition-property(left,width);
+						@include transition-duration(0.5s);	
+					}
+				}	
+			}		
+		}
+		.search_block{
+			.search_field{
+				@include transition-property(width);
+				@include transition-duration(0.5s);
+			}	
+		}
+	}	
+	.catalog-element{
+		.short_link{
+			li{
+				a{
+					&:after{
+						@include transition-property(left,width);
+						@include transition-duration(0.5s);	
+					}
+				}	
+			}		
+		}
+		.features{
+			a{
+				&:after{
+					@include transition-property(left,width);
+					@include transition-duration(0.5s);	
+				}
+			}	
+		}
+		.product_tabs_link{
+			a{
+				&:after{
+					@include transition-property(left,width);
+					@include transition-duration(0.5s);	
+				}
+			}	
+		}
+	}
+	.cart{
+		.cart_list{
+			.row{
+				.col{
+					.product_name{
+						&:after{
+							@include transition-property(width);
+							@include transition-duration(0.5s);	
+						}	
+					}
+				}
+			}
+		}
+	}
+	.image_zoom{
+		&:after{
+			@include transition-property(opacity);
+			@include transition-duration(0.5s);	
+		}
+	}
+}

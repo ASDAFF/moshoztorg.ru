@@ -1,0 +1,143 @@
+@import "compass/css3";
+
+.registration_page{
+	.search_block{
+		top:13px;	
+	}
+	.registration{
+		position:relative;
+		width:990px;
+		margin:0 auto 49px auto;	
+		
+		.breadcrumbs{
+			margin:-8px 0 0 0;	
+		}
+		h1{
+			text-transform:uppercase;
+			font-family:"pfdintextpro-medium";
+			font-size:39px;	
+			margin:12px 0 0 0;
+			@include inline-block;
+			vertical-align:top;	
+		}
+		a{
+			color:#e6330a;
+			font-size:16px;	
+			line-height:16px;
+			font-family:"pfdintextpro-regular";
+			position:relative;
+			
+			&:after{
+				background: image-url("short_link_bottom.png") center bottom no-repeat;
+				height:2px;
+				width:0;
+				content:"";
+				display:block;
+				position:absolute;
+				bottom:0;
+				left:0;
+			}	
+			&:hover{
+				&:after{
+					width:100%;
+				}	
+			}
+		}
+		.form_block{
+			margin:40px 0 21px 0;
+			
+			table{
+				tr{
+					td{
+						vertical-align:top;
+						
+						label{
+							font-family:"pfdintextpro-regular";
+							color:#000000;
+							font-size:16px;	 
+							line-height:16px;
+							cursor:default;
+						}
+						input{
+							border:1px solid #bfbfbf;
+							@include border-radius(2px);
+							font-family:"pfdintextpro-regular";
+							color:#000000;
+							font-size:16px;	 
+							line-height:16px;
+							margin:7px 10px 24px 0;	
+							padding:13px;
+							width:302px;
+							cursor:text;
+						}	
+						.notis{
+							@include inline-block;
+							vertical-align:top;
+							color:#a3a3a3;
+							font-size:12px;
+							line-height:16px;
+							font-family:"pfdintextpro-regular";	
+							margin:13px 0 0 0;
+						}
+						.captcha{
+							margin:12px 0 8px 0;	
+						}
+					}
+				}
+			}
+			.button{
+				@include inline-block;
+				vertical-align:top;	
+				font-family:"pfdintextpro-medium";	
+				font-size:15px;
+				text-transform:uppercase;
+				width:140px;
+				text-align:center;
+				padding:15px 28px 14px 26px;
+				margin:4px 0 5px 0;
+				color:#ffffff;
+				background:#7aab4b;	
+				
+				&:after{
+					display:none;	
+				}
+			}
+		}
+	}
+}
+
+
+@media
+	only screen and (-webkit-min-device-pixel-ratio: 2),
+	only screen and (   min--moz-device-pixel-ratio: 2),
+	only screen and (     -o-min-device-pixel-ratio: 2/1),
+	only screen and (        min-device-pixel-ratio: 2),
+	only screen and (                min-resolution: 192dpi),
+	only screen and (                min-resolution: 2dppx) { 
+	.registration_page{
+		.registration{
+			a{
+				&:after{
+					background: image-url("short_link_bottom@2x.png") center bottom no-repeat;
+					@include background-size(320px 1px);
+				}	
+			}
+		}
+	}
+}
+
+@media screen and (max-width: 640px){
+	.mobile_enabled{
+		.registration_page{
+			width: 100%;
+			padding: 20px;
+			box-sizing: border-box;
+			.registration{
+				width: 100%;
+				.form_block table tr td input{
+					width: 80%;
+				}
+			}
+		}
+	}
+}

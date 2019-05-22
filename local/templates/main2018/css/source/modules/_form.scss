@@ -1,0 +1,32 @@
+//==================== section form
+.section-form {
+  background: no-repeat 50% 50% transparent;
+
+  .btn-holder {
+    margin-top: 0px;
+  }
+
+  .btn {
+    width: 300px;
+  }
+}
+
+//========= form agree check
+.form-agree-check {
+  font: 12px/15px "PT Sans";
+  margin-top: 30px;
+
+  .jq-checkbox {
+    top: 1px;
+  }
+}
+
+//==================== section form-x
+.form-x {
+  background-image: url('../images/formX-bg.jpg');
+  padding: 310px 0 0px;
+
+  h2 {
+    margin-bottom: 0px;
+  }
+}

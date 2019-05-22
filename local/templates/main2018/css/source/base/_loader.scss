@@ -1,0 +1,160 @@
+html {
+
+  &.loading {
+    overflow: hidden !important;
+    height: 100% !important;
+
+    .loader {
+      opacity: 1;
+    }
+  }
+}
+
+.loader {
+  @include general-transition;
+  @include abs-center;
+  position: fixed !important;
+  color: $font-color;
+  background: #fff;
+  height: 100%;
+  z-index: 9999;
+  opacity: 0;
+  transition-duration: .5s;
+}
+
+.a-loader {
+  display: inline-block;
+  width: 55px;
+  height: 55px;
+  position: relative;
+
+  [class*="bar"] {
+    width: 5px;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 25px;
+    margin-bottom: 7.5px;
+    border-top: 14px solid $offtop-color;
+    border-radius: 2px;
+  }
+
+  &.a-loader-1 {
+    @extend .rotate-loader;
+
+    .bar-1 {
+      opacity: .125;
+    }
+
+    .bar-2 {
+      @include transform(rotate(45deg));
+      opacity: .25;
+    }
+
+    .bar-3 {
+      @include transform(rotate(90deg));
+      opacity: .375;
+    }
+
+    .bar-4 {
+      @include transform(rotate(135deg));
+      opacity: .5;
+    }
+
+    .bar-5 {
+      @include transform(rotate(180deg));
+      opacity: .625;
+    }
+
+    .bar-6 {
+      @include transform(rotate(225deg));
+      opacity: .75;
+    }
+
+    .bar-7 {
+      @include transform(rotate(270deg));
+      opacity: .875;
+    }
+
+    .bar-8 {
+      @include transform(rotate(315deg));
+    }
+  }
+
+  &.a-loader-2 {
+
+    [class*="bar"] {
+      @extend .loader-bar;
+    }
+
+    .bar-1 {
+      animation-delay: 0.12s;
+    }
+
+    .bar-2 {
+      @include transform(rotate(45deg));
+      animation-delay: 0.24s;
+    }
+
+    .bar-3 {
+      @include transform(rotate(90deg));
+      animation-delay: 0.36s;
+    }
+
+    .bar-4 {
+      @include transform(rotate(135deg));
+      animation-delay: 0.48s;
+    }
+
+    .bar-5 {
+      @include transform(rotate(180deg));
+      animation-delay: 0.64s;
+    }
+
+    .bar-6 {
+      @include transform(rotate(225deg));
+      animation-delay: 0.72s;
+    }
+
+    .bar-7 {
+      @include transform(rotate(270deg));
+      animation-delay: 0.84s;
+    }
+
+    .bar-8 {
+      @include transform(rotate(315deg));
+      animation-delay: 0.96s;
+    }
+  }
+
+  //for svg logo
+  @include tablet {
+    display: none;
+  }
+
+  [class*="path-"] {
+    @include animation(logo-appear ease-in-out both .8s);
+  }
+
+  .path-1 {
+    @include animation-delay(0);
+  }
+}
+
+.loader-text {
+  margin-top: 16px;
+
+  &::after {
+    content: "...";
+    position: absolute;
+  }
+}
+
+@include keyframes(logo-appear) {
+  0% {
+    opacity: .2;
+  }
+  100% {
+    opacity: 1;
+  }
+}

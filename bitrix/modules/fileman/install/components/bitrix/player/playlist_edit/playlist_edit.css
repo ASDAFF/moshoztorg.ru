@@ -1,0 +1,9 @@
+td div.va_playlist, td div.va_playlist_fd_over{padding: 1px 0px 1px 2px !important;	display: block;	cursor: text; -moz-box-sizing: border-box; background-image:  none !important; }
+td div.va_playlist_fd_over span.fd_icon {width: 15px; height: 15px; }
+td div.va_playlist_fd_over div.playlist_text {overflow: hidden !important; width: 80%; white-space: nowrap !important; float: left;}
+td div.va_playlist div.playlist_text {width: 100%; white-space: normal !important; overflow: hidden !important;}
+td div.va_playlist span.fd_icon {display: none;}
+#bx_playlist_layout table.playlist-table tr td{vertical-align: top !important; height: 28px !important; }
+table.edit-form td, table.edit-form tr, table.edit-form table, table.edit-form tbody{font-size:11px !important; vertical-align: top !important;}
+table.edit-tab td {padding:0px !important;}
+#bx_popup_overlay_playlist{z-index:1020;}

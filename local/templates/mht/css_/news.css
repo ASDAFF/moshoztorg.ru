@@ -1,0 +1,111 @@
+/* line 4, ../sass/css_/news.scss */
+.news_page .search_block {
+  top: 13px;
+}
+/* line 7, ../sass/css_/news.scss */
+.news_page .news {
+  position: relative;
+  width: 990px;
+  margin: 0 auto;
+}
+/* line 12, ../sass/css_/news.scss */
+.news_page .news .breadcrumbs {
+  margin: -8px 0 0 0;
+}
+/* line 15, ../sass/css_/news.scss */
+.news_page .news h1 {
+  text-transform: uppercase;
+  font-family: "pfdintextpro-medium";
+  font-size: 39px;
+  margin: 12px 0 0 0;
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+}
+/* line 23, ../sass/css_/news.scss */
+.news_page .news .news_list {
+  margin: 42px 0 50px 0;
+}
+/* line 26, ../sass/css_/news.scss */
+.news_page .news .news_list .new {
+  display: inline-block;
+  vertical-align: middle;
+  *vertical-align: auto;
+  *zoom: 1;
+  *display: inline;
+  vertical-align: top;
+  position: relative;
+  width: 310px;
+}
+/* line 32, ../sass/css_/news.scss */
+.news_page .news .news_list .new:after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
+}
+/* line 43, ../sass/css_/news.scss */
+.news_page .news .news_list .new .image {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+  overflow: hidden;
+}
+/* line 52, ../sass/css_/news.scss */
+.news_page .news .news_list .new .image img {
+  width: 100%;
+  height: auto;
+  -moz-transition-property: all;
+  -o-transition-property: all;
+  -webkit-transition-property: all;
+  transition-property: all;
+  -moz-transition-duration: 500ms;
+  -o-transition-duration: 500ms;
+  -webkit-transition-duration: 500ms;
+  transition-duration: 500ms;
+}
+/* line 59, ../sass/css_/news.scss */
+.news_page .news .news_list .new .name {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  font-size: 24px;
+  font-family: "plumb-bold";
+  text-transform: uppercase;
+  margin: 28px 28px 40px 28px;
+}
+/* line 68, ../sass/css_/news.scss */
+.news_page .news .news_list .new .time {
+  position: relative;
+  z-index: 2;
+  color: #ffffff;
+  font-size: 13px;
+  font-family: "plumb-medium";
+  text-transform: uppercase;
+  margin: 40px 28px 28px 28px;
+}
+/* line 79, ../sass/css_/news.scss */
+.news_page .news .news_list .new:hover .image img {
+  width: 110%;
+  margin: -5%;
+}
+
+@media screen and (max-width: 640px) {
+  /* line 93, ../sass/css_/news.scss */
+  .mobile_enabled .news_page .news {
+    width: 100%;
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
