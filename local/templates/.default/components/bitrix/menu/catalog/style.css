@@ -1,0 +1,560 @@
+/* ----- изменения -----*/
+
+.header .catalog-nav li.active a {
+    background: none;
+}
+
+
+.menu_icon,
+.header .catalog-nav .gtx_second_level > li:hover svg,
+.gtx_second_level > li.active svg,
+.gtx_imgholder svg {
+    fill: #e6330a;
+}
+
+
+.layout-header {
+    z-index: 950;
+}
+
+.gtx_second_level li > a > p {
+    width: calc(100% - 30px);
+    margin-bottom: 0;
+    padding-left: 12px;
+    font-size: 15px;
+    color: #2d2d2d;
+    font-weight: 500;
+    line-height: 14px;
+    padding-top: 0;
+}
+
+.gtx_second_level {
+    position: relative;
+    max-width: 260px;
+    margin: 0;
+    display: block;
+    width: 260px;
+    height: auto;
+    padding: 25px 15px 25px 15px;
+    border: 1px solid #edede8;
+    border-radius: 1px;
+    background: #f8f8f4;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    z-index: 9;
+    overflow-x: hidden;
+}
+.header .gtx_second_level {
+    overflow-y: auto;
+}
+
+.mhtCatalog .scroll-element.scroll-x {
+    display: none !important;
+}
+
+.fixed_catalogbtn .scroll-wrapper.gtx_second_level,
+.fixed_catalogbtn .scroll-wrapper.gtx_third_level {
+    padding-right: 0;
+    padding-bottom: 0;
+    max-height: calc(100vh - 70px);
+}
+
+.nav .scroll-wrapper.gtx_second_level {
+      padding-right: 0;
+      padding-bottom: 0;
+}
+
+.fixed_catalogbtn .gtxnotmob .gtx_second_level li:last-child {
+    padding-bottom: 25px;
+}
+
+.gtx_second_level::-webkit-scrollbar-track,
+.gtx_third_level::-webkit-scrollbar-track {
+    /*	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);*/
+    /*
+	border-radius: 10px;
+	background-color: #F5F5F5;
+*/
+    /*    background-color: #edede8;*/
+    background: none;
+}
+
+.gtx_second_level::-webkit-scrollbar,
+.gtx_third_level::-webkit-scrollbar {
+    /*
+	width: 0px;
+	background-color: #F5F5F5;
+    background-color:#edede8;
+*/
+     background: none;
+}
+
+.gtx_second_level::-webkit-scrollbar-thumb,
+.gtx_third_level::-webkit-scrollbar-thumb {
+    /*	border-radius: 10px;*/
+    /*	-webkit-box-shadow: inset 0 0 6px rgba(255,255,255,.3);*/
+    /*    background-color: #cacac9;*/
+    /*    background-color: #edede8;*/
+     background: none;
+}
+
+
+.gtxnotmob .gtx_second_level li > a {
+    display: inline-block;
+}
+
+.gtxnotmob .gtx_second_level li > a > p {
+    width: calc(100% - 30px);
+    margin-bottom: 0;
+    padding-left: 12px;
+    color: #2d2d2d;
+    padding-top: 0;
+    display: table-cell;
+    vertical-align: middle;
+    font-size: 15px;
+    font-weight: normal;
+    line-height: 20px;
+    text-align: left;
+}
+
+.gtxnotmob .gtx_second_level li {
+    width: 100%;
+    float: none;
+    height: auto;
+    list-style: none;
+}
+
+.gtxnotmob .gtx_second_level li > a > .gtx_imgholder svg {
+    max-width: 20px;
+    max-height: 20px;
+}
+
+.gtx_second_level:after,
+.gtx_second_level:before {
+    content: '';
+    border: solid transparent;
+    position: absolute;
+    left: 20px;
+    top: -20px;
+    width: 0;
+}
+
+.gtx_second_level:before {
+    border-bottom-color: #edede8;
+    border-width: 10px;
+
+}
+
+.gtx_second_level:after {
+    border-bottom-color: #f8f8f4;
+    border-width: 9px;
+    margin-left: 0.8px;
+    top: -18px;
+}
+
+ul.nav li > a {
+    text-decoration: none;
+}
+
+.gtx_second_level a {
+    margin: 3px 0;
+}
+.gtxnotmob .gtx_second_level li > a p:after,
+ul.nav li > a:after {
+    background-color: #e6330a;
+    display: block;
+    content: "";
+    height: 2px;
+    width: 0%;
+    -webkit-transition: width .3s ease-in-out;
+    -moz--transition: width .3s ease-in-out;
+    transition: width .3s ease-in-out;
+}
+
+.gtxnotmob .gtx_second_level li > a:hover > p,
+.gtx_second_level li.active > a p {
+    color: #e6330a;
+}
+
+
+/*
+.gtx_second_level li > a:hover,
+.gtx_second_level li > a:active,
+.gtx_second_level li > a:focus,
+.gtx_second_level li.active > a {
+    text-decoration: underline;
+    text-decoration-color: #e6330a;
+    color: #e6330a;
+}
+*/
+.gtx_second_level li > a:hover p:after,
+.gtx_second_level li.active > a p:after,
+.gtx_second_level li > a:focus p:after,
+.gtx_second_level li > a:active p:after {
+    width: 100%;
+}
+
+
+.submenu_left {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    height: auto;
+    max-width: 910px;
+}
+
+.layout-header.header .submenu_left {
+    overflow: hidden;
+    }
+
+.submenu_left ul {
+    padding: 0;
+}
+
+.tabs {
+    display: none;
+    position: absolute;
+    left: 0;
+    background: #ffffff;
+    -webkit-box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 5px 10px 0px rgba(0, 0, 0, 0.1);
+    margin-top: 15px;
+}
+
+.tabs.gtxactive {
+    display: -webkit-box !important;
+    display: -ms-flexbox !important;
+    display: flex !important;
+}
+
+.gtxnotmob .gtx_second_level li > a > .gtx_imgholder {
+    width: 20px;
+    text-align: left;
+    display: table-cell;
+    vertical-align: middle;
+}
+
+
+.svg-icon {
+    vertical-align: top;
+}
+
+.submenu_left__wrap {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    width: 100%;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    /*    width: 910px;*/
+}
+
+.submenu_left ul {
+    margin-bottom: 0px;
+    margin-top: 0;
+    padding-bottom: 0px;
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 50px;
+    column-gap: 50px;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.gtx_third_level {
+    position: relative;
+    display: none;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 910px;
+    max-width: 910px;
+    height: auto;
+    overflow: hidden;
+    height: 100%;
+}
+
+.gtx_third_level > .levelcontentwrapper {
+    padding: 28px 30px 50px;
+    max-height: 100%;
+    padding-bottom: 0;
+}
+
+body .scroll-wrapper > .scroll-content {
+    width: 100% !important;
+}
+
+a.sub_title {
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 22px;
+    padding-bottom: 5px;
+    display: block;
+    color: #2d2d2d;
+    text-align: left;
+}
+
+a.orange,
+a.sub_title:hover {
+    color: #e6330a;
+    text-decoration: underline;
+}
+
+.submenu_left li {
+    text-align: left;
+    list-style: none;
+    display: block !important;
+  -webkit-column-break-inside: avoid;
+  break-inside: avoid;
+}
+
+.submenu_left .sub_desc {
+    margin-bottom: 21px;
+}
+
+.submenu_left .sub_desc a {
+    font-weight: normal;
+    color: #2d2d2d;
+    text-decoration: none;
+    font-size: 14px;
+    line-height: 24px;
+
+}
+
+.submenu_left .sub_desc a:hover {
+    color: #e6330a;
+     text-decoration: underline;
+}
+
+.submenu_left .sub_desc a:last-child {
+    text-decoration: underline;
+    display: block;
+}
+
+.brands_img {
+    margin: auto;
+    width: 100%;
+    position: relative;
+    margin-top: 20px;
+}
+
+.fixed_catalogbtn .brands_img {
+    position: relative;    
+    margin: auto;
+    width: 100%;
+    display: inline-block;
+    bottom: auto;
+    left: auto;
+    right: auto;
+}
+
+.brands_img a {
+    display: inline-block;
+    width: 20%;
+    float: left;
+
+}
+
+.fixed_catalogbtn .brands_img a {
+    margin: 20px 0;
+}
+
+.brands_img img {
+    max-width: 120px;
+    border: none;
+    outline: none;
+}
+
+
+#overlay_menu {
+    z-index: 20;
+    position: fixed;
+    background-color: #ffffff;
+    opacity: 0.7;
+    -moz-opacity: 0.7;
+    filter: alpha(opacity=70);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    display: none;
+}
+
+.opc {
+    opacity: .1;
+    pointer-events: none;
+}
+
+.header .catalog-nav li.active a {
+    background: none !important;
+}
+
+ul.nav li > a {
+    text-align: left !important;
+}
+
+.show_layer {
+    display: block !important;
+}
+
+/*
+.header.fixedheader .fixed_catalogbtn {
+    position: relative;
+}
+*/
+
+.header.fixedheader,
+.header.layout-header{
+    height: auto !important;
+    min-height: auto;
+}
+
+
+.scroll-wrapper{
+    overflow: hidden !important;
+}
+
+
+.scroll-wrapper > .scroll-content {
+    border: none !important;
+    -webkit-box-sizing: content-box !important;
+    box-sizing: content-box !important;
+    height: auto;
+    left: 0;
+    margin: 0;
+    max-height: none;
+    max-width: none !important;
+    overflow-y: scroll !important;
+    padding: 0 30px 0 0;
+    position: relative !important;
+    top: 0;
+    width: auto !important;
+}
+
+.submenu_left .scroll-wrapper > .scroll-content {
+    padding-right: 55px;
+}
+
+
+.gtx_second_level > .scroll-element,
+.gtx_second_level > .scroll-element div,
+.gtx_third_level .scroll-element,
+.gtx_third_level .scroll-element div {
+    background: none;
+    border: none;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    z-index: 10;
+}
+
+.gtx_second_level > .scroll-element div,
+.gtx_third_level .scroll-element div {
+    display: block;
+    height: 100%;
+    left: 0;
+    top: 0;
+    width: 100%;
+}
+
+.gtx_second_level > .scroll-element .scroll-element_track,
+.gtx_third_level .scroll-element .scroll-element_track {
+    display: none;
+}
+
+.gtx_second_level > .scroll-element .scroll-bar,
+.gtx_third_level .scroll-element .scroll-bar {
+    background-color: #6C6E71;
+    display: block;
+
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    filter: alpha(opacity=0);
+    opacity: 0;
+    border-radius: 7px;
+
+    -webkit-transition: opacity 0.2s linear;
+    transition: opacity 0.2s linear;
+}
+
+.gtx_second_level:hover > .scroll-element .scroll-bar,
+.gtx_second_level > .scroll-element.scroll-draggable .scroll-bar,
+.gtx_third_level:hover .scroll-element .scroll-bar,
+.gtx_third_level .scroll-element.scroll-draggable .scroll-bar {
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=70)";
+    filter: alpha(opacity=70);
+    opacity: 0.7;
+}
+
+
+.gtx_second_level > .scroll-element.scroll-x,
+.gtx_third_level .scroll-element.scroll-x {
+    bottom: 0px;
+    height: 0px;
+    left: 0;
+    min-width: 100%;
+    overflow: visible;
+    width: 100%;
+}
+
+.gtx_second_level > .scroll-element.scroll-y,
+.gtx_third_level .scroll-element.scroll-y {
+    height: 100%;
+    min-height: 100%;
+    right: 0px;
+    top: 0;
+    width: 0px;
+}
+
+/* scrollbar height/width & offset from container borders */
+
+.gtx_second_level > .scroll-element.scroll-x .scroll-bar,
+.gtx_third_level .scroll-element.scroll-x .scroll-bar {
+    height: 7px;
+    min-width: 10px;
+    top: -9px;
+}
+
+.gtx_second_level > .scroll-element.scroll-y .scroll-bar,
+.gtx_third_level .scroll-element.scroll-y .scroll-bar {
+    left: -9px;
+    min-height: 10px;
+    width: 7px;
+}
+
+.gtx_second_level > .scroll-element.scroll-x .scroll-element_outer,
+.gtx_third_level .scroll-element.scroll-x .scroll-element_outer {
+    left: 2px;
+}
+
+.gtx_second_level > .scroll-element.scroll-x .scroll-element_size,
+.gtx_third_level .scroll-element.scroll-x .scroll-element_size {
+    left: -4px;
+}
+
+.gtx_second_level > .scroll-element.scroll-y .scroll-element_outer,
+.gtx_third_level .scroll-element.scroll-y .scroll-element_outer {
+    top: 2px;
+}
+
+.gtx_second_level > .scroll-element.scroll-y .scroll-element_size,
+.gtx_third_level .scroll-element.scroll-y .scroll-element_size {
+    top: -4px;
+}
+
+/* update scrollbar offset if both scrolls are visible */
+
+.gtx_second_level > .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size,
+.gtx_third_level .scroll-element.scroll-x.scroll-scrolly_visible .scroll-element_size {
+    left: -11px;
+}
+
+.gtx_second_level > .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size,
+.gtx_third_level .scroll-element.scroll-y.scroll-scrollx_visible .scroll-element_size {
+    top: -11px;
+}
+
+.scroll-disallowed {
+  overflow: hidden;
+}

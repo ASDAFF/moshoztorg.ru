@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<!-- Creator: CorelDRAW X7 -->
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="119.063mm" height="73.025mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 6063 3719"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil2 {fill:none}
+    .fil0 {fill:#F8AB21}
+    .fil1 {fill:#165A98}
+   ]]>
+  </style>
+ </defs>
+ <g id="Layer_x0020_1">
+  <metadata id="CorelCorpID_0Corel-Layer"/>
+  <g id="_582716704">
+   <path class="fil0" d="M902 3279c1017,-436 2443,-830 4332,-435l20 -479c-1993,-218 -3423,417 -4352,867l0 47z"/>
+   <polygon class="fil1" points="1965,2016 2406,563 2799,563 2358,2016 "/>
+   <path class="fil1" d="M1790 563l-354 616c-90,162 -143,243 -168,345l-5 0c6,-129 -12,-288 -14,-378l-39 -583 -662 0 -6 40c170,0 270,85 298,260l129 1153 407 0 824 -1453 -410 0z"/>
+   <path class="fil1" d="M4801 1159c-4,-108 -8,-253 0,-341l-6 0c-24,72 -127,288 -172,395l-146 318 344 0 -20 -372zm46 857l-11 -216 -491 -1 -101 217 -426 0 774 -1450 523 0 131 1450 -399 0z"/>
+   <path class="fil1" d="M3212 2057c-278,0 -462,-88 -594,-167l188 -286c118,67 210,143 424,143 68,0 134,-18 172,-83 55,-95 -13,-145 -166,-232l-76 -50c-228,-155 -326,-303 -219,-561 68,-165 249,-290 548,-290 205,0 398,89 511,176l-215 253c-110,-89 -201,-134 -305,-134 -83,0 -146,32 -168,75 -41,81 13,137 133,211l90 57c276,174 342,357 273,528 -119,294 -352,360 -596,360l0 0z"/>
+   <path class="fil1" d="M5382 589c-62,0 -109,48 -109,117 0,65 41,118 109,118 61,0 109,-48 109,-118 0,-69 -48,-117 -109,-117l0 0zm0 260c-82,0 -140,-62 -140,-143 0,-85 65,-142 140,-142 75,0 139,57 139,142 0,86 -64,143 -139,143l0 0zm1 -151c19,0 36,-2 36,-24 0,-19 -18,-22 -34,-22l-31 0 0 46 29 0zm-29 90l-26 0 0 -158 60 0c38,0 57,14 57,46 0,28 -17,40 -41,42l44 70 -29 0 -41 -68 -24 0 0 68z"/>
+  </g>
+  <rect class="fil2" width="6063" height="3719"/>
+ </g>
+</svg>

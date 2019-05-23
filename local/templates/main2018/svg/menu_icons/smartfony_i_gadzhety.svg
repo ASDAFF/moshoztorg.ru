@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" xml:space="preserve" width="128mm" height="212mm" version="1.1" style="shape-rendering:geometricPrecision; text-rendering:geometricPrecision; image-rendering:optimizeQuality; fill-rule:evenodd; clip-rule:evenodd"
+viewBox="0 0 12800 21200"
+ xmlns:xlink="http://www.w3.org/1999/xlink">
+ <defs>
+  <style type="text/css">
+   <![CDATA[
+    .fil0 {fill:black;fill-rule:nonzero}
+   ]]>
+  </style>
+ </defs>
+ <g id="Слой_x0020_1ws">
+  <metadata id="CorelCorpID_0Corel-Layerws"/>
+  <path class="fil0" d="M2472 234l7856 0c608,0 1161,248 1561,649 400,400 649,952 649,1561l0 16312c0,609 -249,1161 -649,1561 -400,401 -953,649 -1561,649l-7856 0c-608,0 -1161,-248 -1561,-649 -400,-400 -649,-952 -649,-1561l0 -16312c0,-609 249,-1161 649,-1561 400,-401 953,-649 1561,-649zm6995 1000l0 700c0,178 -72,339 -189,456 -117,117 -278,189 -456,189l-4844 0c-178,0 -339,-72 -456,-189 -117,-117 -189,-278 -189,-456l0 -700 -861 0c-332,0 -635,136 -854,356 -219,219 -356,521 -356,854l0 14882c0,333 137,635 356,854 219,220 522,356 854,356l7856 0c332,0 635,-136 854,-356 219,-219 356,-521 356,-854l0 -14882c0,-333 -137,-635 -356,-854 -219,-220 -522,-356 -854,-356l-861 0z"/>
+ </g>
+</svg>
